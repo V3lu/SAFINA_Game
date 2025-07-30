@@ -43,4 +43,13 @@ public class FireballExplosionAOEDamage : MonoBehaviour, IVFX
             _capsuleCollider2D.enabled = false;
         }
     }
+
+    public void EnableCollider()
+    {
+        if (_capsuleCollider2D != null)
+        {
+            _capsuleCollider2D.enabled = true;
+        }
+    }
+
 }

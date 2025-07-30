@@ -24,6 +24,10 @@ public class OnAnimationFinishDestoryProjectile : StateMachineBehaviour
         if (animator.gameObject.TryGetComponent<IVFX>(out var vfx))
         {
             ObjectPoolManager.ReturnObjectToPool(animator.gameObject, ObjectPoolManager.PoolType.VFXs);
+            if (vfx is FireballExplosionAOEDamage explosion)
+            {
+                explosion.EnableCollider();
+            }
         }
     }
 

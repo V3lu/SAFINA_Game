@@ -49,8 +49,14 @@ public class VoidBolt : MonoBehaviour, IProjectile
 
         if (_stepCounter % 40 == 0)
         {
-            VoidBoltExplosionVFX voidboltExplosion = Instantiate(_voidBoltBaseSO.GetVoidBoltExplosionPrefab(), transform.position + _direction * 0.5f, Quaternion.identity).GetComponent<VoidBoltExplosionVFX>();
-            voidboltExplosion.SetTarget(_direction);
+            GameObject voidboltExplosion = ObjectPoolManager.SpawnObject(_voidBoltBaseSO.GetVoidBoltExplosionPrefab(), transform.position + _direction * 0.5f, Quaternion.identity);
+            if (voidboltExplosion.TryGetComponent<IVFX>(out var vfx))
+            {
+                if (vfx is VoidBoltExplosionVFX explosion)
+                {
+                    explosion.SetTarget(_direction);
+                }
+            }
         }
     }
 
