@@ -1,7 +1,7 @@
 using Assets.Code.Interfaces;
 using UnityEngine;
 
-public class FireballExplosionAOEDamage : MonoBehaviour
+public class FireballExplosionAOEDamage : MonoBehaviour, IVFX
 {
     [SerializeField] private FireballBaseSO _fireballBaseSO;
 

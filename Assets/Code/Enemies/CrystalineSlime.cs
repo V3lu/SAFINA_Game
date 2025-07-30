@@ -48,7 +48,7 @@ public class CrystalineSlime : MonoBehaviour, IMob
     {
         this.HP -= hp;
         _enemyHealthbarController.Sethealth(HP, _crystalineSlimeSO.GetHP());
-        ObjectPoolManager.SpawnObject(_hitPrefab, gameObject.transform.position, Quaternion.identity);
+        ObjectPoolManager.SpawnObject(_hitPrefab, gameObject.transform.position, Quaternion.identity, ObjectPoolManager.PoolType.VFXs);
     }
 
     private void OnDeath()

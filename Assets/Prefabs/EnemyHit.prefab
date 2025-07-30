@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6680102563051439121}
   - component: {fileID: 101811434647619599}
   - component: {fileID: 2565553215845195360}
+  - component: {fileID: 4274781504078951423}
   m_Layer: 0
   m_Name: EnemyHit
   m_TagString: EnemyHit
@@ -110,3 +111,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4274781504078951423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5784736543062994673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18dbfc5e864ba824ab3f5feafc9c40e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

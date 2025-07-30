@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4266557537891370394}
   - component: {fileID: -7596665379932226835}
   - component: {fileID: -5104752144656139333}
+  - component: {fileID: 7464002182528494115}
   m_Layer: 0
   m_Name: SAFINA_EnergyBlast
   m_TagString: EnergyBlast
@@ -124,3 +125,70 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _energyBlastBaseSO: {fileID: 11400000, guid: 89e6b759cee42874b9605936ca04ae22, type: 2}
+--- !u!60 &7464002182528494115
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3981800061773876094}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 1.5}
+    newSize: {x: 2, y: 1.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.78994846, y: 0.17092657}
+      - {x: 0.06847763, y: 0.5266323}
+      - {x: -0.083155155, y: 0.5266323}
+      - {x: -0.91494894, y: 0.09375}
+      - {x: -0.9269042, y: -0.033970594}
+      - {x: -0.8165808, y: -0.14103651}
+      - {x: -0.0625, y: -0.53125}
+      - {x: 0.14911127, y: -0.48006582}
+      - {x: 0.78397083, y: -0.13831592}
+      - {x: 0.8970146, y: -0.0625}
+      - {x: 0.9209266, y: 0.03125}
+    - - {x: -0.5625, y: 0.03125}
+      - {x: -0.5625, y: 0}
+      - {x: -0.03125, y: 0.28125}
+      - {x: 0.03125, y: 0.28125}
+      - {x: 0.5625, y: 0}
+      - {x: 0.5625, y: 0.03125}
+      - {x: 0.03125, y: -0.25}
+      - {x: -0.03125, y: -0.25}
+      - {x: -0.03125, y: -0.21875}
+  m_UseDelaunayMesh: 0

@@ -111,7 +111,11 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
             if (_attackProjectileSpawnTimer <= 0)
             {
                 _attackProjectileSpawnTimer = _attackSpeed;
-                EnergyBlast voidbolt = Instantiate(_energyBlastPrefab, closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position, Quaternion.identity).GetComponent<EnergyBlast>();
+                GameObject energyBlast = ObjectPoolManager.SpawnObject(_energyBlastPrefab, closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Projectiles);
+                if (energyBlast.TryGetComponent<IProjectile>(out var projectile))
+                {
+                    projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform);
+                }
             }
         }
 

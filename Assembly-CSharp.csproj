@@ -74,11 +74,13 @@
     <Compile Include="Assets\Code\ScriptableObjects\GameDataSO.cs" />
     <Compile Include="Assets\Code\ScriptableObjects\VoidBoltBaseSO.cs" />
     <Compile Include="Assets\Code\ScriptableObjects\CrystalinePathSO.cs" />
+    <Compile Include="Assets\Code\VFX\EnemyHitVFX.cs" />
     <Compile Include="Assets\Code\Controllers\VoidBoltSkillChooseController.cs" />
     <Compile Include="Assets\Code\Enemies\CrystalineSlime.cs" />
     <Compile Include="Assets\Code\Projectiles\EnergyBlast.cs" />
     <Compile Include="Assets\Code\Interfaces\IAutoAttackTypeSelectable.cs" />
     <Compile Include="Assets\Code\Controllers\FireballSkillChooseController.cs" />
+    <Compile Include="Assets\Code\Interfaces\IVFX.cs" />
     <Compile Include="Assets\Code\Projectiles\OnAnimationFinishDestoryProjectile.cs" />
     <Compile Include="Assets\Code\Managers\ObjectPoolManager.cs" />
     <Compile Include="Assets\Code\Interfaces\IMob.cs" />

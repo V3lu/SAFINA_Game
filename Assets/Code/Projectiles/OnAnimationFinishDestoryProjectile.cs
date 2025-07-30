@@ -1,3 +1,4 @@
+using Assets.Code.Interfaces;
 using UnityEngine;
 
 public class OnAnimationFinishDestoryProjectile : StateMachineBehaviour
@@ -15,8 +16,15 @@ public class OnAnimationFinishDestoryProjectile : StateMachineBehaviour
     //}
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        // Destroy the GameObject the Animator is attached to
-        GameObject.Destroy(animator.gameObject);
+        if (animator.gameObject.TryGetComponent<IProjectile>(out var prefab))
+        {
+            ObjectPoolManager.ReturnObjectToPool(animator.gameObject, ObjectPoolManager.PoolType.Projectiles);
+        }
+
+        if (animator.gameObject.TryGetComponent<IVFX>(out var vfx))
+        {
+            ObjectPoolManager.ReturnObjectToPool(animator.gameObject, ObjectPoolManager.PoolType.VFXs);
+        }
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

@@ -3,52 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\aethi\\SAFINA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\projectiles\\fireball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\projectiles\\fireball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|c:\\users\\aethi\\safina\\assets\\code\\vfx\\enemyhitvfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\vfx\\enemyhitvfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\vfx\\fireballexplosionaoedamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\vfx\\fireballexplosionaoedamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\projectiles\\onanimationfinishdestoryprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\projectiles\\onanimationfinishdestoryprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\projectiles\\voidbolt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\projectiles\\voidbolt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\interfaces\\iprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\interfaces\\iprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\projectiles\\fireball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\projectiles\\fireball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|c:\\users\\aethi\\safina\\assets\\code\\enemies\\crystalineslime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\enemies\\crystalineslime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\vfx\\voidboltexplosionvfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\vfx\\voidboltexplosionvfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\vfx\\fireballexplosionaoedamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\vfx\\fireballexplosionaoedamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|c:\\users\\aethi\\safina\\assets\\code\\interfaces\\ivfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\interfaces\\ivfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\interfaces\\imob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\interfaces\\imob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\managers\\objectpoolmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\managers\\objectpoolmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\controllers\\enemyhealthbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\controllers\\enemyhealthbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\enemies\\crystalineslime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\enemies\\crystalineslime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\projectiles\\energyblast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\projectiles\\energyblast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\scriptableobjects\\energyblastbaseso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scriptableobjects\\energyblastbaseso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\scriptableobjects\\voidboltbaseso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scriptableobjects\\voidboltbaseso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\controllers\\crystalineslimespawnpointcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\controllers\\crystalineslimespawnpointcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\scriptableobjects\\fireballbaseso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scriptableobjects\\fireballbaseso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\interfaces\\iprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\interfaces\\iprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\interfaces\\imob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\interfaces\\imob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\controllers\\enemyhealthbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\controllers\\enemyhealthbarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\controllers\\crystalineslimespawnpointcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\controllers\\crystalineslimespawnpointcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\interfaces\\idamagable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,20 +83,8 @@
       "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\interfaces\\iautoattacktypeselectable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\projectiles\\energyblast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\projectiles\\energyblast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\projectiles\\onanimationfinishdestoryprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\projectiles\\onanimationfinishdestoryprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\scriptableobjects\\crystalinepathso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scriptableobjects\\crystalinepathso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\scriptableobjects\\energyblastbaseso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\scriptableobjects\\energyblastbaseso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\controllers\\energyblastskillchoosecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -85,10 +97,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\controllers\\fireballskillchoosecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\controllers\\fireballskillchoosecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\vfx\\voidboltexplosionvfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\vfx\\voidboltexplosionvfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1ECDDAD-4A66-1E97-84C6-2F7186EE7731}|Assembly-CSharp.csproj|C:\\Users\\aethi\\SAFINA\\assets\\code\\scriptableobjects\\gamedataso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -118,7 +126,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 21,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -190,104 +198,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ObjectPoolManager.cs",
-              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Managers\\ObjectPoolManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Code\\Managers\\ObjectPoolManager.cs",
-              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Managers\\ObjectPoolManager.cs",
-              "RelativeToolTip": "Assets\\Code\\Managers\\ObjectPoolManager.cs",
-              "ViewState": "AgIAAI8AAAAAAAAAAAAAwKUAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "EnemyHitVFX.cs",
+              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\VFX\\EnemyHitVFX.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\VFX\\EnemyHitVFX.cs",
+              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\VFX\\EnemyHitVFX.cs",
+              "RelativeToolTip": "Assets\\Code\\VFX\\EnemyHitVFX.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-23T18:40:20.627Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CrystalineSlime.cs",
-              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Enemies\\CrystalineSlime.cs",
-              "RelativeDocumentMoniker": "Assets\\Code\\Enemies\\CrystalineSlime.cs",
-              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Enemies\\CrystalineSlime.cs",
-              "RelativeToolTip": "Assets\\Code\\Enemies\\CrystalineSlime.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAADwvyoAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T13:31:09.001Z",
+              "WhenOpened": "2025-07-30T19:17:32.002Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EnemyHealthbarController.cs",
-              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Controllers\\EnemyHealthbarController.cs",
-              "RelativeDocumentMoniker": "Assets\\Code\\Controllers\\EnemyHealthbarController.cs",
-              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Controllers\\EnemyHealthbarController.cs",
-              "RelativeToolTip": "Assets\\Code\\Controllers\\EnemyHealthbarController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "IVFX.cs",
+              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Interfaces\\IVFX.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\Interfaces\\IVFX.cs",
+              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Interfaces\\IVFX.cs",
+              "RelativeToolTip": "Assets\\Code\\Interfaces\\IVFX.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T16:36:04.426Z"
+              "WhenOpened": "2025-07-30T19:16:45.17Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IAutoAttackTypeSelectable.cs",
-              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Interfaces\\IAutoAttackTypeSelectable.cs",
-              "RelativeDocumentMoniker": "Assets\\Code\\Interfaces\\IAutoAttackTypeSelectable.cs",
-              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Interfaces\\IAutoAttackTypeSelectable.cs",
-              "RelativeToolTip": "Assets\\Code\\Interfaces\\IAutoAttackTypeSelectable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T08:49:49.426Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Fireball.cs",
               "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Projectiles\\Fireball.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\Projectiles\\Fireball.cs",
               "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Projectiles\\Fireball.cs",
               "RelativeToolTip": "Assets\\Code\\Projectiles\\Fireball.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowC4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwDgAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-15T08:57:26.525Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IProjectile.cs",
-              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Interfaces\\IProjectile.cs",
-              "RelativeDocumentMoniker": "Assets\\Code\\Interfaces\\IProjectile.cs",
-              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Interfaces\\IProjectile.cs",
-              "RelativeToolTip": "Assets\\Code\\Interfaces\\IProjectile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T14:56:47.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IMob.cs",
-              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Interfaces\\IMob.cs",
-              "RelativeDocumentMoniker": "Assets\\Code\\Interfaces\\IMob.cs",
-              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Interfaces\\IMob.cs",
-              "RelativeToolTip": "Assets\\Code\\Interfaces\\IMob.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T12:13:10.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Controllers\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\Controllers\\PlayerController.cs",
               "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Controllers\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Code\\Controllers\\PlayerController.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAkwFsAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAkwG0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T13:31:57.431Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-04T13:31:57.431Z"
             },
             {
               "$type": "Document",
@@ -297,51 +255,113 @@
               "RelativeDocumentMoniker": "Assets\\Code\\Projectiles\\VoidBolt.cs",
               "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Projectiles\\VoidBolt.cs",
               "RelativeToolTip": "Assets\\Code\\Projectiles\\VoidBolt.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwEEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwEAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-17T14:00:15.356Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EnergyBlast.cs",
+              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Projectiles\\EnergyBlast.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\Projectiles\\EnergyBlast.cs",
+              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Projectiles\\EnergyBlast.cs",
+              "RelativeToolTip": "Assets\\Code\\Projectiles\\EnergyBlast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T15:35:37.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EnergyBlastBaseSO.cs",
+              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\ScriptableObjects\\EnergyBlastBaseSO.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\ScriptableObjects\\EnergyBlastBaseSO.cs",
+              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\ScriptableObjects\\EnergyBlastBaseSO.cs",
+              "RelativeToolTip": "Assets\\Code\\ScriptableObjects\\EnergyBlastBaseSO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T06:36:56.059Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "OnAnimationFinishDestoryProjectile.cs",
+              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Projectiles\\OnAnimationFinishDestoryProjectile.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\Projectiles\\OnAnimationFinishDestoryProjectile.cs",
+              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Projectiles\\OnAnimationFinishDestoryProjectile.cs",
+              "RelativeToolTip": "Assets\\Code\\Projectiles\\OnAnimationFinishDestoryProjectile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T14:59:14.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "FireballExplosionAOEDamage.cs",
               "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\VFX\\FireballExplosionAOEDamage.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\VFX\\FireballExplosionAOEDamage.cs",
               "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\VFX\\FireballExplosionAOEDamage.cs",
               "RelativeToolTip": "Assets\\Code\\VFX\\FireballExplosionAOEDamage.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBYAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-22T15:04:53.554Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CrystalineSlimeSpawnPointController.cs",
-              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Controllers\\CrystalineSlimeSpawnPointController.cs",
-              "RelativeDocumentMoniker": "Assets\\Code\\Controllers\\CrystalineSlimeSpawnPointController.cs",
-              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Controllers\\CrystalineSlimeSpawnPointController.cs",
-              "RelativeToolTip": "Assets\\Code\\Controllers\\CrystalineSlimeSpawnPointController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "VoidBoltExplosionVFX.cs",
+              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\VFX\\VoidBoltExplosionVFX.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\VFX\\VoidBoltExplosionVFX.cs",
+              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\VFX\\VoidBoltExplosionVFX.cs",
+              "RelativeToolTip": "Assets\\Code\\VFX\\VoidBoltExplosionVFX.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T15:09:21.838Z"
+              "WhenOpened": "2025-07-21T16:32:03.786Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "CrystalineSlime.cs",
+              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Enemies\\CrystalineSlime.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\Enemies\\CrystalineSlime.cs",
+              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Enemies\\CrystalineSlime.cs",
+              "RelativeToolTip": "Assets\\Code\\Enemies\\CrystalineSlime.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAADwvy4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T13:31:09.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ObjectPoolManager.cs",
+              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Managers\\ObjectPoolManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\Managers\\ObjectPoolManager.cs",
+              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Managers\\ObjectPoolManager.cs",
+              "RelativeToolTip": "Assets\\Code\\Managers\\ObjectPoolManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T18:40:20.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "VoidBoltBaseSO.cs",
               "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\ScriptableObjects\\VoidBoltBaseSO.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\ScriptableObjects\\VoidBoltBaseSO.cs",
               "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\ScriptableObjects\\VoidBoltBaseSO.cs",
               "RelativeToolTip": "Assets\\Code\\ScriptableObjects\\VoidBoltBaseSO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-21T16:14:21.604Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "FireballBaseSO.cs",
               "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\ScriptableObjects\\FireballBaseSO.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\ScriptableObjects\\FireballBaseSO.cs",
@@ -353,7 +373,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
+              "Title": "IMob.cs",
+              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Interfaces\\IMob.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\Interfaces\\IMob.cs",
+              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Interfaces\\IMob.cs",
+              "RelativeToolTip": "Assets\\Code\\Interfaces\\IMob.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T12:13:10.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IProjectile.cs",
+              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Interfaces\\IProjectile.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\Interfaces\\IProjectile.cs",
+              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Interfaces\\IProjectile.cs",
+              "RelativeToolTip": "Assets\\Code\\Interfaces\\IProjectile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T14:56:47.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IAutoAttackTypeSelectable.cs",
+              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Interfaces\\IAutoAttackTypeSelectable.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\Interfaces\\IAutoAttackTypeSelectable.cs",
+              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Interfaces\\IAutoAttackTypeSelectable.cs",
+              "RelativeToolTip": "Assets\\Code\\Interfaces\\IAutoAttackTypeSelectable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T08:49:49.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EnemyHealthbarController.cs",
+              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Controllers\\EnemyHealthbarController.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\Controllers\\EnemyHealthbarController.cs",
+              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Controllers\\EnemyHealthbarController.cs",
+              "RelativeToolTip": "Assets\\Code\\Controllers\\EnemyHealthbarController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T16:36:04.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CrystalineSlimeSpawnPointController.cs",
+              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Controllers\\CrystalineSlimeSpawnPointController.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\Controllers\\CrystalineSlimeSpawnPointController.cs",
+              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Controllers\\CrystalineSlimeSpawnPointController.cs",
+              "RelativeToolTip": "Assets\\Code\\Controllers\\CrystalineSlimeSpawnPointController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T15:09:21.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "IDamagable.cs",
               "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Interfaces\\IDamagable.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\Interfaces\\IDamagable.cs",
@@ -365,43 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "EnergyBlast.cs",
-              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Projectiles\\EnergyBlast.cs",
-              "RelativeDocumentMoniker": "Assets\\Code\\Projectiles\\EnergyBlast.cs",
-              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Projectiles\\EnergyBlast.cs",
-              "RelativeToolTip": "Assets\\Code\\Projectiles\\EnergyBlast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T15:35:37.446Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "OnAnimationFinishDestoryProjectile.cs",
-              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Projectiles\\OnAnimationFinishDestoryProjectile.cs",
-              "RelativeDocumentMoniker": "Assets\\Code\\Projectiles\\OnAnimationFinishDestoryProjectile.cs",
-              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Projectiles\\OnAnimationFinishDestoryProjectile.cs",
-              "RelativeToolTip": "Assets\\Code\\Projectiles\\OnAnimationFinishDestoryProjectile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T14:59:14.215Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "EnergyBlastBaseSO.cs",
-              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\ScriptableObjects\\EnergyBlastBaseSO.cs",
-              "RelativeDocumentMoniker": "Assets\\Code\\ScriptableObjects\\EnergyBlastBaseSO.cs",
-              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\ScriptableObjects\\EnergyBlastBaseSO.cs",
-              "RelativeToolTip": "Assets\\Code\\ScriptableObjects\\EnergyBlastBaseSO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T06:36:56.059Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "CrystalinePathSO.cs",
               "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\ScriptableObjects\\CrystalinePathSO.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\ScriptableObjects\\CrystalinePathSO.cs",
@@ -413,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "EnergyBlastSkillChooseController.cs",
               "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Controllers\\EnergyBlastSkillChooseController.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\Controllers\\EnergyBlastSkillChooseController.cs",
@@ -425,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "FireballSkillChooseController.cs",
               "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Controllers\\FireballSkillChooseController.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\Controllers\\FireballSkillChooseController.cs",
@@ -437,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "VoidBoltSkillChooseController.cs",
               "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Controllers\\VoidBoltSkillChooseController.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\Controllers\\VoidBoltSkillChooseController.cs",
@@ -449,19 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "VoidBoltExplosionVFX.cs",
-              "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\VFX\\VoidBoltExplosionVFX.cs",
-              "RelativeDocumentMoniker": "Assets\\Code\\VFX\\VoidBoltExplosionVFX.cs",
-              "ToolTip": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\VFX\\VoidBoltExplosionVFX.cs",
-              "RelativeToolTip": "Assets\\Code\\VFX\\VoidBoltExplosionVFX.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T16:32:03.786Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "GameDataSO.cs",
               "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\ScriptableObjects\\GameDataSO.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\ScriptableObjects\\GameDataSO.cs",
@@ -473,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "CrystalineSlimeSO.cs",
               "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\ScriptableObjects\\CrystalineSlimeSO.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\ScriptableObjects\\CrystalineSlimeSO.cs",
@@ -485,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "VoidBoltExplosion.cs",
               "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\VFX\\VoidBoltExplosion.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\VFX\\VoidBoltExplosion.cs",
@@ -497,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "GameData.cs",
               "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\ScriptableObjects\\GameData.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\ScriptableObjects\\GameData.cs",
@@ -509,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "CameraController.cs",
               "DocumentMoniker": "C:\\Users\\aethi\\SAFINA\\Assets\\Code\\Controllers\\CameraController.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\Controllers\\CameraController.cs",

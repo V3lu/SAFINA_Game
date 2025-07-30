@@ -1,6 +1,7 @@
+using Assets.Code.Interfaces;
 using UnityEngine;
 
-public class VoidBoltExplosionVFX : MonoBehaviour
+public class VoidBoltExplosionVFX : MonoBehaviour, IVFX
 {
     private Vector3 _direction = Vector3.zero;
 
