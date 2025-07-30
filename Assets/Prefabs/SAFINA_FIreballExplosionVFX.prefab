@@ -161,4 +161,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8351521046c0d243951a1b7bff30fb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FireballBaseSO: {fileID: 11400000, guid: 836e4312801d48640bc19349e227c00c, type: 2}
+  _fireballBaseSO: {fileID: 11400000, guid: 836e4312801d48640bc19349e227c00c, type: 2}

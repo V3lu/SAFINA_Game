@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474dab59aa170a0458d541c3e5a15306, type: 3}
   m_Name: VoidBoltBaseSO
   m_EditorClassIdentifier: 
-  voidBoltExplosionPrefab: {fileID: 6661894360443243992, guid: 80a026d922133b040b3bdd594d3abd07, type: 3}
-  range: 7
-  initialSpeed: 10
-  loweredSpeed: 6
-  baseDamageLowest: 4
-  baseDamageHighest: 8
+  _voidBoltExplosionPrefab: {fileID: 6661894360443243992, guid: 80a026d922133b040b3bdd594d3abd07, type: 3}
+  _range: 8
+  _initialSpeed: 10
+  _loweredSpeed: 6
+  _baseDamageLowest: 4
+  _baseDamageHighest: 8

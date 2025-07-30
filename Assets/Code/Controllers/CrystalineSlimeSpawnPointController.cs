@@ -3,7 +3,6 @@ using UnityEngine;
 public class CrystalineSlimeSpawnPointController : MonoBehaviour
 {
     [SerializeField] private GameObject _crystalineSlimePrefab;
-    [SerializeField] private Transform _playerTransform;
     [SerializeField] private float _spawnRate;
     [SerializeField] private CrystalinePathSO _crystalinePathSO;
 
@@ -13,7 +12,7 @@ public class CrystalineSlimeSpawnPointController : MonoBehaviour
     
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -24,9 +23,7 @@ public class CrystalineSlimeSpawnPointController : MonoBehaviour
         if(_spawnTimer <= 0)
         {
             _spawnTimer = _spawnRate;
-            CrystalineSlime slime = Instantiate(_crystalineSlimePrefab, transform.position, Quaternion.identity).GetComponent<CrystalineSlime>();
-            slime.Spawn(_playerTransform);
-            _crystalinePathSO.AddEnemy(slime);
+            ObjectPoolManager.SpawnObject(_crystalineSlimePrefab, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Mobs);
         }
     }
 }

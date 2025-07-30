@@ -1,19 +1,26 @@
 using Assets.Code.Interfaces;
 using UnityEngine;
 
-public class VoidBolt : MonoBehaviour
+public class VoidBolt : MonoBehaviour, IProjectile
 {
     [SerializeField] private VoidBoltBaseSO _voidBoltBaseSO;
 
 
     private int _stepCounter = 0;
-    private float _distanceTraveled = 0f;
-    private Vector3 _direction = Vector3.zero;
 
+    private Vector3 _direction = Vector3.zero;
+    private float _distanceTraveled = 0f;
 
     void Start()
     {
         
+    }
+
+    private void ResetAfterPoolReturn()
+    {
+        _direction = Vector3.zero;
+        _distanceTraveled = 0f;
+        _stepCounter = 0;
     }
 
     // Update is called once per frame
@@ -21,7 +28,8 @@ public class VoidBolt : MonoBehaviour
     {
         if (_distanceTraveled >= _voidBoltBaseSO.GetRange())
         {
-            Destroy(gameObject);
+            ObjectPoolManager.ReturnObjectToPool(this.gameObject, ObjectPoolManager.PoolType.Projectiles);
+            ResetAfterPoolReturn();
         }
 
         if (_stepCounter >= 40)
@@ -55,9 +63,7 @@ public class VoidBolt : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject gameObject = collision.gameObject;
-        IMob mob = gameObject.GetComponent<IMob>();
-        if (mob != null)
+        if (collision.TryGetComponent<IMob>(out var mob))
         {
             mob.LooseHP(Random.Range(_voidBoltBaseSO.GetBaseDamageLowest(), _voidBoltBaseSO.GetBaseDamageHighest()));
         }

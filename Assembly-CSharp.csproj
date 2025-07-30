@@ -83,6 +83,7 @@
     <Compile Include="Assets\Code\Managers\ObjectPoolManager.cs" />
     <Compile Include="Assets\Code\Interfaces\IMob.cs" />
     <Compile Include="Assets\Code\Projectiles\Fireball.cs" />
+    <Compile Include="Assets\Code\Interfaces\IProjectile.cs" />
     <Compile Include="Assets\Code\VFX\VoidBoltExplosionVFX.cs" />
   </ItemGroup>
   <ItemGroup>

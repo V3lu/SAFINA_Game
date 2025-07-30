@@ -74,11 +74,11 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
         _speedY = Input.GetAxisRaw("Vertical") * _movSpeed;
         _rb.linearVelocity = new Vector2(_speedX, _speedY);
 
-        IMob closestEnemy = GetClosestEnemy();
+        Dictionary<GameObject, GameObject> closestEnemyPlusOriginalPrefab = GetClosestEnemy();
         Directions directionToLookAt = Directions.Right;
-        if (closestEnemy != null)
+        if (closestEnemyPlusOriginalPrefab != null)
         {
-            directionToLookAt = DirectionToLookForTheClosestEnemy(closestEnemy);
+            directionToLookAt = DirectionToLookForTheClosestEnemy(closestEnemyPlusOriginalPrefab);
         }
 
         _attackProjectileSpawnTimer -= Time.deltaTime;
@@ -87,8 +87,11 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
             if (_attackProjectileSpawnTimer <= 0)
             {
                 _attackProjectileSpawnTimer = _attackSpeed;
-                Fireball fireball = Instantiate(_fireballPrefab, transform.position, Quaternion.identity).GetComponent<Fireball>();
-                fireball.SetTarget(closestEnemy.Transform);
+                GameObject fireball = ObjectPoolManager.SpawnObject(_fireballPrefab, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Projectiles);
+                if (fireball.TryGetComponent<IProjectile>(out var projectile))
+                {
+                    projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform);
+                }
             }
         }
         else if (AttackType == ChosenBasicAttact.Void)
@@ -96,8 +99,11 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
             if (_attackProjectileSpawnTimer <= 0)
             {
                 _attackProjectileSpawnTimer = _attackSpeed;
-                VoidBolt voidbolt = Instantiate(_voidBoltPrefab, transform.position, Quaternion.identity).GetComponent<VoidBolt>();
-                voidbolt.SetTarget(closestEnemy.Transform);
+                GameObject voidBolt = ObjectPoolManager.SpawnObject(_voidBoltPrefab, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Projectiles);
+                if (voidBolt.TryGetComponent<IProjectile>(out var projectile))
+                {
+                    projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform);
+                }
             }
         }
         else if (AttackType == ChosenBasicAttact.Energy)
@@ -105,7 +111,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
             if (_attackProjectileSpawnTimer <= 0)
             {
                 _attackProjectileSpawnTimer = _attackSpeed;
-                EnergyBlast voidbolt = Instantiate(_energyBlastPrefab, closestEnemy.Transform.position, Quaternion.identity).GetComponent<EnergyBlast>();
+                EnergyBlast voidbolt = Instantiate(_energyBlastPrefab, closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position, Quaternion.identity).GetComponent<EnergyBlast>();
             }
         }
 
@@ -146,18 +152,23 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     {
         _animator.SetInteger("State", (int)state);
     }
-    IMob GetClosestEnemy()
+    Dictionary<GameObject, GameObject> GetClosestEnemy()              
     {
-        Dictionary<IMob, float> mobsDistances = new Dictionary<IMob, float>();
-        if (_crystalinePathSO.GetAllEnemies().Count > 0)
+        Dictionary<GameObject, GameObject> activeEnemiesObjects = ObjectPoolManager.GetAllActiveGameObjectsOfThePool(ObjectPoolManager.PoolType.Mobs);
+        Dictionary<GameObject, float> mobsDistances = new Dictionary<GameObject, float>();
+        if (activeEnemiesObjects.Count() > 0)
         {
-            foreach (IMob mob in _crystalinePathSO.GetAllEnemies())
+            foreach (var kvp in activeEnemiesObjects)
             {
-                float distanceOfTheCurrentMobToPlayer = Vector3.Distance(gameObject.transform.position, mob.Transform.position);
-                mobsDistances[mob] = distanceOfTheCurrentMobToPlayer;
+                float distanceOfTheCurrentMobToPlayer = Vector3.Distance(gameObject.transform.position, kvp.Key.transform.position);
+                mobsDistances[kvp.Key] = distanceOfTheCurrentMobToPlayer;
             }
-            IMob closestEnemy = mobsDistances.Where(eb => eb.Value == mobsDistances.Values.Min()).FirstOrDefault().Key;
-            return closestEnemy;
+
+            GameObject closestEnemy = mobsDistances.Where(eb => eb.Value == mobsDistances.Values.Min()).FirstOrDefault().Key;
+            GameObject originalPrefab = activeEnemiesObjects[closestEnemy];
+
+            return new Dictionary<GameObject, GameObject> { { closestEnemy, originalPrefab } };
+            
         }
         else
         {
@@ -165,9 +176,9 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
         }
 
     }
-    Directions DirectionToLookForTheClosestEnemy(IMob closestEnemy)
+    Directions DirectionToLookForTheClosestEnemy(Dictionary<GameObject, GameObject> closestEnemy)
     {
-        if (closestEnemy.Transform.position.x >= gameObject.transform.position.x)
+        if (closestEnemy.ElementAt(0).Key.transform.position.x >= gameObject.transform.position.x)
         {
             return Directions.Right;
         }

@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.000030517578, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &185346444918265740
@@ -57,15 +57,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_Color: {r: 0.79622644, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -190,9 +190,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e3b834c85619694c86e4b2ef5361da9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBarSlider: {fileID: 4000047840680570180}
-  healthBarColor: {r: 0.6313726, g: 0.060583156, b: 0, a: 1}
-  offset: {x: 0, y: 0.4, z: 0}
+  _healthBarSlider: {fileID: 4000047840680570180}
+  _healthBarColor: {r: 0.93207544, g: 0.040448453, b: 0.10976413, a: 1}
+  _offset: {x: 0, y: -0.35, z: 0}
 --- !u!1 &2053464738876199069
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -270,7 +270,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 4883865549329395320}
   m_HandleRect: {fileID: 0}
@@ -375,8 +375,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_Color: {r: 0.07924521, g: 0.07341395, b: 0.07828519, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -519,10 +519,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6871b3b818506624ca9315d933676323, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPrefab: {fileID: 5784736543062994673, guid: acc3c3ead1b6673479d2f7592ef40e3a, type: 3}
-  enemyHealthbarController: {fileID: 7100832792298499005}
-  CrystalineSlimeSO: {fileID: 11400000, guid: 4199e47f6c9d486428573f6e6967406d, type: 2}
-  CrystalinePathSO: {fileID: 11400000, guid: fe1484c2745ca0b4d8efebe545a0c9c4, type: 2}
+  _hitPrefab: {fileID: 5784736543062994673, guid: acc3c3ead1b6673479d2f7592ef40e3a, type: 3}
+  _enemyHealthbarController: {fileID: 7100832792298499005}
+  _crystalineSlimeSO: {fileID: 11400000, guid: 4199e47f6c9d486428573f6e6967406d, type: 2}
+  _crystalinePathSO: {fileID: 11400000, guid: fe1484c2745ca0b4d8efebe545a0c9c4, type: 2}
 --- !u!50 &-4995249348836857608
 Rigidbody2D:
   serializedVersion: 5

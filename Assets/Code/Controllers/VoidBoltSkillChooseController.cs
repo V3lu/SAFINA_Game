@@ -8,13 +8,15 @@ public class VoidBoltSkillChooseController : MonoBehaviour, IAutoAttackTypeSelec
     [SerializeField] private Image _targetImage;
     [SerializeField] private Sprite _unhooveredSprite;
     [SerializeField] private Sprite _hooveredSprite;
-    [SerializeField] private GameObject _safina;
     [SerializeField] private Canvas _canvas;
+
+
+    private static GameObject _safina;
 
 
     void Start()
     {
-        
+        _safina = GameObject.FindGameObjectWithTag("Player");
     }
     public void Hoovered()
     {

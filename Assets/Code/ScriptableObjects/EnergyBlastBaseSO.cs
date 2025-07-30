@@ -1,19 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
-namespace Assets.Code.ScriptableObjects
+[CreateAssetMenu(fileName = "EnergyBlastBaseSO", menuName = "Scriptable Objects/EnergyBlastBaseSO")]
+public class EnergyBlastBaseSO : ScriptableObject
 {
-    public class EnergyBlastBaseSO
-    {
-        [SerializeField] private float _baseDamageLowest = 6;
-        [SerializeField] private float _baseDamageHighest = 10;
+    [SerializeField] private float _baseDamageLowest = 6;
+    [SerializeField] private float _baseDamageHighest = 10;
 
 
-        public float BaseDamageLowest => _baseDamageLowest;
-        public float BaseDamageHighest => _baseDamageHighest;
-    }
+    public float BaseDamageLowest => _baseDamageLowest;
+    public float BaseDamageHighest => _baseDamageHighest;
 }

@@ -16,18 +16,22 @@ public class FireballExplosionAOEDamage : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject gameObject = collision.gameObject;
-        IMob mob = gameObject.GetComponent<IMob>();
-        if (mob != null)
+        if (collision.gameObject != null)
         {
             if (_firstEnemyHit)
             {
-                mob.LooseHP(_fireballBaseSO.BaseDamageHighest);
+                if (collision.TryGetComponent<IMob>(out var mob))
+                {
+                    mob.LooseHP(Random.Range(_fireballBaseSO.BaseDamageLowest, _fireballBaseSO.BaseDamageHighest));
+                }
                 _firstEnemyHit = false;
             }
             else
             {
-                mob.LooseHP(Random.Range(_fireballBaseSO.BaseDamageLowest, _fireballBaseSO.BaseDamageHighest));
+                if (collision.TryGetComponent<IMob>(out var mob))
+                {
+                    mob.LooseHP(Random.Range(_fireballBaseSO.BaseDamageLowest, _fireballBaseSO.BaseDamageHighest));
+                }
             }
         }
     }

@@ -1,8 +1,11 @@
+using Assets.Code.Interfaces;
 using System.Collections.Generic;
+using Unity.Burst;
 using UnityEngine;
 using UnityEngine.Pool;
+using static Unity.VisualScripting.Metadata;
 
-public class ObjectPoolmanager : MonoBehaviour
+public class ObjectPoolManager : MonoBehaviour
 {
     [SerializeField] private bool _addToDontDestroyOnLoad = false; //This one is for ex.sounds that you'll want to keep playing when scene loads or sth like that
 
@@ -12,15 +15,21 @@ public class ObjectPoolmanager : MonoBehaviour
     private static GameObject _particleSystemsEmpty;
     private static GameObject _gameObjectsEmpty;
     private static GameObject _soundFXEmpty;
+    private static GameObject _mobsEmpty;
+    private static GameObject _VFXEmpty;
+    private static GameObject _projectilesEmpty;
     private static Dictionary<GameObject, ObjectPool<GameObject>> _objectPools;
-    private static Dictionary<GameObject, GameObject> _cloneToPrefabMap;
+    private static Dictionary<GameObject, GameObject> _spawnedInstanceToOriginalPrefabMap;
 
 
     public enum PoolType
     {
         ParticleSystems,
         GameObjects,
-        SoundFX
+        SoundFX,
+        Mobs,
+        VFXs,
+        Projectiles
     }
     public static PoolType poolingType;
 
@@ -28,8 +37,7 @@ public class ObjectPoolmanager : MonoBehaviour
     private void Awake()
     {
         _objectPools = new Dictionary<GameObject, ObjectPool<GameObject>>();
-        _cloneToPrefabMap = new Dictionary<GameObject, GameObject>();
-
+        _spawnedInstanceToOriginalPrefabMap = new Dictionary<GameObject, GameObject>();
         SetupEmpties();
     }
 
@@ -45,6 +53,15 @@ public class ObjectPoolmanager : MonoBehaviour
 
         _soundFXEmpty = new GameObject("Sound Effects");
         _soundFXEmpty.transform.SetParent(_emptyHolder.transform);
+
+        _mobsEmpty = new GameObject("Mobs");
+        _mobsEmpty.transform.SetParent(_emptyHolder.transform);
+
+        _VFXEmpty = new GameObject("VFXs");
+        _VFXEmpty.transform.SetParent(_emptyHolder.transform);
+
+        _projectilesEmpty = new GameObject("Projectiles");
+        _projectilesEmpty.transform.SetParent(_emptyHolder.transform);
 
         if (_addToDontDestroyOnLoad)
         {
@@ -90,9 +107,9 @@ public class ObjectPoolmanager : MonoBehaviour
 
     private static void OnDestroyObject(GameObject obj)
     {
-        if (_cloneToPrefabMap.ContainsKey(obj))
+        if (_spawnedInstanceToOriginalPrefabMap.ContainsKey(obj))
         {
-            _cloneToPrefabMap.Remove(obj);
+            _spawnedInstanceToOriginalPrefabMap.Remove(obj);
         }
     }
 
@@ -112,6 +129,18 @@ public class ObjectPoolmanager : MonoBehaviour
 
                 return _soundFXEmpty;
 
+            case PoolType.Mobs:
+
+                return _mobsEmpty;
+
+            case PoolType.VFXs:
+
+                return _VFXEmpty;
+
+            case PoolType.Projectiles:
+
+                return _projectilesEmpty;
+
             default:
                 return null;
         }
@@ -124,6 +153,87 @@ public class ObjectPoolmanager : MonoBehaviour
             CreatePool(objectToSpawn, spawnPos, spawnRotation, poolType);
         }
 
-        GameObject obj = _objectPools[objectToSpawn].Get();
+        GameObject obj = _objectPools[objectToSpawn].Get();   //Gets an object from the pool
+
+        if (obj != null)
+        {
+            if (!_spawnedInstanceToOriginalPrefabMap.ContainsKey(obj))
+            {
+                _spawnedInstanceToOriginalPrefabMap.Add(obj, objectToSpawn);
+            }
+
+            obj.transform.position = spawnPos;
+            obj.transform.rotation = spawnRotation;
+            obj.SetActive(true);
+
+            if (typeof(T) == typeof(GameObject))
+            {
+                return obj as T;
+            }
+
+            T component = obj.GetComponent<T>();
+            if (component == null)
+            {
+                Debug.LogError($"Object {objectToSpawn.name} doesn't have component of type {typeof(T)}");
+                return null;
+            }
+
+            return component;
+        }
+
+        return null;
+    }
+
+    public static T SpawnObject<T>(T typePrefab, Vector3 spawnPos, Quaternion spawnRotation, PoolType poolType = PoolType.GameObjects) where T : Component
+    {
+        return SpawnObject<T>(typePrefab.gameObject, spawnPos, spawnRotation, poolType);
+    }
+
+    public static GameObject SpawnObject(GameObject objectToSpawn, Vector3 spawnPos, Quaternion spawnRotation, PoolType poolType = PoolType.GameObjects)
+    {
+        return SpawnObject<GameObject>(objectToSpawn, spawnPos, spawnRotation, poolType);
+    }
+
+    public static void ReturnObjectToPool(GameObject obj, PoolType poolType = PoolType.GameObjects)
+    {
+        if (_spawnedInstanceToOriginalPrefabMap.TryGetValue(obj, out GameObject prefab))
+        {
+            GameObject parentObject = SetParentObject(poolType);
+
+            if (obj.transform.parent != parentObject.transform)
+            {
+                obj.transform.SetParent(parentObject.transform);
+            }
+
+            if (_objectPools.TryGetValue(prefab, out ObjectPool<GameObject> pool))
+            {
+                pool.Release(obj);
+            }
+        }
+        else
+        {
+            Debug.LogWarning("Trying to return an object that is not pooled: " + obj.name);
+        }
+    }
+    
+    public static Dictionary<GameObject, GameObject> GetAllActiveGameObjectsOfThePool(PoolType poolType = PoolType.GameObjects)
+    {
+        Dictionary<GameObject, GameObject> activeChildrenWithOriginalPrebaf = new();
+        Transform transform = SetParentObject(poolType).GetComponentInChildren<Transform>();
+        foreach (Transform child in transform)
+        {
+            if (_spawnedInstanceToOriginalPrefabMap.TryGetValue(child.gameObject, out GameObject originalPrefab))
+            {
+                if (child.gameObject.activeSelf) // Match prefab AND is active
+                {
+                    activeChildrenWithOriginalPrebaf[child.gameObject] = originalPrefab;
+                }
+            }
+            
+        }
+
+        return activeChildrenWithOriginalPrebaf;
+
+
     }
 }

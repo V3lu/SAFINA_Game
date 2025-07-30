@@ -9,6 +9,7 @@ namespace Assets.Scripts
     public interface IDamagable
     {
         float HP { get; set; }
+
         void LooseHP(float hp);
         void RestoreHP(float hp);
     }

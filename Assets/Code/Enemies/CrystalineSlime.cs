@@ -12,7 +12,7 @@ public class CrystalineSlime : MonoBehaviour, IMob
     [SerializeField] private CrystalinePathSO _crystalinePathSO;
 
 
-    private Transform _target;
+    private static Transform _playerTransform;
 
 
     public float HP { get; set; }
@@ -23,36 +23,39 @@ public class CrystalineSlime : MonoBehaviour, IMob
     {
         this.HP = _crystalineSlimeSO.GetHP();
         _enemyHealthbarController.Sethealth(HP, HP);
+        _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Update()
     {
-        Vector3 moveDirNormalized = (_target.position - transform.position).normalized;
+        Vector3 moveDirNormalized = (_playerTransform.position - transform.position).normalized;
         transform.position += moveDirNormalized * _crystalineSlimeSO.GetMovSpeed() * Time.deltaTime;
 
-        if(Vector3.Distance(transform.position, _target.position) < 1f)
+        if(Vector3.Distance(transform.position, _playerTransform.position) < 1f)
         {
             _crystalinePathSO.RemoveEnemyFromList(this);
-            Destroy(gameObject);
+            OnDeath();
         }
 
         if(this.HP <= 0)
         {
             _crystalinePathSO.RemoveEnemyFromList(this);
-            Destroy(gameObject);
+            OnDeath();
         }
-    }
-
-    public void Spawn(Transform target)
-    {
-        this._target = target;
     }
 
     public void LooseHP(float hp)
     {
         this.HP -= hp;
         _enemyHealthbarController.Sethealth(HP, _crystalineSlimeSO.GetHP());
-        Instantiate(_hitPrefab, transform.position, Quaternion.identity);
+        ObjectPoolManager.SpawnObject(_hitPrefab, gameObject.transform.position, Quaternion.identity);
+    }
+
+    private void OnDeath()
+    {
+        ObjectPoolManager.ReturnObjectToPool(this.gameObject, ObjectPoolManager.PoolType.Mobs);
+        this.HP = _crystalineSlimeSO.GetHP();
+        _enemyHealthbarController.Sethealth(HP, HP);
     }
 
     public void RestoreHP(float hp)

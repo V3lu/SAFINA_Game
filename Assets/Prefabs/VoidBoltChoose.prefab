@@ -89,11 +89,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8a60397c9af164bafe218be0b40a98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetImage: {fileID: 7254874815683411017}
-  UnhooveredSprite: {fileID: -852753706077388728, guid: 5c22b1e80dadeb24bb458fac2436e959, type: 3}
-  HooveredSprite: {fileID: 654044473121816708, guid: 5c22b1e80dadeb24bb458fac2436e959, type: 3}
-  SAFINA: {fileID: 0}
-  Canvas: {fileID: 0}
+  _targetImage: {fileID: 7254874815683411017}
+  _unhooveredSprite: {fileID: -852753706077388728, guid: 5c22b1e80dadeb24bb458fac2436e959, type: 3}
+  _hooveredSprite: {fileID: 654044473121816708, guid: 5c22b1e80dadeb24bb458fac2436e959, type: 3}
+  _canvas: {fileID: 0}
 --- !u!114 &1509005598002877045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,6 +129,22 @@ MonoBehaviour:
         - m_Target: {fileID: 5497946681166326628}
           m_TargetAssemblyTypeName: VoidBoltSkillChooseController, Assembly-CSharp
           m_MethodName: Unhoovered
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5497946681166326628}
+          m_TargetAssemblyTypeName: VoidBoltSkillChooseController, Assembly-CSharp
+          m_MethodName: Selected
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

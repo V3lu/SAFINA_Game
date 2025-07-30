@@ -123,3 +123,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d9c85b9ef4fc3a4c800c1027938cdda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _energyBlastBaseSO: {fileID: 11400000, guid: 89e6b759cee42874b9605936ca04ae22, type: 2}

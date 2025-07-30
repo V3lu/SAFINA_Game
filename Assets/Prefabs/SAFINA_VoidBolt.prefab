@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3ab343e691c4040ab5f93efb1f638e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VoidBoltBaseSO: {fileID: 11400000, guid: 8023b350bebc5a1408747ba10e2cb68d, type: 2}
+  _voidBoltBaseSO: {fileID: 11400000, guid: 8023b350bebc5a1408747ba10e2cb68d, type: 2}
 --- !u!50 &1918658253812553102
 Rigidbody2D:
   serializedVersion: 5

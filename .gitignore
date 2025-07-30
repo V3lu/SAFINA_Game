@@ -1,1 +1,116 @@
-Library/
+# =============== #
+# Unity generated #
+# =============== #
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+
+# Uncomment this if you have the Package Manager installed via manifest.json
+# /Packages/*
+
+# ==================== #
+# OS generated files   #
+# ==================== #
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# =================== #
+# Visual Studio files #
+# =================== #
+
+.vs/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# ================== #
+# Rider files        #
+# ================== #
+
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ================== #
+# Crash Reports      #
+# ================== #
+
+sysinfo.txt
+
+# ================== #
+# Asset Store Tools  #
+# ================== #
+
+AssetStoreTools*
+
+# ============================== #
+# Unity Addressables / Cache    #
+# ============================== #
+
+/Assets/AddressableAssetsData/*/*.bin
+/Library/com.unity.addressables/*
+
+# ================== #
+# Build output       #
+# ================== #
+
+*.apk
+*.aab
+*.unitypackage
+
+# ================== #
+# Packman           #
+# ================== #
+
+# ignore everything in packages folder, but not manifest.json
+Packages/*
+!Packages/manifest.json
+!Packages/packages-lock.json
+
+# ============================ #
+# Generated iOS Xcode project  #
+# ============================ #
+
+*.pbxproj
+*.xcworkspace
+*.xcuserstate
+xcuserdata/
+
+# ============================ #
+# JetBrains Rider cache       #
+# ============================ #
+
+.idea/
+*.sln.iml
+
+# ====================== #
+# Unity Generated Meta  #
+# ====================== #
+
+# (You generally want to keep .meta files!)
+# If you need to exclude specific ones, do it by path.

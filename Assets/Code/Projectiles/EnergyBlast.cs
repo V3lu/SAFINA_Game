@@ -1,4 +1,3 @@
-using Assets.Code.ScriptableObjects;
 using UnityEngine;
 
 public class EnergyBlast : MonoBehaviour

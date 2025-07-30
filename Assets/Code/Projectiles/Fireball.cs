@@ -1,20 +1,26 @@
 using Assets.Code.Interfaces;
-using Assets.Code.ScriptableObjects;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class Fireball : MonoBehaviour
+public class Fireball : MonoBehaviour, IProjectile
 {
     [SerializeField] private FireballBaseSO _fireballBaseSO;
 
 
+    private bool _temporaryCollisionSolution = false;  //TODO Make this work properly in the future
     private Vector3 _direction = Vector3.zero;
     private float _distanceTraveled = 0f;
-    private bool _temporaryCollisionSolution = false;  //TODO Make this work properly in the future
-
 
     void Start()
     {
         
+    }
+
+    private void ResetAfterPoolReturn()
+    {
+        _direction = Vector3.zero;
+        _distanceTraveled = 0f;
+        _temporaryCollisionSolution = false;
     }
 
     // Update is called once per frame
@@ -26,12 +32,14 @@ public class Fireball : MonoBehaviour
 
         if (_distanceTraveled >= _fireballBaseSO.Range)
         {
-            Destroy(gameObject);
+            ObjectPoolManager.ReturnObjectToPool(this.gameObject, ObjectPoolManager.PoolType.Projectiles);
+            ResetAfterPoolReturn();
         }
 
         if (_temporaryCollisionSolution)
         {
-            Destroy(gameObject);
+            ObjectPoolManager.ReturnObjectToPool(this.gameObject, ObjectPoolManager.PoolType.Projectiles);
+            ResetAfterPoolReturn();
         }
     }
 
@@ -44,11 +52,14 @@ public class Fireball : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject gameObject = collision.gameObject;
-        IMob mob = gameObject.GetComponent<IMob>();
-        if (mob != null)
+        if (collision.gameObject != null)
         {
-            Instantiate(_fireballBaseSO.FireballExplosionPrefab, transform.position, Quaternion.identity);
+            if (collision.TryGetComponent<IMob>(out var mob))
+            {
+                mob.LooseHP(Random.Range(_fireballBaseSO.BaseDamageLowest, _fireballBaseSO.BaseDamageHighest));
+            }
+            GameObject explosionPrefab = _fireballBaseSO.FireballExplosionPrefab;
+            ObjectPoolManager.SpawnObject(explosionPrefab, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.VFXs);
             _temporaryCollisionSolution = true;
         }
     }

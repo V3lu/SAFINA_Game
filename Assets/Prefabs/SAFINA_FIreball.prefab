@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f073853b5f86f884b9b93a1ba33d279e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireballBaseSO: {fileID: 11400000, guid: 836e4312801d48640bc19349e227c00c, type: 2}
+  _fireballBaseSO: {fileID: 11400000, guid: 836e4312801d48640bc19349e227c00c, type: 2}
 --- !u!70 &4488950235027804263
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
