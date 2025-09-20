@@ -1,2 +1,16 @@
 fileFormatVersion: 2
 guid: 346798243b0d3dd4baf93049dbb33fcd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _crystalinePathSO: {instanceID: 0}
+  - _XPSO: {fileID: 11400000, guid: 0652412c4e2160e4d805451d770ab44e, type: 2}
+  - _fireballPrefab: {instanceID: 0}
+  - _energyBlastPrefab: {instanceID: 0}
+  - _voidBoltPrefab: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -12,6 +12,7 @@ TagManager:
   - Voidbolt
   - Fireball
   - ObjectPoolManager
+  - XPBar
   layers:
   - Default
   - TransparentFX

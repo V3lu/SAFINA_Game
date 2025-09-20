@@ -8,11 +8,12 @@ using UnityEngine;
 
 public class PlayerCtrl : MonoBehaviour, IDamagable
 {
+    [SerializeField] private CrystalinePathSO _crystalinePathSO;
+    [SerializeField] private XPSO _XPSO;
     [SerializeField] private GameObject _fireballPrefab;
     [SerializeField] private GameObject _energyBlastPrefab;
     [SerializeField] private GameObject _voidBoltPrefab;
     [SerializeField] private float _attackSpeed;
-    [SerializeField] private CrystalinePathSO _crystalinePathSO;
     [SerializeField] private float _movSpeed;
 
 
@@ -21,7 +22,10 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     private Rigidbody2D _rb;
     private Animator _animator;
 
-    private static float _playerXP = 0f;
+    private static double _playerXP = 0;
+    private static int _playerLvl = 0;
+    private static XPBarController _xpBarController;
+
     public static ChosenBasicAttact AttackType = ChosenBasicAttact.NotChosen;
 
     public float HP { get; set; }
@@ -65,6 +69,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     {
         _rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+        _xpBarController = GameObject.FindGameObjectWithTag("XPBar").GetComponent<XPBarController>();
         this.HP = 50;
     }
 
@@ -192,8 +197,24 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
             return Directions.Left;
         }
     }
-    public void GainXP(float XP)
+
+    public void GainXP(double XP)
     {
         _playerXP += XP;
+        if (_playerXP > _XPSO.LevelCaps[_playerLvl])
+        {
+            _playerLvl += 1;
+            _xpBarController.ResetMaskAfterLevelUp();
+        }
+    }
+
+    public double GetCurrentXP()
+    {
+        return _playerXP;
+    }
+
+    public int GetCurrentLvl()
+    {
+        return _playerLvl;
     }
 }

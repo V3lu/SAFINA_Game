@@ -3,11 +3,12 @@ using UnityEngine;
 
 public class VialaTiny : MonoBehaviour, ICollectable
 {
-    private static float XP { get; set; } = 10f;
+    private static XPBarController _XPBarController;
+    private static double XP { get; set; } = 0.01;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        _XPBarController = GameObject.FindGameObjectWithTag("XPBar").GetComponent<XPBarController>();
     }
 
     // Update is called once per frame
@@ -22,6 +23,7 @@ public class VialaTiny : MonoBehaviour, ICollectable
         {
             ObjectPoolManager.ReturnObjectToPool(gameObject);
             GameManager.Player.GainXP(XP);
+            _XPBarController.AddXP(XP);
         }
     }
 }
