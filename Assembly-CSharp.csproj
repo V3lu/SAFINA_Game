@@ -68,8 +68,10 @@
     <Compile Include="Assets\Code\Controllers\EnemyHealthbarController.cs" />
     <Compile Include="Assets\Code\Controllers\CrystalineSlimeSpawnPointController.cs" />
     <Compile Include="Assets\Code\Controllers\PlayerController.cs" />
+    <Compile Include="Assets\Code\Collectables\VialaTiny.cs" />
     <Compile Include="Assets\Code\Projectiles\VoidBolt.cs" />
     <Compile Include="Assets\Code\Interfaces\IDamagable.cs" />
+    <Compile Include="Assets\Code\Interfaces\ICollectable.cs" />
     <Compile Include="Assets\Code\ScriptableObjects\CrystalineSlimeSO.cs" />
     <Compile Include="Assets\Code\ScriptableObjects\GameDataSO.cs" />
     <Compile Include="Assets\Code\ScriptableObjects\VoidBoltBaseSO.cs" />
@@ -81,9 +83,10 @@
     <Compile Include="Assets\Code\Interfaces\IAutoAttackTypeSelectable.cs" />
     <Compile Include="Assets\Code\Controllers\FireballSkillChooseController.cs" />
     <Compile Include="Assets\Code\Interfaces\IVFX.cs" />
-    <Compile Include="Assets\Code\Projectiles\OnAnimationFinishDestoryProjectile.cs" />
+    <Compile Include="Assets\Code\Controllers\OnAnimationFinishReturnToPool.cs" />
     <Compile Include="Assets\Code\Managers\ObjectPoolManager.cs" />
     <Compile Include="Assets\Code\Interfaces\IMob.cs" />
+    <Compile Include="Assets\Code\Managers\GameManager.cs" />
     <Compile Include="Assets\Code\Projectiles\Fireball.cs" />
     <Compile Include="Assets\Code\Interfaces\IProjectile.cs" />
     <Compile Include="Assets\Code\VFX\VoidBoltExplosionVFX.cs" />

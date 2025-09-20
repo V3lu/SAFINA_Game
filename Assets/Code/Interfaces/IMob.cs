@@ -12,7 +12,7 @@ namespace Assets.Code.Interfaces
     public interface IMob : IDamagable
     {
         Transform Transform { get; }
-
+        float MaxHP { get; set; }
         void SpecialAction();
         void MoveTo(Vector3 position, float moveSpeed);
     }

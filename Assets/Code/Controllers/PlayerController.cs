@@ -21,8 +21,9 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     private Rigidbody2D _rb;
     private Animator _animator;
 
-
+    private static float _playerXP = 0f;
     public static ChosenBasicAttact AttackType = ChosenBasicAttact.NotChosen;
+
     public float HP { get; set; }
     public enum ChosenBasicAttact
     {
@@ -191,6 +192,8 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
             return Directions.Left;
         }
     }
-
-    
+    public void GainXP(float XP)
+    {
+        _playerXP += XP;
+    }
 }

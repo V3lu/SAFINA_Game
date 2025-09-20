@@ -1,13 +1,17 @@
 using Assets.Code.Interfaces;
 using UnityEngine;
+using Random = System.Random;
 
-public class OnAnimationFinishDestoryProjectile : StateMachineBehaviour
+public class OnAnimationFinishReturnToPool : StateMachineBehaviour
 {
+    private GameObject _vialaOrb;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
-    //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        if (_vialaOrb == null)
+            _vialaOrb = Resources.Load<GameObject>("Viala_0"); 
+
+    }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     //override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -27,6 +31,21 @@ public class OnAnimationFinishDestoryProjectile : StateMachineBehaviour
             if (vfx is FireballExplosionAOEDamage explosion)
             {
                 explosion.EnableCollider();
+            }
+        }
+
+        if (animator.gameObject.TryGetComponent<IMob>(out var mob))
+        {
+            ObjectPoolManager.ReturnObjectToPool(animator.gameObject, ObjectPoolManager.PoolType.Mobs);
+            if(mob is CrystalineSlime crystalineSlime)
+            {
+                crystalineSlime.resetState();
+                Random rand = new Random();
+                int chance = rand.Next(11);
+                if (chance < 9)
+                {
+                    ObjectPoolManager.SpawnObject(_vialaOrb, mob.Transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Collectables);
+                }
             }
         }
     }

@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 9776ab3983e29ec47b72af3c96ca664f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _vialaOrb: {fileID: 5034827216173169069, guid: 157417b17b9c75f498057bf2bbceaac2, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

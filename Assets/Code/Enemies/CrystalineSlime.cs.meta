@@ -1,2 +1,16 @@
 fileFormatVersion: 2
 guid: 6871b3b818506624ca9315d933676323
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _hitPrefab: {fileID: 5784736543062994673, guid: acc3c3ead1b6673479d2f7592ef40e3a, type: 3}
+  - _enemyHealthbarController: {instanceID: 0}
+  - _crystalineSlimeSO: {fileID: 11400000, guid: 4199e47f6c9d486428573f6e6967406d, type: 2}
+  - _crystalinePathSO: {fileID: 11400000, guid: fe1484c2745ca0b4d8efebe545a0c9c4, type: 2}
+  - _vialaOrb: {fileID: 5034827216173169069, guid: 157417b17b9c75f498057bf2bbceaac2, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

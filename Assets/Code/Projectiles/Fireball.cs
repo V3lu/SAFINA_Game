@@ -57,10 +57,10 @@ public class Fireball : MonoBehaviour, IProjectile
             if (collision.TryGetComponent<IMob>(out var mob))
             {
                 mob.LooseHP(Random.Range(_fireballBaseSO.BaseDamageLowest, _fireballBaseSO.BaseDamageHighest));
+                GameObject explosionPrefab = _fireballBaseSO.FireballExplosionPrefab;
+                ObjectPoolManager.SpawnObject(explosionPrefab, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.VFXs);
+                _temporaryCollisionSolution = true;
             }
-            GameObject explosionPrefab = _fireballBaseSO.FireballExplosionPrefab;
-            ObjectPoolManager.SpawnObject(explosionPrefab, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.VFXs);
-            _temporaryCollisionSolution = true;
         }
     }
 }

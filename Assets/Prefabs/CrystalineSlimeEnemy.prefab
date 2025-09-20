@@ -423,7 +423,7 @@ Transform:
   m_GameObject: {fileID: 4165814963773616511}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 72, z: 0}
   m_LocalScale: {x: 0.62, y: 0.62, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -479,7 +479,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.48, y: 0.48}
+  m_Size: {x: 0.32, y: 0.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -523,6 +523,7 @@ MonoBehaviour:
   _enemyHealthbarController: {fileID: 7100832792298499005}
   _crystalineSlimeSO: {fileID: 11400000, guid: 4199e47f6c9d486428573f6e6967406d, type: 2}
   _crystalinePathSO: {fileID: 11400000, guid: fe1484c2745ca0b4d8efebe545a0c9c4, type: 2}
+  _vialaOrb: {fileID: 5034827216173169069, guid: 157417b17b9c75f498057bf2bbceaac2, type: 3}
 --- !u!50 &-4995249348836857608
 Rigidbody2D:
   serializedVersion: 5

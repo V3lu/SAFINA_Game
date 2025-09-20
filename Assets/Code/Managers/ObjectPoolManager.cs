@@ -18,6 +18,7 @@ public class ObjectPoolManager : MonoBehaviour
     private static GameObject _mobsEmpty;
     private static GameObject _VFXEmpty;
     private static GameObject _projectilesEmpty;
+    private static GameObject _collectablesEmpty;
     private static Dictionary<GameObject, ObjectPool<GameObject>> _objectPools;
     private static Dictionary<GameObject, GameObject> _spawnedInstanceToOriginalPrefabMap;
 
@@ -29,7 +30,8 @@ public class ObjectPoolManager : MonoBehaviour
         SoundFX,
         Mobs,
         VFXs,
-        Projectiles
+        Projectiles,
+        Collectables
     }
     public static PoolType poolingType;
 
@@ -62,6 +64,9 @@ public class ObjectPoolManager : MonoBehaviour
 
         _projectilesEmpty = new GameObject("Projectiles");
         _projectilesEmpty.transform.SetParent(_emptyHolder.transform);
+
+        _collectablesEmpty = new GameObject("Collectables");
+        _collectablesEmpty.transform.SetParent(_emptyHolder.transform);
 
         if (_addToDontDestroyOnLoad)
         {
@@ -140,6 +145,10 @@ public class ObjectPoolManager : MonoBehaviour
             case PoolType.Projectiles:
 
                 return _projectilesEmpty;
+
+            case PoolType.Collectables:
+
+                return _collectablesEmpty;
 
             default:
                 return null;
