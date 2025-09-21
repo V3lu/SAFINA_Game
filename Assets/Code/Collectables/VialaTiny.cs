@@ -23,7 +23,6 @@ public class VialaTiny : MonoBehaviour, ICollectable
         {
             ObjectPoolManager.ReturnObjectToPool(gameObject);
             GameManager.Player.GainXP(XP);
-            _XPBarController.AddXP(XP);
         }
     }
 }

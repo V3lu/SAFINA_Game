@@ -22,7 +22,8 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     private Rigidbody2D _rb;
     private Animator _animator;
 
-    private static double _playerXP = 0;
+    private static double _playerXPTotal = 0;
+    private static double _playerXPCurrent = 0;
     private static int _playerLvl = 0;
     private static XPBarController _xpBarController;
 
@@ -200,17 +201,22 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
 
     public void GainXP(double XP)
     {
-        _playerXP += XP;
-        if (_playerXP > _XPSO.LevelCaps[_playerLvl])
+        _xpBarController.AddXP(XP);
+        _playerXPTotal += XP;
+        _playerXPCurrent += XP;
+
+        if (_playerXPCurrent >= _XPSO.LevelCaps[_playerLvl])
         {
             _playerLvl += 1;
+            _playerXPCurrent = 0;
             _xpBarController.ResetMaskAfterLevelUp();
+            _xpBarController.LevelUp();
         }
     }
 
     public double GetCurrentXP()
     {
-        return _playerXP;
+        return _playerXPCurrent;
     }
 
     public int GetCurrentLvl()
