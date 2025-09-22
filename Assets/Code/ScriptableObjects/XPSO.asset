@@ -11,7 +11,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 016d72ba20edd6a4599440321d0c7fd7, type: 3}
   m_Name: XPSO
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::XPSO
   _maxLevel: 80
   _xpRequiredToLevelUpMultiplicator: 1.5
-  _firstLevelCap: 0.1

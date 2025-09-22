@@ -22,8 +22,8 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     private Rigidbody2D _rb;
     private Animator _animator;
 
-    private static double _playerXPTotal = 0;
-    private static double _playerXPCurrent = 0;
+    private static long _playerXPTotal = 0;
+    private static long _playerXPCurrent = 0;
     private static int _playerLvl = 0;
     private static XPBarController _xpBarController;
 
@@ -199,7 +199,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
         }
     }
 
-    public void GainXP(double XP)
+    public void GainXP(long XP)
     {
         _xpBarController.AddXP(XP);
         _playerXPTotal += XP;

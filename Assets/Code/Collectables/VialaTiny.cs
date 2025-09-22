@@ -1,10 +1,11 @@
 using Assets.Code.Interfaces;
+using System;
 using UnityEngine;
 
 public class VialaTiny : MonoBehaviour, ICollectable
 {
     private static XPBarController _XPBarController;
-    private static double XP { get; set; } = 0.01;
+    private static long XP { get; set; } = 1;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

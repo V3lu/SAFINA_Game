@@ -119,63 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &65894749
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 9.451415
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.32192802
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4464532126413196842, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_Name
-      value: CrystalineSlimeSpawnPoint (4)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
 --- !u!1 &98489035
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,63 +512,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1360833223951483905, guid: 8b160d1b398c7ea45abaf99aac34a99c, type: 3}
   m_PrefabInstance: {fileID: 333829039}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &409064598
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.104382
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 10.142049
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4464532126413196842, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_Name
-      value: CrystalineSlimeSpawnPoint (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,7 +577,6 @@ MonoBehaviour:
   m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
-  m_Version: 2
   m_TaaSettings:
     m_Quality: 3
     m_FrameInfluence: 0.1
@@ -699,6 +584,7 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -1334,6 +1220,8 @@ TilemapRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1355,6 +1243,7 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -91136,6 +91025,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrystalineSlimeSpawnPoint (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7400809248543943927, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
+      propertyPath: _spawnRate
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -91192,6 +91085,10 @@ PrefabInstance:
     - target: {fileID: 4464532126413196842, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
       propertyPath: m_Name
       value: CrystalineSlimeSpawnPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 7400809248543943927, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
+      propertyPath: _spawnRate
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -91460,63 +91357,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020404611}
   m_CullTransparentMesh: 1
---- !u!1001 &2129051867
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.6071863
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.5295289
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2985051189525800612, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4464532126413196842, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
-      propertyPath: m_Name
-      value: CrystalineSlimeSpawnPoint (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 686a4d4edd59b784ca9c7c38446b0c92, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -91530,8 +91370,5 @@ SceneRoots:
   - {fileID: 1239894462}
   - {fileID: 833506309}
   - {fileID: 1890480470}
-  - {fileID: 409064598}
   - {fileID: 1833543287}
-  - {fileID: 2129051867}
-  - {fileID: 65894749}
   - {fileID: 556114647}

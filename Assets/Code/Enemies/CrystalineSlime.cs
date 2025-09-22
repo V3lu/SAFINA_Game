@@ -2,6 +2,7 @@
 using Assets.Code.Interfaces;
 using Assets.Scripts;
 using System;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using Random = System.Random;
@@ -27,7 +28,7 @@ public class CrystalineSlime : MonoBehaviour, IMob
     {
         this.HP = _crystalineSlimeSO.GetHP();
         this.MaxHP = _crystalineSlimeSO.GetHP();
-        _enemyHealthbarController.Sethealth(HP, HP);
+        _enemyHealthbarController.Sethealth(HP, MaxHP);
         _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         _animator = this.GetComponent<Animator>();
     }
@@ -53,25 +54,34 @@ public class CrystalineSlime : MonoBehaviour, IMob
             _crystalinePathSO.RemoveEnemyFromList(this);
             OnDeath();
         }
+    }
 
-        if(this.HP <= 0)
-        {
-            _crystalinePathSO.RemoveEnemyFromList(this);
-            OnDeath();
-        }
+    private void OnEnable()
+    {
+        this.HP = MaxHP;
+        _enemyHealthbarController.Sethealth(HP, MaxHP);
     }
 
     public void LooseHP(float hp)
     {
         this.HP -= hp;
-        _enemyHealthbarController.Sethealth(HP, _crystalineSlimeSO.GetHP());
+
+        if (this.HP <= 0)
+        {
+            _enemyHealthbarController.Sethealth(MaxHP, MaxHP);
+            _crystalinePathSO.RemoveEnemyFromList(this);
+            OnDeath();
+        }
+        else
+        {
+            _enemyHealthbarController.Sethealth(HP, MaxHP);
+        }
+
         ObjectPoolManager.SpawnObject(_hitPrefab, gameObject.transform.position, Quaternion.identity, ObjectPoolManager.PoolType.VFXs);
     }
 
     private void OnDeath()
     {
-        _enemyHealthbarController.Sethealth(HP, HP);
-
         if (transform.position.x >= _playerTransform.position.x)
         {
             _animator.SetInteger("state", 1);
@@ -80,7 +90,6 @@ public class CrystalineSlime : MonoBehaviour, IMob
         {
             _animator.SetInteger("state", 0);
         }
-        this.HP = MaxHP;
     }
 
     private void Movement()

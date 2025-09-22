@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,11 +23,11 @@ public class XPBarController : MonoBehaviour
         _playerCtrl = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCtrl>();
     }
 
-    public void AddXP(double XP)
+    public void AddXP(long XP)
     {
         double updatedXPValue = GameManager.Player.GetCurrentXP() + XP;
-        double newRightMask = _currentRightMask - _initialRightMask * (XP / _XPSO.LevelCaps[_playerCtrl.GetCurrentLvl()]);
-        _currentRightMask -= _initialRightMask * (XP / _XPSO.LevelCaps[_playerCtrl.GetCurrentLvl()]);
+        double newRightMask = _currentRightMask - _initialRightMask * ((double)XP / (double)_XPSO.LevelCaps[_playerCtrl.GetCurrentLvl()]);
+        _currentRightMask -= _initialRightMask * ((double)XP / (double)_XPSO.LevelCaps[_playerCtrl.GetCurrentLvl()]);
         Vector4 padding = _mask.padding;
         padding.z = (float)newRightMask;
         _mask.padding = padding;
