@@ -1,0 +1,1865 @@
+fileFormatVersion: 2
+guid: e387ffb4a858b1441a44757211d8e96c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5342990376083428691
+    second: SAFINA_SeleniteGeode_0
+  - first:
+      213: 8443625979636207979
+    second: SAFINA_SeleniteGeode_1
+  - first:
+      213: -1084731290468416264
+    second: SAFINA_SeleniteGeode_2
+  - first:
+      213: -6257112720614559486
+    second: SAFINA_SeleniteGeode_3
+  - first:
+      213: -867411863204541653
+    second: SAFINA_SeleniteGeode_4
+  - first:
+      213: -6101704326429783356
+    second: SAFINA_SeleniteGeode_5
+  - first:
+      213: -6217802711270471655
+    second: SAFINA_SeleniteGeode_6
+  - first:
+      213: 3651637518437032657
+    second: SAFINA_SeleniteGeode_7
+  - first:
+      213: -4524300349359643186
+    second: SAFINA_SeleniteGeode_8
+  - first:
+      213: -2145243612808718087
+    second: SAFINA_SeleniteGeode_9
+  - first:
+      213: 2688519902188453732
+    second: SAFINA_SeleniteGeode_10
+  - first:
+      213: 5676058907266385967
+    second: SAFINA_SeleniteGeode_11
+  - first:
+      213: -7130552027620356038
+    second: SAFINA_SeleniteGeode_12
+  - first:
+      213: -3812033888298960485
+    second: SAFINA_SeleniteGeode_13
+  - first:
+      213: 954743127849409472
+    second: SAFINA_SeleniteGeode_14
+  - first:
+      213: -8317619204668873145
+    second: SAFINA_SeleniteGeode_15
+  - first:
+      213: 5592336211446824012
+    second: SAFINA_SeleniteGeode_16
+  - first:
+      213: 809477567310257692
+    second: SAFINA_SeleniteGeode_17
+  - first:
+      213: 8974957132519140759
+    second: SAFINA_SeleniteGeode_18
+  - first:
+      213: 8668838184990577688
+    second: SAFINA_SeleniteGeode_19
+  - first:
+      213: -8171864024265879818
+    second: SAFINA_SeleniteGeode_20
+  - first:
+      213: -5443552850895735072
+    second: SAFINA_SeleniteGeode_21
+  - first:
+      213: -2944382290215846247
+    second: SAFINA_SeleniteGeode_22
+  - first:
+      213: 847952159418680129
+    second: SAFINA_SeleniteGeode_23
+  - first:
+      213: -2324069817273792683
+    second: SAFINA_SeleniteGeode_24
+  - first:
+      213: -2436538714699270049
+    second: SAFINA_SeleniteGeode_25
+  - first:
+      213: -5204254581535470820
+    second: SAFINA_SeleniteGeode_26
+  - first:
+      213: -6350735635363293933
+    second: SAFINA_SeleniteGeode_27
+  - first:
+      213: 7013901017032202272
+    second: SAFINA_SeleniteGeode_28
+  - first:
+      213: 6022370306775995565
+    second: SAFINA_SeleniteGeode_29
+  - first:
+      213: 5997737890004078373
+    second: SAFINA_SeleniteGeode_30
+  - first:
+      213: -3575382087004898503
+    second: SAFINA_SeleniteGeode_31
+  - first:
+      213: 4260998551844861019
+    second: SAFINA_SeleniteGeode_32
+  - first:
+      213: 8005509279432728800
+    second: SAFINA_SeleniteGeode_33
+  - first:
+      213: 9198334810899625838
+    second: SAFINA_SeleniteGeode_34
+  - first:
+      213: -2620873163634655729
+    second: SAFINA_SeleniteGeode_35
+  - first:
+      213: 8141123905429979392
+    second: SAFINA_SeleniteGeode_36
+  - first:
+      213: 680782970054047617
+    second: SAFINA_SeleniteGeode_37
+  - first:
+      213: -4409869445826503481
+    second: SAFINA_SeleniteGeode_38
+  - first:
+      213: -8928240352351104214
+    second: SAFINA_SeleniteGeode_39
+  - first:
+      213: 60468577054382295
+    second: SAFINA_SeleniteGeode_40
+  - first:
+      213: 5522593021859471069
+    second: SAFINA_SeleniteGeode_41
+  - first:
+      213: 522671890525980664
+    second: SAFINA_SeleniteGeode_42
+  - first:
+      213: -660835603367378423
+    second: SAFINA_SeleniteGeode_43
+  - first:
+      213: 2662128170668468346
+    second: SAFINA_SeleniteGeode_44
+  - first:
+      213: 7974217211516243252
+    second: SAFINA_SeleniteGeode_45
+  - first:
+      213: -4382531529466057989
+    second: SAFINA_SeleniteGeode_46
+  - first:
+      213: 5578696729724656752
+    second: SAFINA_SeleniteGeode_47
+  - first:
+      213: 7189930572086849533
+    second: SAFINA_SeleniteGeode_48
+  - first:
+      213: 3188677794691493241
+    second: SAFINA_SeleniteGeode_49
+  - first:
+      213: 3019321273430202723
+    second: SAFINA_SeleniteGeode_50
+  - first:
+      213: 1347994628622706391
+    second: SAFINA_SeleniteGeode_51
+  - first:
+      213: -1503097100225225734
+    second: SAFINA_SeleniteGeode_52
+  - first:
+      213: -2645571843764586388
+    second: SAFINA_SeleniteGeode_53
+  - first:
+      213: 3888610484867856259
+    second: SAFINA_SeleniteGeode_54
+  - first:
+      213: 4657184792008348352
+    second: SAFINA_SeleniteGeode_55
+  - first:
+      213: 7182493414299519694
+    second: SAFINA_SeleniteGeode_56
+  - first:
+      213: -8751828490522010067
+    second: SAFINA_SeleniteGeode_57
+  - first:
+      213: -5442745328568659858
+    second: SAFINA_SeleniteGeode_58
+  - first:
+      213: 5984627016238896439
+    second: SAFINA_SeleniteGeode_59
+  - first:
+      213: 6287265985961819163
+    second: SAFINA_SeleniteGeode_60
+  - first:
+      213: 3756212084578262990
+    second: SAFINA_SeleniteGeode_61
+  - first:
+      213: -5187233792926497151
+    second: SAFINA_SeleniteGeode_62
+  - first:
+      213: -6956130118771649885
+    second: SAFINA_SeleniteGeode_63
+  - first:
+      213: -485097609252614695
+    second: SAFINA_SeleniteGeode_64
+  - first:
+      213: 6700243587173640373
+    second: SAFINA_SeleniteGeode_65
+  - first:
+      213: -5782420136890480813
+    second: SAFINA_SeleniteGeode_66
+  - first:
+      213: 4355650111544584307
+    second: SAFINA_SeleniteGeode_67
+  - first:
+      213: 3998190374020767385
+    second: SAFINA_SeleniteGeode_68
+  - first:
+      213: 6356025451679408643
+    second: SAFINA_SeleniteGeode_69
+  - first:
+      213: -5023696576245758451
+    second: SAFINA_SeleniteGeode_70
+  - first:
+      213: 7061408646956144721
+    second: SAFINA_SeleniteGeode_71
+  - first:
+      213: -3550599971129889129
+    second: SAFINA_SeleniteGeode_72
+  - first:
+      213: 6903460371908334591
+    second: SAFINA_SeleniteGeode_73
+  - first:
+      213: 1465059028780556750
+    second: SAFINA_SeleniteGeode_74
+  - first:
+      213: 5276401521306102631
+    second: SAFINA_SeleniteGeode_75
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35598cc407d162a40800000000000000
+      internalID: 5342990376083428691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b61d97c9719cd2570800000000000000
+      internalID: 8443625979636207979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f401e273a242f0f0800000000000000
+      internalID: -1084731290468416264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 201f038d1254a29a0800000000000000
+      internalID: -6257112720614559486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2bcbb3918556f3f0800000000000000
+      internalID: -867411863204541653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca40ba4e34625ba0800000000000000
+      internalID: -6101704326429783356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918434f906de5b9a0800000000000000
+      internalID: -6217802711270471655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2adeec9f83da230800000000000000
+      internalID: 3651637518437032657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec52e339dc47631c0800000000000000
+      internalID: -4524300349359643186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f85cd5dc409a32e0800000000000000
+      internalID: -2145243612808718087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_10
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46fb28d4b9a8f4520800000000000000
+      internalID: 2688519902188453732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_11
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f280ecbc08965ce40800000000000000
+      internalID: 5676058907266385967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a305f3dc5b03b0d90800000000000000
+      internalID: -7130552027620356038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b997038206fe81bc0800000000000000
+      internalID: -3812033888298960485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cb953bf0ddef3d00800000000000000
+      internalID: 954743127849409472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 746aeb8e661e19c80800000000000000
+      internalID: -8317619204668873145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c77d3a728fb9d40800000000000000
+      internalID: 5592336211446824012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_17
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1edc250f87db3b00800000000000000
+      internalID: 809477567310257692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d692ee5f37d8c70800000000000000
+      internalID: 8974957132519140759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_19
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81494b75666ed4870800000000000000
+      internalID: 8668838184990577688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_20
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe86d067f4b79e80800000000000000
+      internalID: -8171864024265879818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_21
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e67b46f58d9474b0800000000000000
+      internalID: -5443552850895735072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ebbb438e37327d0800000000000000
+      internalID: -2944382290215846247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1430da01ff784cb00800000000000000
+      internalID: 847952159418680129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557403c80de3fbfd0800000000000000
+      internalID: -2324069817273792683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_25
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f58fcd4c2fcaf2ed0800000000000000
+      internalID: -2436538714699270049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_26
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b01ea0806c6c7b0800000000000000
+      internalID: -5204254581535470820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_27
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31591c75697add7a0800000000000000
+      internalID: -6350735635363293933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_28
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02894f150d1665160800000000000000
+      internalID: 7013901017032202272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_29
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da45e39d2e1c39350800000000000000
+      internalID: 6022370306775995565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f089565de3c3350800000000000000
+      internalID: 5997737890004078373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_31
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b37cf5fe0b16ec0800000000000000
+      internalID: -3575382087004898503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b54ba2f6b9b122b30800000000000000
+      internalID: 4260998551844861019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_33
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e06eae4648491f60800000000000000
+      internalID: 8005509279432728800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_34
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6738c096cc07af70800000000000000
+      internalID: 9198334810899625838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_35
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0eb3306eb9c0abd0800000000000000
+      internalID: -2620873163634655729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0014897fe051bf070800000000000000
+      internalID: 8141123905429979392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_37
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187f43b1180a27900800000000000000
+      internalID: 680782970054047617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_38
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc99af7a1ffcc2c0800000000000000
+      internalID: -4409869445826503481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_39
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23ddc014b4881480800000000000000
+      internalID: -8928240352351104214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_40
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d85667b9d3d6d000800000000000000
+      internalID: 60468577054382295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_41
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde1cfae71134ac40800000000000000
+      internalID: 5522593021859471069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f702e0b057e04700800000000000000
+      internalID: 522671890525980664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_43
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9024b5e158d34d6f0800000000000000
+      internalID: -660835603367378423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7821477777c1f420800000000000000
+      internalID: 2662128170668468346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_45
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43d4b3efd4c1aae60800000000000000
+      internalID: 7974217211516243252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_46
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfae9392bce1e23c0800000000000000
+      internalID: -4382531529466057989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_47
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07c1fd45e138b6d40800000000000000
+      internalID: 5578696729724656752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_48
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff25fce2c3c7c360800000000000000
+      internalID: 7189930572086849533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_49
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d23c75f85704c20800000000000000
+      internalID: 3188677794691493241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_50
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 369569d73b8c6e920800000000000000
+      internalID: 3019321273430202723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_51
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6e03609f905b210800000000000000
+      internalID: 1347994628622706391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_52
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afbd72ea62de32be0800000000000000
+      internalID: -1503097100225225734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_53
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c68f2a8cc6a094bd0800000000000000
+      internalID: -2645571843764586388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 387786c12ae17f530800000000000000
+      internalID: 3888610484867856259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_55
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c2520db4e4a1a040800000000000000
+      internalID: 4657184792008348352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_56
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecac7e0b4b75da360800000000000000
+      internalID: 7182493414299519694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_57
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2eda476b524b8680800000000000000
+      internalID: -8751828490522010067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_58
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e609fb7e5fb7774b0800000000000000
+      internalID: -5442745328568659858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_59
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7351028309aad0350800000000000000
+      internalID: 5984627016238896439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c76a55a1bd04750800000000000000
+      internalID: 6287265985961819163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_61
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf115a5dfeb02430800000000000000
+      internalID: 3756212084578262990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_62
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 186c6b5395e3308b0800000000000000
+      internalID: -5187233792926497151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_63
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2583b138cd67f90800000000000000
+      internalID: -6956130118771649885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_64
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd4b176b469449f0800000000000000
+      internalID: -485097609252614695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_SeleniteGeode_65
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8e21a0b0c0cfc50800000000000000
+      internalID: 6700243587173640373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 46e940bff74346848ba4a549a6888f76
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":12.0,"y":8.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      SAFINA_SeleniteGeode_0: 5342990376083428691
+      SAFINA_SeleniteGeode_1: 8443625979636207979
+      SAFINA_SeleniteGeode_10: 2688519902188453732
+      SAFINA_SeleniteGeode_11: 5676058907266385967
+      SAFINA_SeleniteGeode_12: -7130552027620356038
+      SAFINA_SeleniteGeode_13: -3812033888298960485
+      SAFINA_SeleniteGeode_14: 954743127849409472
+      SAFINA_SeleniteGeode_15: -8317619204668873145
+      SAFINA_SeleniteGeode_16: 5592336211446824012
+      SAFINA_SeleniteGeode_17: 809477567310257692
+      SAFINA_SeleniteGeode_18: 8974957132519140759
+      SAFINA_SeleniteGeode_19: 8668838184990577688
+      SAFINA_SeleniteGeode_2: -1084731290468416264
+      SAFINA_SeleniteGeode_20: -8171864024265879818
+      SAFINA_SeleniteGeode_21: -5443552850895735072
+      SAFINA_SeleniteGeode_22: -2944382290215846247
+      SAFINA_SeleniteGeode_23: 847952159418680129
+      SAFINA_SeleniteGeode_24: -2324069817273792683
+      SAFINA_SeleniteGeode_25: -2436538714699270049
+      SAFINA_SeleniteGeode_26: -5204254581535470820
+      SAFINA_SeleniteGeode_27: -6350735635363293933
+      SAFINA_SeleniteGeode_28: 7013901017032202272
+      SAFINA_SeleniteGeode_29: 6022370306775995565
+      SAFINA_SeleniteGeode_3: -6257112720614559486
+      SAFINA_SeleniteGeode_30: 5997737890004078373
+      SAFINA_SeleniteGeode_31: -3575382087004898503
+      SAFINA_SeleniteGeode_32: 4260998551844861019
+      SAFINA_SeleniteGeode_33: 8005509279432728800
+      SAFINA_SeleniteGeode_34: 9198334810899625838
+      SAFINA_SeleniteGeode_35: -2620873163634655729
+      SAFINA_SeleniteGeode_36: 8141123905429979392
+      SAFINA_SeleniteGeode_37: 680782970054047617
+      SAFINA_SeleniteGeode_38: -4409869445826503481
+      SAFINA_SeleniteGeode_39: -8928240352351104214
+      SAFINA_SeleniteGeode_4: -867411863204541653
+      SAFINA_SeleniteGeode_40: 60468577054382295
+      SAFINA_SeleniteGeode_41: 5522593021859471069
+      SAFINA_SeleniteGeode_42: 522671890525980664
+      SAFINA_SeleniteGeode_43: -660835603367378423
+      SAFINA_SeleniteGeode_44: 2662128170668468346
+      SAFINA_SeleniteGeode_45: 7974217211516243252
+      SAFINA_SeleniteGeode_46: -4382531529466057989
+      SAFINA_SeleniteGeode_47: 5578696729724656752
+      SAFINA_SeleniteGeode_48: 7189930572086849533
+      SAFINA_SeleniteGeode_49: 3188677794691493241
+      SAFINA_SeleniteGeode_5: -6101704326429783356
+      SAFINA_SeleniteGeode_50: 3019321273430202723
+      SAFINA_SeleniteGeode_51: 1347994628622706391
+      SAFINA_SeleniteGeode_52: -1503097100225225734
+      SAFINA_SeleniteGeode_53: -2645571843764586388
+      SAFINA_SeleniteGeode_54: 3888610484867856259
+      SAFINA_SeleniteGeode_55: 4657184792008348352
+      SAFINA_SeleniteGeode_56: 7182493414299519694
+      SAFINA_SeleniteGeode_57: -8751828490522010067
+      SAFINA_SeleniteGeode_58: -5442745328568659858
+      SAFINA_SeleniteGeode_59: 5984627016238896439
+      SAFINA_SeleniteGeode_6: -6217802711270471655
+      SAFINA_SeleniteGeode_60: 6287265985961819163
+      SAFINA_SeleniteGeode_61: 3756212084578262990
+      SAFINA_SeleniteGeode_62: -5187233792926497151
+      SAFINA_SeleniteGeode_63: -6956130118771649885
+      SAFINA_SeleniteGeode_64: -485097609252614695
+      SAFINA_SeleniteGeode_65: 6700243587173640373
+      SAFINA_SeleniteGeode_7: 3651637518437032657
+      SAFINA_SeleniteGeode_8: -4524300349359643186
+      SAFINA_SeleniteGeode_9: -2145243612808718087
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

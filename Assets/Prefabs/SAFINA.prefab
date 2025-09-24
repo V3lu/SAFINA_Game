@@ -56,6 +56,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -77,6 +79,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -125,11 +128,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 346798243b0d3dd4baf93049dbb33fcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _crystalinePathSO: {fileID: 11400000, guid: fe1484c2745ca0b4d8efebe545a0c9c4, type: 2}
+  _XPSO: {fileID: 11400000, guid: 0652412c4e2160e4d805451d770ab44e, type: 2}
   _fireballPrefab: {fileID: 847111671672806296, guid: 342b7617d124e5a438b959e1494ff2a5, type: 3}
   _energyBlastPrefab: {fileID: 3981800061773876094, guid: 49aedb9d31e097046a9f0c3803c529fa, type: 3}
   _voidBoltPrefab: {fileID: 3090728429097142128, guid: ca9dc960d339a51418ff83f4fa2e2432, type: 3}
   _attackSpeed: 1.6
-  _crystalinePathSO: {fileID: 11400000, guid: fe1484c2745ca0b4d8efebe545a0c9c4, type: 2}
   _movSpeed: 2
 --- !u!50 &2360872314497071879
 Rigidbody2D:

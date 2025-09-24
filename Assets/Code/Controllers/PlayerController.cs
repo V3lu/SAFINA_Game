@@ -17,11 +17,10 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     [SerializeField] private float _movSpeed;
 
 
-    private float _attackProjectileSpawnTimer;
-    private float _speedX, _speedY;
-    private Rigidbody2D _rb;
-    private Animator _animator;
-
+    private static float _attackProjectileSpawnTimer;
+    private static float _speedX, _speedY;
+    private static Rigidbody2D _rb;
+    private static Animator _animator;
     private static long _playerXPTotal = 0;
     private static long _playerXPCurrent = 0;
     private static int _playerLvl = 0;

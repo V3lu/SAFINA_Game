@@ -9,19 +9,8 @@ public class CrystalinePathSO : ScriptableObject
     private List<IMob> _presentEnemies = new();
 
 
-    public void AddEnemy(IMob mob)
-    {
-        _presentEnemies.Add(mob);
-    }
-
-    public List<IMob> GetAllEnemies()
-    {
-        return _presentEnemies;
-    }
-
-    public void RemoveEnemyFromList(IMob mob)
-    {
-        _presentEnemies.Remove(mob);
-    }
+    public void AddEnemy(IMob mob) => _presentEnemies.Add(mob);
+    public void RemoveEnemyFromList(IMob mob) => _presentEnemies.Remove(mob);
+    public List<IMob> AllEnemies => _presentEnemies;
 
 }

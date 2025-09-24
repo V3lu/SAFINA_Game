@@ -4,7 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - _hitPrefab: {fileID: 5784736543062994673, guid: acc3c3ead1b6673479d2f7592ef40e3a, type: 3}
+  - _hitPrefab: {fileID: 5784736543062994673, guid: e639b17eb94665241a02d6081d57dee3, type: 3}
   - _enemyHealthbarController: {instanceID: 0}
   - _crystalineSlimeSO: {fileID: 11400000, guid: 4199e47f6c9d486428573f6e6967406d, type: 2}
   - _crystalinePathSO: {fileID: 11400000, guid: fe1484c2745ca0b4d8efebe545a0c9c4, type: 2}

@@ -9,23 +9,8 @@ public class CrystalineSlimeSO : ScriptableObject
     [SerializeField] private float _hp = 50;
 
 
-    public string GetName()
-    {
-        return _name;
-    }
-
-    public string GetDescription()
-    {
-        return _description;
-    }
-
-    public float GetMovSpeed()
-    {
-        return _movSpeed;
-    }
-
-    public float GetHP()
-    {
-        return _hp;
-    }
+    public string Name => _name;
+    public string Description => _description;
+    public float MovSpeed => _movSpeed;
+    public float HP => _hp;
 }

@@ -81,6 +81,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\Code\ScriptableObjects\CrystalineSlimeSO.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
+    <Compile Include="Assets\Code\Enemies\SeleniteGeode.cs" />
+    <Compile Include="Assets\Code\Controllers\SeleniteGeodeSpawnPointController.cs" />
     <Compile Include="Assets\Code\ScriptableObjects\GameDataSO.cs" />
     <Compile Include="Assets\Code\ScriptableObjects\VoidBoltBaseSO.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
@@ -124,6 +126,7 @@
     <Compile Include="Assets\Code\Managers\GameManager.cs" />
     <Compile Include="Assets\Code\Projectiles\Fireball.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+    <Compile Include="Assets\Code\ScriptableObjects\SeleniteGeodeSO.cs" />
     <Compile Include="Assets\Code\Interfaces\IProjectile.cs" />
     <Compile Include="Assets\Code\VFX\VoidBoltExplosionVFX.cs" />
   </ItemGroup>

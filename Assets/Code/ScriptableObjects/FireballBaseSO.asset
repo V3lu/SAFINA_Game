@@ -11,8 +11,8 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9324f9702f49d8e458bec6367bb86827, type: 3}
   m_Name: FireballBaseSO
-  m_EditorClassIdentifier: 
-  _fireballExplosionPrefab: {fileID: 6302505505497457010, guid: 76836d9739dd76a45be4dfe4c721d6c3, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::FireballBaseSO
+  _fireballExplosionPrefab: {fileID: 6302505505497457010, guid: abe25cd13827f4f48ba439f5f5a73044, type: 3}
   _range: 7
   _speed: 5
   _baseDamageLowest: 2

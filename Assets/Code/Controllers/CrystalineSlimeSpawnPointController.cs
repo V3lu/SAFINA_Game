@@ -6,7 +6,6 @@ public class CrystalineSlimeSpawnPointController : MonoBehaviour
     [SerializeField] private float _spawnRate;
     [SerializeField] private CrystalinePathSO _crystalinePathSO;
 
-
     private float _spawnTimer;
 
     

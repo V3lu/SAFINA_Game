@@ -26,7 +26,7 @@ public class VoidBolt : MonoBehaviour, IProjectile
     // Update is called once per frame
     void Update()
     {
-        if (_distanceTraveled >= _voidBoltBaseSO.GetRange())
+        if (_distanceTraveled >= _voidBoltBaseSO.Range)
         {
             ObjectPoolManager.ReturnObjectToPool(this.gameObject, ObjectPoolManager.PoolType.Projectiles);
             ResetAfterPoolReturn();
@@ -34,14 +34,14 @@ public class VoidBolt : MonoBehaviour, IProjectile
 
         if (_stepCounter >= 40)
         {
-            float moveStep = _voidBoltBaseSO.GetLoweredSpeed() * Time.deltaTime;
+            float moveStep = _voidBoltBaseSO.LoweredSpeed * Time.deltaTime;
             _stepCounter++;
             transform.position += _direction * moveStep;
             _distanceTraveled += moveStep;
         }
         else
         {
-            float moveStep = _voidBoltBaseSO.GetInitialSpeed() * Time.deltaTime;
+            float moveStep = _voidBoltBaseSO.InitialSpeed * Time.deltaTime;
             _stepCounter++;
             transform.position += _direction * moveStep;
             _distanceTraveled += moveStep;
@@ -49,7 +49,7 @@ public class VoidBolt : MonoBehaviour, IProjectile
 
         if (_stepCounter % 40 == 0)
         {
-            GameObject voidboltExplosion = ObjectPoolManager.SpawnObject(_voidBoltBaseSO.GetVoidBoltExplosionPrefab(), transform.position + _direction * 0.5f, Quaternion.identity);
+            GameObject voidboltExplosion = ObjectPoolManager.SpawnObject(_voidBoltBaseSO.VoidBoltExplosionPrefab, transform.position + _direction * 0.5f, Quaternion.identity);
             if (voidboltExplosion.TryGetComponent<IVFX>(out var vfx))
             {
                 if (vfx is VoidBoltExplosionVFX explosion)
@@ -71,7 +71,7 @@ public class VoidBolt : MonoBehaviour, IProjectile
     {
         if (collision.TryGetComponent<IMob>(out var mob))
         {
-            mob.LooseHP(Random.Range(_voidBoltBaseSO.GetBaseDamageLowest(), _voidBoltBaseSO.GetBaseDamageHighest()));
+            mob.LooseHP(Random.Range(_voidBoltBaseSO.BaseDamageLowest, _voidBoltBaseSO.BaseDamageHighest));
         }
     }
 }

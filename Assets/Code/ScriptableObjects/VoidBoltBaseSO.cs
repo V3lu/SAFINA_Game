@@ -11,34 +11,11 @@ public class VoidBoltBaseSO : ScriptableObject
     [SerializeField] private float _baseDamageHighest = 8;
 
 
-    public GameObject GetVoidBoltExplosionPrefab()
-    {
-        return _voidBoltExplosionPrefab;
-    }
-
-    public float GetLoweredSpeed()
-    {
-        return _loweredSpeed;
-    }
-
-    public float GetRange()
-    {
-        return _range;
-    }
-
-    public float GetInitialSpeed()
-    {
-        return _initialSpeed;
-    }
-
-    public float GetBaseDamageLowest()
-    {
-        return _baseDamageLowest;
-    }
-
-    public float GetBaseDamageHighest()
-    {
-        return _baseDamageHighest;
-    }
+    public GameObject VoidBoltExplosionPrefab => _voidBoltExplosionPrefab;
+    public float LoweredSpeed => _loweredSpeed;
+    public float Range => _range;
+    public float InitialSpeed => _initialSpeed;
+    public float BaseDamageLowest => _baseDamageLowest;
+    public float BaseDamageHighest => _baseDamageHighest;
 
 }

@@ -37,12 +37,24 @@ public class OnAnimationFinishReturnToPool : StateMachineBehaviour
         if (animator.gameObject.TryGetComponent<IMob>(out var mob))
         {
             ObjectPoolManager.ReturnObjectToPool(animator.gameObject, ObjectPoolManager.PoolType.Mobs);
+
             if(mob is CrystalineSlime crystalineSlime)
             {
                 crystalineSlime.resetState();
                 Random rand = new Random();
                 int chance = rand.Next(11);
                 if (chance < 9)
+                {
+                    ObjectPoolManager.SpawnObject(_vialaOrb, mob.Transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Collectables);
+                }
+            }
+
+            if (mob is SeleniteGeode seleniteGeode)
+            {
+                seleniteGeode.ResetState();
+                Random rand = new Random();
+                int chance = rand.Next(11);
+                if (chance < 7)
                 {
                     ObjectPoolManager.SpawnObject(_vialaOrb, mob.Transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Collectables);
                 }

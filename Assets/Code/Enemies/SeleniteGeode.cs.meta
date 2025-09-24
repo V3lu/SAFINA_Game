@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a02ec1fb5b25f11408fc6f1d6a95eaed
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _hitPrefab: {fileID: 5784736543062994673, guid: e639b17eb94665241a02d6081d57dee3, type: 3}
+  - _enemyHealthbarController: {instanceID: 0}
+  - _seleniteGeodeSO: {fileID: 11400000, guid: 5bc4fb4d7aa9b794cb3f76ddea168936, type: 2}
+  - _crystalinePathSO: {fileID: 11400000, guid: fe1484c2745ca0b4d8efebe545a0c9c4, type: 2}
+  - _vialaOrb: {fileID: 5034827216173169069, guid: 157417b17b9c75f498057bf2bbceaac2, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

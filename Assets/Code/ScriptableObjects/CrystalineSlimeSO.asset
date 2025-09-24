@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79275985463a095409ecc3efc5451bc3, type: 3}
   m_Name: CrystalineSlimeSO
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::CrystalineSlimeSO
   _name: Crystaline Slime
   _description: TODO Description
   _movSpeed: 2

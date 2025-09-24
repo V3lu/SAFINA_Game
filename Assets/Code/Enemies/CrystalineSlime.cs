@@ -15,9 +15,9 @@ public class CrystalineSlime : MonoBehaviour, IMob
     [SerializeField] private CrystalinePathSO _crystalinePathSO;
     [SerializeField] private VialaTiny _vialaOrb;
 
-    private static Transform _playerTransform;
-
     private Animator _animator;
+
+    private static Transform _playerTransform;
 
     public float HP { get; set; }
     public Transform Transform { get { return gameObject.transform; } }
@@ -26,8 +26,8 @@ public class CrystalineSlime : MonoBehaviour, IMob
 
     void Start()
     {
-        this.HP = _crystalineSlimeSO.GetHP();
-        this.MaxHP = _crystalineSlimeSO.GetHP();
+        this.HP = _crystalineSlimeSO.HP;
+        this.MaxHP = _crystalineSlimeSO.HP;
         _enemyHealthbarController.Sethealth(HP, MaxHP);
         _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         _animator = this.GetComponent<Animator>();
@@ -56,7 +56,7 @@ public class CrystalineSlime : MonoBehaviour, IMob
         }
     }
 
-    private void OnEnable()
+    void OnEnable()
     {
         this.HP = MaxHP;
         _enemyHealthbarController.Sethealth(HP, MaxHP);
@@ -80,7 +80,7 @@ public class CrystalineSlime : MonoBehaviour, IMob
         ObjectPoolManager.SpawnObject(_hitPrefab, gameObject.transform.position, Quaternion.identity, ObjectPoolManager.PoolType.VFXs);
     }
 
-    private void OnDeath()
+    void OnDeath()
     {
         if (transform.position.x >= _playerTransform.position.x)
         {
@@ -92,12 +92,12 @@ public class CrystalineSlime : MonoBehaviour, IMob
         }
     }
 
-    private void Movement()
+    void Movement()
     {
         if (this.HP > 0)
         {
             Vector3 moveDirNormalized = (_playerTransform.position - transform.position).normalized;
-            transform.position += moveDirNormalized * _crystalineSlimeSO.GetMovSpeed() * Time.deltaTime;
+            transform.position += moveDirNormalized * _crystalineSlimeSO.MovSpeed * Time.deltaTime;
         }
         else
         {
