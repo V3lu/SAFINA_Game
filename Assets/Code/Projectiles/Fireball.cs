@@ -43,9 +43,9 @@ public class Fireball : MonoBehaviour, IProjectile
         }
     }
 
-    public void SetTarget(Transform target)
+    public void SetTarget(Vector3 target)
     {
-        _direction = (target.position - transform.position).normalized;
+        _direction = (target - transform.position).normalized;
         float angle = Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle + 90f);
     }

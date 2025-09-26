@@ -86,15 +86,18 @@
     <Compile Include="Assets\Code\ScriptableObjects\GameDataSO.cs" />
     <Compile Include="Assets\Code\ScriptableObjects\VoidBoltBaseSO.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+    <Compile Include="Assets\Code\ScriptableObjects\SeleniteGeodeProjectileSO.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\Code\Projectiles\SG_Projectile\ProjectileShadow.cs" />
     <Compile Include="Assets\Code\ScriptableObjects\CrystalinePathSO.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Code\VFX\EnemyHitVFX.cs" />
+    <Compile Include="Assets\Code\Projectiles\SG_Projectile\SeleniteGeodeProjectile.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Code\Controllers\VoidBoltSkillChooseController.cs" />
     <Compile Include="Assets\Code\Enemies\CrystalineSlime.cs" />
@@ -123,6 +126,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\Code\Projectiles\SG_Projectile\ProjectileVisual.cs" />
     <Compile Include="Assets\Code\Managers\GameManager.cs" />
     <Compile Include="Assets\Code\Projectiles\Fireball.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />

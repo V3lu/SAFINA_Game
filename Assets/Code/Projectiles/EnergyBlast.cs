@@ -5,7 +5,7 @@ public class EnergyBlast : MonoBehaviour, IProjectile
 {
     [SerializeField] private EnergyBlastBaseSO _energyBlastBaseSO;
 
-    private Transform explosionPlace;
+    private Vector3 explosionPlace;
 
     void Start()
     {
@@ -18,7 +18,7 @@ public class EnergyBlast : MonoBehaviour, IProjectile
         
     }
 
-    public void SetTarget(Transform target)
+    public void SetTarget(Vector3 target)
     {
         explosionPlace = target;
     }

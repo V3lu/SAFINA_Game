@@ -9,6 +9,6 @@ namespace Assets.Code.Interfaces
 {
     public interface IProjectile
     {
-        void SetTarget(Transform target);
+        void SetTarget(Vector3 position);
     }
 }

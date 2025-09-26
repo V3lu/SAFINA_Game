@@ -56,7 +56,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
 
     public void LooseHP(float hp)
     {
-        throw new System.NotImplementedException();
+        this.HP -= hp;
     }
 
     public void RestoreHP(float hp)
@@ -96,7 +96,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
                 GameObject fireball = ObjectPoolManager.SpawnObject(_fireballPrefab, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Projectiles);
                 if (fireball.TryGetComponent<IProjectile>(out var projectile))
                 {
-                    projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform);
+                    projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position);
                 }
             }
         }
@@ -108,7 +108,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
                 GameObject voidBolt = ObjectPoolManager.SpawnObject(_voidBoltPrefab, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Projectiles);
                 if (voidBolt.TryGetComponent<IProjectile>(out var projectile))
                 {
-                    projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform);
+                    projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position);
                 }
             }
         }
@@ -120,7 +120,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
                 GameObject energyBlast = ObjectPoolManager.SpawnObject(_energyBlastPrefab, closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Projectiles);
                 if (energyBlast.TryGetComponent<IProjectile>(out var projectile))
                 {
-                    projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform);
+                    projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position);
                 }
             }
         }
