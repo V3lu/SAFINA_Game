@@ -3,20 +3,20 @@ using UnityEngine;
 
 public class VoidBolt : MonoBehaviour, IProjectile
 {
-    [SerializeField] private VoidBoltBaseSO _voidBoltBaseSO;
+    [SerializeField] VoidBoltBaseSO _voidBoltBaseSO;
 
 
-    private int _stepCounter = 0;
+    int _stepCounter = 0;
 
-    private Vector3 _direction = Vector3.zero;
-    private float _distanceTraveled = 0f;
+    Vector3 _direction = Vector3.zero;
+    float _distanceTraveled = 0f;
 
     void Start()
     {
         
     }
 
-    private void ResetAfterPoolReturn()
+    void ResetAfterPoolReturn()
     {
         _direction = Vector3.zero;
         _distanceTraveled = 0f;
@@ -67,7 +67,7 @@ public class VoidBolt : MonoBehaviour, IProjectile
         transform.rotation = Quaternion.Euler(0, 0, angle);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.TryGetComponent<IMob>(out var mob))
         {

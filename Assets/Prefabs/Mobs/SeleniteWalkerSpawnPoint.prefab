@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1330277926266278051}
   - component: {fileID: 7942191539833759670}
   m_Layer: 0
-  m_Name: SeleniteGeodeSpawnPoint
+  m_Name: SeleniteWalkerSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

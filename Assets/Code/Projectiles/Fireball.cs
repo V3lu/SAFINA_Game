@@ -4,19 +4,19 @@ using UnityEngine.InputSystem;
 
 public class Fireball : MonoBehaviour, IProjectile
 {
-    [SerializeField] private FireballBaseSO _fireballBaseSO;
+    [SerializeField] FireballBaseSO _fireballBaseSO;
 
 
-    private bool _temporaryCollisionSolution = false;  //TODO Make this work properly in the future
-    private Vector3 _direction = Vector3.zero;
-    private float _distanceTraveled = 0f;
+    bool _temporaryCollisionSolution = false;  //TODO Make this work properly in the future
+    Vector3 _direction = Vector3.zero;
+    float _distanceTraveled = 0f;
 
     void Start()
     {
         
     }
 
-    private void ResetAfterPoolReturn()
+    void ResetAfterPoolReturn()
     {
         _direction = Vector3.zero;
         _distanceTraveled = 0f;
@@ -50,7 +50,7 @@ public class Fireball : MonoBehaviour, IProjectile
         transform.rotation = Quaternion.Euler(0, 0, angle + 90f);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject != null)
         {

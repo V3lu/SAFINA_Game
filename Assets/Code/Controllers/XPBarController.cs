@@ -5,15 +5,15 @@ using UnityEngine.UI;
 
 public class XPBarController : MonoBehaviour
 {
-    [SerializeField] private RectTransform _barRect;
-    [SerializeField] private RectMask2D _mask;
-    [SerializeField] private TMP_Text _XPIndicator;
-    [SerializeField] private XPSO _XPSO;
+    [SerializeField] RectTransform _barRect;
+    [SerializeField] RectMask2D _mask;
+    [SerializeField] TMP_Text _XPIndicator;
+    [SerializeField] XPSO _XPSO;
 
-    private static double _initialRightMask;
-    private static double _currentRightMask;
+    static double _initialRightMask;
+    static double _currentRightMask;
 
-    private PlayerCtrl _playerCtrl;
+    PlayerCtrl _playerCtrl;
 
     void Start()
     {

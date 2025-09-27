@@ -3,9 +3,9 @@ using UnityEngine.UI;
 
 public class EnemyHealthbarController : MonoBehaviour
 {
-    [SerializeField] private Slider _healthBarSlider;
-    [SerializeField] private Color _healthBarColor;
-    [SerializeField] private Vector3 _offset;
+    [SerializeField] Slider _healthBarSlider;
+    [SerializeField] Color _healthBarColor;
+    [SerializeField] Vector3 _offset;
 
 
     void Start()

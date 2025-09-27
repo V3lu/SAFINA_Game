@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8fdf97bd05950b54fab337cd5d3d4d4e, type: 3}
-  m_Name: SeleniteGeodeSO
+  m_Name: SeleniteWalkerSO
   m_EditorClassIdentifier: Assembly-CSharp::SeleniteGeodeSO
   _baseDamageLowest: 2
   _baseDamageHighest: 16
@@ -18,6 +18,6 @@ MonoBehaviour:
   _description: TODO Description
   _movSpeed: 1.3
   _hp: 16
-  _attackSpeed: 0.5
+  _attackSpeed: 3
   _attackRangeDistanceToPlayerMin: 4
   _attackRangeDistanceToPlayerMax: 8

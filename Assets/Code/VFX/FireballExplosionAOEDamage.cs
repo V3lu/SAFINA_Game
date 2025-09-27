@@ -3,18 +3,18 @@ using UnityEngine;
 
 public class FireballExplosionAOEDamage : MonoBehaviour, IVFX
 {
-    [SerializeField] private FireballBaseSO _fireballBaseSO;
+    [SerializeField] FireballBaseSO _fireballBaseSO;
 
 
-    private CapsuleCollider2D _capsuleCollider2D;
-    private bool _firstEnemyHit = true;
+    CapsuleCollider2D _capsuleCollider2D;
+    bool _firstEnemyHit = true;
 
 
     void Start()
     {
         _capsuleCollider2D = GetComponent<CapsuleCollider2D>();
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject != null)
         {

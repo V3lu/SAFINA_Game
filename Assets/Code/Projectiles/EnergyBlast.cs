@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class EnergyBlast : MonoBehaviour, IProjectile
 {
-    [SerializeField] private EnergyBlastBaseSO _energyBlastBaseSO;
+    [SerializeField] EnergyBlastBaseSO _energyBlastBaseSO;
 
-    private Vector3 explosionPlace;
+    Vector3 explosionPlace;
 
     void Start()
     {
@@ -23,7 +23,7 @@ public class EnergyBlast : MonoBehaviour, IProjectile
         explosionPlace = target;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.TryGetComponent<IMob>(out var mob))
         {

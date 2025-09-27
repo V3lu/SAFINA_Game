@@ -6,7 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "CrystalinePathSO", menuName = "Scriptable Objects/CrystalinePathSO")]
 public class CrystalinePathSO : ScriptableObject
 {
-    private List<IMob> _presentEnemies = new();
+    List<IMob> _presentEnemies = new();
 
 
     public void AddEnemy(IMob mob) => _presentEnemies.Add(mob);

@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class VoidBoltSkillChooseController : MonoBehaviour, IAutoAttackTypeSelectable
 {
-    [SerializeField] private Image _targetImage;
-    [SerializeField] private Sprite _unhooveredSprite;
-    [SerializeField] private Sprite _hooveredSprite;
-    [SerializeField] private Canvas _canvas;
+    [SerializeField] Image _targetImage;
+    [SerializeField] Sprite _unhooveredSprite;
+    [SerializeField] Sprite _hooveredSprite;
+    [SerializeField] Canvas _canvas;
 
 
-    private static GameObject _safina;
+    static GameObject _safina;
 
 
     void Start()

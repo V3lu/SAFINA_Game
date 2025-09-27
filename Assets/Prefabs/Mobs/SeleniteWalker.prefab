@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 6212829569913379523}
   - component: {fileID: 5125828997999525403}
   m_Layer: 0
-  m_Name: SeleniteGeode
+  m_Name: SeleniteWalker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -424,38 +424,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SeleniteGeode
   _hitPrefab: {fileID: 5784736543062994673, guid: e639b17eb94665241a02d6081d57dee3, type: 3}
   _enemyHealthbarController: {fileID: 3296898046368890676}
-  _seleniteGeodeSO: {fileID: 11400000, guid: 5bc4fb4d7aa9b794cb3f76ddea168936, type: 2}
+  _seleniteWalkerSO: {fileID: 11400000, guid: 5bc4fb4d7aa9b794cb3f76ddea168936, type: 2}
   _crystalinePathSO: {fileID: 11400000, guid: fe1484c2745ca0b4d8efebe545a0c9c4, type: 2}
   _vialaOrb: {fileID: 5034827216173169069, guid: 157417b17b9c75f498057bf2bbceaac2, type: 3}
   _projectile: {fileID: 5849661873531838109, guid: 66390920033597d45b5aa2a522007ede, type: 3}
-  _projectileMaxMoveSpeed: 3.3
-  _projectileMaxHeight: 0.7
+  _projectileMaxMoveSpeed: 5.18
+  _projectileMaxHeight: 0.33
   _trajectoryAnimationCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0.0030272119
       value: 0.0008125901
-      inSlope: 1.9881603
-      outSlope: 1.9881603
+      inSlope: 1.4932913
+      outSlope: 1.4932913
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.5043762
-      value: 0.9975747
-      inSlope: -0.0062678456
-      outSlope: -0.0062678456
+      time: 0.65763545
+      value: 0.97833335
+      inSlope: -0.3513816
+      outSlope: -0.3513816
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
+      time: 0.85291934
+      value: 0.5494793
+      inSlope: -3.4877064
+      outSlope: -3.4877064
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.22516282
+      outWeight: 0.2873198
+    - serializedVersion: 3
       time: 1.0010071
       value: 0.003967285
-      inSlope: -2.000696
-      outSlope: -2.000696
+      inSlope: -3.6837082
+      outSlope: -3.6837082
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334

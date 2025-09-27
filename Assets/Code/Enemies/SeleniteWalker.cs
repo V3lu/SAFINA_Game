@@ -5,37 +5,38 @@ using static PlayerCtrl;
 
 public class SeleniteGeode : MonoBehaviour, IMob
 {
-    [SerializeField] private GameObject _hitPrefab;
-    [SerializeField] private EnemyHealthbarController _enemyHealthbarController;
-    [SerializeField] private SeleniteGeodeSO _seleniteGeodeSO;
-    [SerializeField] private CrystalinePathSO _crystalinePathSO;
-    [SerializeField] private VialaTiny _vialaOrb;
-    [SerializeField] private SeleniteGeodeProjectile _projectile;
-    [SerializeField] private float _projectileMaxMoveSpeed;
-    [SerializeField] private float _projectileMaxHeight;
-    [SerializeField] private AnimationCurve _trajectoryAnimationCurve;
-    [SerializeField] private AnimationCurve _axisCorrectionAnimationCurve;
-    [SerializeField] private AnimationCurve __projectileSpeedAnimationCurve;
+    [SerializeField] GameObject _hitPrefab;
+    [SerializeField] EnemyHealthbarController _enemyHealthbarController;
+    [SerializeField] SeleniteWalkerSO _seleniteWalkerSO;
+    [SerializeField] CrystalinePathSO _crystalinePathSO;
+    [SerializeField] VialaTiny _vialaOrb;
+    [SerializeField] SeleniteWalkerProjectile _projectile;
+    [SerializeField] float _projectileMaxMoveSpeed;
+    [SerializeField] float _projectileMaxHeight;
+    [SerializeField] AnimationCurve _trajectoryAnimationCurve;
+    [SerializeField] AnimationCurve _axisCorrectionAnimationCurve;
+    [SerializeField] AnimationCurve __projectileSpeedAnimationCurve;
 
-    private Animator _animator;
-    private float _attackProjectileSpawnTimer;
-    private enum Actions
+    GameObject _playerReference;
+    Animator _animator;
+    float _attackProjectileSpawnTimer;
+
+    enum Actions
     {
         Attack,
         Escape,
         Approach
     }
-    private enum DistancesFromPlayer
+    enum DistancesFromPlayer
     {
         AttackDistance,
         EscapeDistance,
         ApproachDistance
     }
-    private Actions _currentAction;
-    private DistancesFromPlayer _distanceFromPlayer;
 
+    Actions _currentAction;
+    DistancesFromPlayer _distanceFromPlayer;
 
-    private static PlayerCtrl _playerReference;
 
     public Transform Transform { get { return gameObject.transform; } }
     public float MaxHP { get; set; }
@@ -64,28 +65,31 @@ public class SeleniteGeode : MonoBehaviour, IMob
 
     void Start()
     {
-        this.HP = _seleniteGeodeSO.HP;
-        this.MaxHP = _seleniteGeodeSO.HP;
+        this.HP = _seleniteWalkerSO.HP;
+        this.MaxHP = _seleniteWalkerSO.HP;
         _enemyHealthbarController.Sethealth(HP, MaxHP);
-        _playerReference = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCtrl>();
         _animator = this.GetComponent<Animator>();
+        this._playerReference = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()
     {
-        DetermineDistanceAndAction();
-
-        switch (_currentAction)
+        if (this.HP > 0)
         {
-            case Actions.Escape:
-                Movement();
-                break;
-            case Actions.Approach:
-                Movement();
-                break;
-            case Actions.Attack:
-                OnAttack();
-                break;
+            DetermineDistanceAndAction();
+
+            switch (_currentAction)
+            {
+                case Actions.Escape:
+                    Movement();
+                    break;
+                case Actions.Approach:
+                    Movement();
+                    break;
+                case Actions.Attack:
+                    OnAttack();
+                    break;
+            }
         }
     }
 
@@ -133,12 +137,12 @@ public class SeleniteGeode : MonoBehaviour, IMob
         
         if (_attackProjectileSpawnTimer <= 0)
         {
-            _attackProjectileSpawnTimer = _seleniteGeodeSO.AttackSpeed;
-            SeleniteGeodeProjectile seleniteGeodeProjectile = ObjectPoolManager.SpawnObject(_projectile, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Projectiles);
-            seleniteGeodeProjectile.InitializeProjectile(_playerReference.transform.position, _projectileMaxMoveSpeed, _projectileMaxHeight);
+            _attackProjectileSpawnTimer = _seleniteWalkerSO.AttackSpeed;
+            SeleniteWalkerProjectile seleniteWalkerProjectile = ObjectPoolManager.SpawnObject(_projectile, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Projectiles);
+            seleniteWalkerProjectile.InitializeProjectile(_playerReference.transform ,_playerReference.transform.position, _projectileMaxMoveSpeed, _projectileMaxHeight, this.transform.position);
             _trajectoryAnimationCurve.preWrapMode = WrapMode.Clamp;
             _trajectoryAnimationCurve.postWrapMode = WrapMode.Clamp;
-            seleniteGeodeProjectile.InitializeAnimationCurves(_trajectoryAnimationCurve, _axisCorrectionAnimationCurve, __projectileSpeedAnimationCurve);
+            seleniteWalkerProjectile.InitializeAnimationCurves(_trajectoryAnimationCurve, _axisCorrectionAnimationCurve, __projectileSpeedAnimationCurve);
         }
         
     }
@@ -158,7 +162,7 @@ public class SeleniteGeode : MonoBehaviour, IMob
                 if (this.HP > 0)
                 {
                     Vector3 moveDirNormalized = -((_playerReference.transform.position - transform.position).normalized);
-                    transform.position += moveDirNormalized * _seleniteGeodeSO.MovSpeed * Time.deltaTime;
+                    transform.position += moveDirNormalized * _seleniteWalkerSO.MovSpeed * Time.deltaTime;
                 }
                 else
                 {
@@ -188,7 +192,7 @@ public class SeleniteGeode : MonoBehaviour, IMob
                 if (this.HP > 0)
                 {
                     Vector3 moveDirNormalized = (_playerReference.transform.position - transform.position).normalized;
-                    transform.position += moveDirNormalized * _seleniteGeodeSO.MovSpeed * Time.deltaTime;
+                    transform.position += moveDirNormalized * _seleniteWalkerSO.MovSpeed * Time.deltaTime;
                 }
                 else
                 {
@@ -201,12 +205,12 @@ public class SeleniteGeode : MonoBehaviour, IMob
     void DetermineDistanceAndAction()
     {
         float magnitude = (_playerReference.transform.position - transform.position).magnitude;
-        if(magnitude < _seleniteGeodeSO.MinDistToPlayer)
+        if(magnitude < _seleniteWalkerSO.MinDistToPlayer)
         {
             _currentAction = Actions.Escape;
             _distanceFromPlayer = DistancesFromPlayer.EscapeDistance;
         }
-        else if(magnitude > _seleniteGeodeSO.MinDistToPlayer && magnitude < _seleniteGeodeSO.MaxDistToPlayer)
+        else if(magnitude > _seleniteWalkerSO.MinDistToPlayer && magnitude < _seleniteWalkerSO.MaxDistToPlayer)
         {
             _currentAction = Actions.Attack;
             _distanceFromPlayer = DistancesFromPlayer.AttackDistance;
@@ -222,7 +226,7 @@ public class SeleniteGeode : MonoBehaviour, IMob
     {
         if (collision.gameObject.transform == _playerReference.transform)
         {
-            _playerReference.LooseHP(5);
+            _playerReference.GetComponent<PlayerCtrl>().LooseHP(5);
         }
     }
     public void ResetState()

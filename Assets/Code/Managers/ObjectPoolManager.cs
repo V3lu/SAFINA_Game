@@ -7,20 +7,20 @@ using static Unity.VisualScripting.Metadata;
 
 public class ObjectPoolManager : MonoBehaviour
 {
-    [SerializeField] private bool _addToDontDestroyOnLoad = false; //This one is for ex.sounds that you'll want to keep playing when scene loads or sth like that
+    [SerializeField] bool _addToDontDestroyOnLoad = false; //This one is for ex.sounds that you'll want to keep playing when scene loads or sth like that
 
 
-    private GameObject _emptyHolder;
+    GameObject _emptyHolder;
 
-    private static GameObject _particleSystemsEmpty;
-    private static GameObject _gameObjectsEmpty;
-    private static GameObject _soundFXEmpty;
-    private static GameObject _mobsEmpty;
-    private static GameObject _VFXEmpty;
-    private static GameObject _projectilesEmpty;
-    private static GameObject _collectablesEmpty;
-    private static Dictionary<GameObject, ObjectPool<GameObject>> _objectPools;
-    private static Dictionary<GameObject, GameObject> _spawnedInstanceToOriginalPrefabMap;
+    static GameObject _particleSystemsEmpty;
+    static GameObject _gameObjectsEmpty;
+    static GameObject _soundFXEmpty;
+    static GameObject _mobsEmpty;
+    static GameObject _VFXEmpty;
+    static GameObject _projectilesEmpty;
+    static GameObject _collectablesEmpty;
+    static Dictionary<GameObject, ObjectPool<GameObject>> _objectPools;
+    static Dictionary<GameObject, GameObject> _spawnedInstanceToOriginalPrefabMap;
 
 
     public enum PoolType
@@ -36,14 +36,14 @@ public class ObjectPoolManager : MonoBehaviour
     public static PoolType poolingType;
 
 
-    private void Awake()
+    void Awake()
     {
         _objectPools = new Dictionary<GameObject, ObjectPool<GameObject>>();
         _spawnedInstanceToOriginalPrefabMap = new Dictionary<GameObject, GameObject>();
         SetupEmpties();
     }
 
-    private void SetupEmpties()
+    void SetupEmpties()
     {
         _emptyHolder = new GameObject("Object Pools");
 
@@ -74,7 +74,7 @@ public class ObjectPoolManager : MonoBehaviour
         }
     }
 
-    private static void CreatePool(GameObject prefab, Vector3 pos, Quaternion rot, PoolType poolType = PoolType.GameObjects)
+    static void CreatePool(GameObject prefab, Vector3 pos, Quaternion rot, PoolType poolType = PoolType.GameObjects)
     {
         ObjectPool<GameObject> pool = new ObjectPool<GameObject>(
             createFunc: () => CreateObject(prefab, pos, rot, poolType),
@@ -85,7 +85,7 @@ public class ObjectPoolManager : MonoBehaviour
         _objectPools.Add(prefab, pool);
     }
 
-    private static GameObject CreateObject(GameObject prefab, Vector3 pos, Quaternion rot, PoolType poolType = PoolType.GameObjects)
+    static GameObject CreateObject(GameObject prefab, Vector3 pos, Quaternion rot, PoolType poolType = PoolType.GameObjects)
     {
         prefab.SetActive(false);    //Only way to spawn an object and not have to wait for OnEnabled call guaranteed - saves headache
 
@@ -99,18 +99,18 @@ public class ObjectPoolManager : MonoBehaviour
         return obj;
     }
 
-    private static void OnGetObject(GameObject obj)
+    static void OnGetObject(GameObject obj)
     {
         // logic for what to do when we get object from the pool
     }
 
-    private static void OnReleaseObject(GameObject obj)
+    static void OnReleaseObject(GameObject obj)
     {
         // logic for what to do when we release an object back to the pool
         obj.SetActive(false);
     }
 
-    private static void OnDestroyObject(GameObject obj)
+    static void OnDestroyObject(GameObject obj)
     {
         if (_spawnedInstanceToOriginalPrefabMap.ContainsKey(obj))
         {
@@ -118,7 +118,7 @@ public class ObjectPoolManager : MonoBehaviour
         }
     }
 
-    private static GameObject SetParentObject(PoolType poolType)
+    static GameObject SetParentObject(PoolType poolType)
     {
         switch(poolType)
         {
@@ -155,7 +155,7 @@ public class ObjectPoolManager : MonoBehaviour
         }
     }
 
-    private static T SpawnObject<T>(GameObject objectToSpawn, Vector3 spawnPos, Quaternion spawnRotation, PoolType poolType = PoolType.GameObjects) where T : Object
+    static T SpawnObject<T>(GameObject objectToSpawn, Vector3 spawnPos, Quaternion spawnRotation, PoolType poolType = PoolType.GameObjects) where T : Object
     {
         if (!_objectPools.ContainsKey(objectToSpawn))
         {

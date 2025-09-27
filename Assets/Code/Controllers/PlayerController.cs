@@ -8,23 +8,23 @@ using UnityEngine;
 
 public class PlayerCtrl : MonoBehaviour, IDamagable
 {
-    [SerializeField] private CrystalinePathSO _crystalinePathSO;
-    [SerializeField] private XPSO _XPSO;
-    [SerializeField] private GameObject _fireballPrefab;
-    [SerializeField] private GameObject _energyBlastPrefab;
-    [SerializeField] private GameObject _voidBoltPrefab;
-    [SerializeField] private float _attackSpeed;
-    [SerializeField] private float _movSpeed;
+    [SerializeField] CrystalinePathSO _crystalinePathSO;
+    [SerializeField] XPSO _XPSO;
+    [SerializeField] GameObject _fireballPrefab;
+    [SerializeField] GameObject _energyBlastPrefab;
+    [SerializeField] GameObject _voidBoltPrefab;
+    [SerializeField] float _attackSpeed;
+    [SerializeField] float _movSpeed;
 
 
-    private static float _attackProjectileSpawnTimer;
-    private static float _speedX, _speedY;
-    private static Rigidbody2D _rb;
-    private static Animator _animator;
-    private static long _playerXPTotal = 0;
-    private static long _playerXPCurrent = 0;
-    private static int _playerLvl = 0;
-    private static XPBarController _xpBarController;
+    static float _attackProjectileSpawnTimer;
+    static float _speedX, _speedY;
+    static Rigidbody2D _rb;
+    static Animator _animator;
+    static long _playerXPTotal = 0;
+    static long _playerXPCurrent = 0;
+    static int _playerLvl = 0;
+    static XPBarController _xpBarController;
 
     public static ChosenBasicAttact AttackType = ChosenBasicAttact.NotChosen;
 

@@ -9,15 +9,15 @@ using Random = System.Random;
 
 public class CrystalineSlime : MonoBehaviour, IMob
 {
-    [SerializeField] private GameObject _hitPrefab;
-    [SerializeField] private EnemyHealthbarController _enemyHealthbarController;
-    [SerializeField] private CrystalineSlimeSO _crystalineSlimeSO;
-    [SerializeField] private CrystalinePathSO _crystalinePathSO;
-    [SerializeField] private VialaTiny _vialaOrb;
+    [SerializeField] GameObject _hitPrefab;
+    [SerializeField] EnemyHealthbarController _enemyHealthbarController;
+    [SerializeField] CrystalineSlimeSO _crystalineSlimeSO;
+    [SerializeField] CrystalinePathSO _crystalinePathSO;
+    [SerializeField] VialaTiny _vialaOrb;
 
-    private Animator _animator;
+    Animator _animator;
 
-    private static Transform _playerTransform;
+    static Transform _playerTransform;
 
     public float HP { get; set; }
     public Transform Transform { get { return gameObject.transform; } }

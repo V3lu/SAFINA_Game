@@ -5,9 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "XPSO", menuName = "Scriptable Objects/XPSO")]
 public class XPSO : ScriptableObject
 {
-    [SerializeField] private int _maxLevel = 80;
-    [SerializeField] private double _xpRequiredToLevelUpMultiplicator = 1.5;
-    private List<long> _levelCaps = new(){ 10, 15, 23, 34, 51, 76, 114, 171, 256, 384, 577, 865,
+    [SerializeField] int _maxLevel = 80;
+    [SerializeField] double _xpRequiredToLevelUpMultiplicator = 1.5;
+    List<long> _levelCaps = new(){ 10, 15, 23, 34, 51, 76, 114, 171, 256, 384, 577, 865,
                                             1297, 1946, 2919, 4379, 6568, 9853, 14779, 22168, 33253, 49879,
                                             74818, 112227, 168341, 252512, 378768, 568151, 852227, 1278340,
                                             1917511, 2876266, 4314399, 6471598, 9707397, 14561096, 21841644,

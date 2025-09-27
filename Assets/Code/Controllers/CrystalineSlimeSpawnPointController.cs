@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class CrystalineSlimeSpawnPointController : MonoBehaviour
 {
-    [SerializeField] private GameObject _crystalineSlimePrefab;
-    [SerializeField] private float _spawnRate;
-    [SerializeField] private CrystalinePathSO _crystalinePathSO;
+    [SerializeField] GameObject _crystalineSlimePrefab;
+    [SerializeField] float _spawnRate;
+    [SerializeField] CrystalinePathSO _crystalinePathSO;
 
-    private float _spawnTimer;
+    float _spawnTimer;
 
     
     void Start()

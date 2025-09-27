@@ -4,7 +4,7 @@ using Random = System.Random;
 
 public class OnAnimationFinishReturnToPool : StateMachineBehaviour
 {
-    private GameObject _vialaOrb;
+    GameObject _vialaOrb;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
