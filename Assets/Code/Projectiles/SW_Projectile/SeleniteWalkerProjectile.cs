@@ -4,6 +4,7 @@ using UnityEngine;
 public class SeleniteWalkerProjectile : MonoBehaviour, IProjectile
 {
     [SerializeField] SeleniteWalkerProjectileSO _seleniteWalkerProjectileSO;
+    [SerializeField] SeleniteWalkerAoE _seleniteWalkerAoE;
 
     AnimationCurve _trajectoryAnimationCurveFromGeodeReference;
     AnimationCurve _axiscorrectionAnimationCurveFromGeodeReference;
@@ -37,6 +38,7 @@ public class SeleniteWalkerProjectile : MonoBehaviour, IProjectile
             ObjectPoolManager.ReturnObjectToPool(this.gameObject, ObjectPoolManager.PoolType.Projectiles);
             this.GetComponentInChildren<TrailRenderer>().enabled = false;
             ResetAfterPoolReturn();
+            ObjectPoolManager.SpawnObject(_seleniteWalkerAoE, this.gameObject.transform.position, Quaternion.identity, ObjectPoolManager.PoolType.VFXs);
         }
     }
 

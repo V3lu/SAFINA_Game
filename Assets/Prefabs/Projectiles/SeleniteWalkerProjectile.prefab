@@ -294,7 +294,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75fabbeda09ecef4983253c0f98d7baa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SeleniteGeodeProjectile
-  _seleniteWalkerProjectileSO: {fileID: 0}
+  _seleniteWalkerProjectileSO: {fileID: 11400000, guid: 35a81f4f6b6d57648a62b4c3b6715252, type: 2}
+  _seleniteWalkerAoE: {fileID: 1222878648474216051, guid: d3d9cbc4a4640b44ba671c675b2c7f4d, type: 3}
 --- !u!114 &8294830425234305013
 MonoBehaviour:
   m_ObjectHideFlags: 0
