@@ -14,4 +14,13 @@ public class SeleniteWalkerAoE : MonoBehaviour, IVFX
     {
         
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.TryGetComponent<PlayerCtrl>(out var player))
+        {
+            var playerCtrl = player as PlayerCtrl;
+            playerCtrl.LooseHP(20);
+        }
+    }
 }

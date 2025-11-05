@@ -81,10 +81,10 @@ public class SeleniteGeode : MonoBehaviour, IMob
             switch (_currentAction)
             {
                 case Actions.Escape:
-                    Movement();
+                    OnEscape();
                     break;
                 case Actions.Approach:
-                    Movement();
+                    OnApproach();
                     break;
                 case Actions.Attack:
                     OnAttack();
@@ -126,17 +126,18 @@ public class SeleniteGeode : MonoBehaviour, IMob
 
     void OnAttack()
     {
-        if (transform.position.x >= _playerReference.transform.position.x)
-            _animator.SetInteger("state", 3);
-        else
-            _animator.SetInteger("state", 2);
-
-
-
         _attackProjectileSpawnTimer -= Time.deltaTime;
         
         if (_attackProjectileSpawnTimer <= 0)
         {
+            if (transform.position.x >= _playerReference.transform.position.x)
+            {
+                _animator.SetInteger("state", 3);
+            }
+            else
+            {
+                _animator.SetInteger("state", 2);
+            }
             _attackProjectileSpawnTimer = _seleniteWalkerSO.AttackSpeed;
             SeleniteWalkerProjectile seleniteWalkerProjectile = ObjectPoolManager.SpawnObject(_projectile, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Projectiles);
             seleniteWalkerProjectile.InitializeProjectile(_playerReference.transform ,_playerReference.transform.position, _projectileMaxMoveSpeed, _projectileMaxHeight, this.transform.position);
@@ -146,59 +147,48 @@ public class SeleniteGeode : MonoBehaviour, IMob
         }
         
     }
-    void Movement()
+    
+    void OnEscape()
     {
-        switch (_distanceFromPlayer)
+        if (transform.position.x >= _playerReference.transform.position.x)
         {
-            case DistancesFromPlayer.EscapeDistance:
-                if (_animator.GetInteger("state") == 1 || _animator.GetInteger("state") == 0)
-                {
-                    if (transform.position.x >= _playerReference.transform.position.x)
-                        _animator.SetInteger("state", 0);
-                    else
-                        _animator.SetInteger("state", 1);
-                }
+            _animator.SetInteger("state", 4);
+        }
+        else
+        {
+            _animator.SetInteger("state", 5);
+        }
 
-                if (this.HP > 0)
-                {
-                    Vector3 moveDirNormalized = -((_playerReference.transform.position - transform.position).normalized);
-                    transform.position += moveDirNormalized * _seleniteWalkerSO.MovSpeed * Time.deltaTime;
-                }
-                else
-                {
-                    transform.position += new Vector3(0, 0, 0);
-                }
-                break;
-            case DistancesFromPlayer.AttackDistance:
-                if (_animator.GetInteger("state") == 1 || _animator.GetInteger("state") == 0)
-                {
-                    if (transform.position.x >= _playerReference.transform.position.x)
-                        _animator.SetInteger("state", 1);
-                    else
-                        _animator.SetInteger("state", 0);
-                }
+        if (this.HP > 0)
+        {
+            Vector3 moveDirNormalized = -((_playerReference.transform.position - transform.position).normalized);
+            transform.position += moveDirNormalized * _seleniteWalkerSO.MovSpeed * Time.deltaTime;
+        }
+        else
+        {
+            transform.position += new Vector3(0, 0, 0);
+        }
+    }
 
-                transform.position += new Vector3(0, 0, 0);
-                break;
-            case DistancesFromPlayer.ApproachDistance:
-                if (_animator.GetInteger("state") == 1 || _animator.GetInteger("state") == 0)
-                {
-                    if (transform.position.x >= _playerReference.transform.position.x)
-                        _animator.SetInteger("state", 1);
-                    else
-                        _animator.SetInteger("state", 0);
-                }
+    void OnApproach()
+    {
+        if (transform.position.x >= _playerReference.transform.position.x)
+        {
+            _animator.SetInteger("state", 1);
+        }
+        else
+        {
+            _animator.SetInteger("state", 0);
+        }
 
-                if (this.HP > 0)
-                {
-                    Vector3 moveDirNormalized = (_playerReference.transform.position - transform.position).normalized;
-                    transform.position += moveDirNormalized * _seleniteWalkerSO.MovSpeed * Time.deltaTime;
-                }
-                else
-                {
-                    transform.position += new Vector3(0, 0, 0);
-                }
-                break;
+        if (this.HP > 0)
+        {
+            Vector3 moveDirNormalized = (_playerReference.transform.position - transform.position).normalized;
+            transform.position += moveDirNormalized * _seleniteWalkerSO.MovSpeed * Time.deltaTime;
+        }
+        else
+        {
+            transform.position += new Vector3(0, 0, 0);
         }
     }
 

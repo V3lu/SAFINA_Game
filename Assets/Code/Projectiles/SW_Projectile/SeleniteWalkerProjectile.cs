@@ -1,4 +1,5 @@
 using Assets.Code.Interfaces;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SeleniteWalkerProjectile : MonoBehaviour, IProjectile
