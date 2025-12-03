@@ -6,7 +6,7 @@ public class VoidBoltBaseSO : ScriptableObject
     [SerializeField] GameObject _voidBoltExplosionPrefab;
     [SerializeField] float _range = 8f;
     [SerializeField] float _initialSpeed = 10f;
-    [SerializeField] float _loweredSpeed = 6f;
+    [SerializeField] float _loweredSpeed = 14f;
     [SerializeField] float _baseDamageLowest = 4;
     [SerializeField] float _baseDamageHighest = 8;
 

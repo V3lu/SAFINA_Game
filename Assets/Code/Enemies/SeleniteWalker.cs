@@ -150,6 +150,7 @@ public class SeleniteGeode : MonoBehaviour, IMob
     
     void OnEscape()
     {
+        print("escape");
         if (transform.position.x >= _playerReference.transform.position.x)
         {
             _animator.SetInteger("state", 4);

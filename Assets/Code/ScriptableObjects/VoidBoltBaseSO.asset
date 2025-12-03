@@ -15,6 +15,6 @@ MonoBehaviour:
   _voidBoltExplosionPrefab: {fileID: 6661894360443243992, guid: 8ac284c3b5790894299830869d93a8dc, type: 3}
   _range: 8
   _initialSpeed: 10
-  _loweredSpeed: 6
+  _loweredSpeed: 14
   _baseDamageLowest: 4
   _baseDamageHighest: 8
