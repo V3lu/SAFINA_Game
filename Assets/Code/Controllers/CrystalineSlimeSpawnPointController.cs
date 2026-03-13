@@ -4,7 +4,6 @@ public class CrystalineSlimeSpawnPointController : MonoBehaviour
 {
     [SerializeField] GameObject _crystalineSlimePrefab;
     [SerializeField] float _spawnRate;
-    [SerializeField] CrystalinePathSO _crystalinePathSO;
 
     float _spawnTimer;
 

@@ -36,8 +36,8 @@ public class SeleniteWalkerProjectile : MonoBehaviour, IProjectile
         UpdateProjectilePosition();
         if (Vector3.Distance(transform.position, _targetVec3) < _distanceToTargetToDestroyProjectile)
         {
-            ObjectPoolManager.ReturnObjectToPool(this.gameObject, ObjectPoolManager.PoolType.Projectiles);
             this.GetComponentInChildren<TrailRenderer>().enabled = false;
+            ObjectPoolManager.ReturnObjectToPool(this.gameObject, ObjectPoolManager.PoolType.Projectiles);
             ResetAfterPoolReturn();
             ObjectPoolManager.SpawnObject(_seleniteWalkerAoE, this.gameObject.transform.position, Quaternion.identity, ObjectPoolManager.PoolType.VFXs);
         }

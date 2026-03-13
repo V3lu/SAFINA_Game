@@ -57,7 +57,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     public void LooseHP(float hp)
     {
         this.HP -= hp;
-        Debug.Log($"{this.HP} + HP remaining");
+        Debug.Log($"{this.HP} HP remaining");
     }
 
     public void RestoreHP(float hp)
@@ -222,5 +222,10 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     public int GetCurrentLvl()
     {
         return _playerLvl;
+    }
+
+    public float GetCurrentHP()
+    {
+        return this.HP;
     }
 }
