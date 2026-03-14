@@ -5,38 +5,39 @@ using static PlayerCtrl;
 
 public class SeleniteGeode : MonoBehaviour, IMob
 {
-    [SerializeField] GameObject _hitPrefab;
-    [SerializeField] EnemyHealthbarController _enemyHealthbarController;
-    [SerializeField] SeleniteWalkerSO _seleniteWalkerSO;
-    [SerializeField] CrystalinePathSO _crystalinePathSO;
-    [SerializeField] VialaTiny _vialaOrb;
-    [SerializeField] SeleniteWalkerProjectile _projectile;
-    [SerializeField] float _projectileMaxMoveSpeed;
-    [SerializeField] float _projectileMaxHeight;
-    [SerializeField] AnimationCurve _trajectoryAnimationCurve;
-    [SerializeField] AnimationCurve _axisCorrectionAnimationCurve;
-    [SerializeField] AnimationCurve __projectileSpeedAnimationCurve;
+    [SerializeField] private GameObject _hitPrefab;
+    [SerializeField] private EnemyHealthbarController _enemyHealthbarController;
+    [SerializeField] private SeleniteWalkerSO _seleniteWalkerSO;
+    [SerializeField] private CrystalinePathSO _crystalinePathSO;
+    [SerializeField] private VialaTiny _vialaOrb;
+    [SerializeField] private SeleniteWalkerProjectile _projectile;
+    [SerializeField] private float _projectileMaxMoveSpeed;
+    [SerializeField] private float _projectileMaxHeight;
+    [SerializeField] private AnimationCurve _trajectoryAnimationCurve;
+    [SerializeField] private AnimationCurve _axisCorrectionAnimationCurve;
+    [SerializeField] private AnimationCurve __projectileSpeedAnimationCurve;
 
-    GameObject _playerReference;
-    Animator _animator;
-    SpriteRenderer spriteRenderer;
-    float _attackProjectileSpawnTimer;
+    private GameObject _playerReference;
+    private Animator _animator;
+    private SpriteRenderer spriteRenderer;
+    private float _attackProjectileSpawnTimer;
 
-    enum Actions
+    private enum Actions
     {
         Attack,
         Escape,
         Approach
     }
-    enum DistancesFromPlayer
+
+    private enum DistancesFromPlayer
     {
         AttackDistance,
         EscapeDistance,
         ApproachDistance
     }
 
-    Actions _currentAction;
-    DistancesFromPlayer _distanceFromPlayer;
+    private Actions _currentAction;
+    private DistancesFromPlayer _distanceFromPlayer;
 
 
     public Transform Transform { get { return gameObject.transform; } }
@@ -58,13 +59,13 @@ public class SeleniteGeode : MonoBehaviour, IMob
         
     }
 
-    void OnEnable()
+    private void OnEnable()
     {
         this.HP = MaxHP;
         _enemyHealthbarController.Sethealth(HP, MaxHP);
     }
 
-    void Start()
+    private void Start()
     {
         this.HP = _seleniteWalkerSO.HP;
         this.MaxHP = _seleniteWalkerSO.HP;
@@ -74,7 +75,7 @@ public class SeleniteGeode : MonoBehaviour, IMob
         this.spriteRenderer = this.GetComponent<SpriteRenderer>();
     }
 
-    void Update()
+    private void Update()
     {
         if (this.HP > 0)
         {
@@ -113,7 +114,7 @@ public class SeleniteGeode : MonoBehaviour, IMob
         ObjectPoolManager.SpawnObject(_hitPrefab, gameObject.transform.position, Quaternion.identity, ObjectPoolManager.PoolType.VFXs);
     }
 
-    void OnDeath()
+    private void OnDeath()
     {
         switch (_currentAction)
         {
@@ -130,7 +131,7 @@ public class SeleniteGeode : MonoBehaviour, IMob
 
     }
 
-    void OnAttack()
+    private void OnAttack()
     {
         _attackProjectileSpawnTimer -= Time.deltaTime;
         
@@ -147,7 +148,7 @@ public class SeleniteGeode : MonoBehaviour, IMob
         
     }
     
-    void OnEscape()
+    private void OnEscape()
     {
         _animator.SetInteger("state", 2);
         if (transform.position.x >= _playerReference.transform.position.x)
@@ -170,7 +171,7 @@ public class SeleniteGeode : MonoBehaviour, IMob
         }
     }
 
-    void OnApproach()
+    private void OnApproach()
     {
         _animator.SetInteger("state", 0);
         if (transform.position.x >= _playerReference.transform.position.x)
@@ -193,23 +194,26 @@ public class SeleniteGeode : MonoBehaviour, IMob
         }
     }
 
-    void DetermineDistanceAndAction()
+    private void DetermineDistanceAndAction()
     {
         float magnitude = (_playerReference.transform.position - transform.position).magnitude;
         if(magnitude < _seleniteWalkerSO.MinDistToPlayer)
         {
             _currentAction = Actions.Escape;
             _distanceFromPlayer = DistancesFromPlayer.EscapeDistance;
+            _animator.SetInteger("state", 2);
         }
         else if(magnitude > _seleniteWalkerSO.MinDistToPlayer && magnitude < _seleniteWalkerSO.MaxDistToPlayer)
         {
             _currentAction = Actions.Attack;
             _distanceFromPlayer = DistancesFromPlayer.AttackDistance;
+            _animator.SetInteger("state", 1);
         }
         else
         {
             _currentAction = Actions.Approach;
             _distanceFromPlayer = DistancesFromPlayer.ApproachDistance;
+            _animator.SetInteger("state", 0);
         }
 
     }

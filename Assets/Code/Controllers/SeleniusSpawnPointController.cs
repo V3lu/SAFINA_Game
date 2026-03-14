@@ -19,7 +19,7 @@ public class SeleniusSpawnPointController : MonoBehaviour
     {
         _spawnTimer -= Time.deltaTime;
 
-        if (_spawnTimer <= 0 && !_exists)
+        if (_spawnTimer <= 0 && !_exists && GameManager.Player.GetCurrentLvl() > 2)
         {
             _spawnTimer = _spawnRate;
             ObjectPoolManager.SpawnObject(_seleniusGameObject, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Mobs);
