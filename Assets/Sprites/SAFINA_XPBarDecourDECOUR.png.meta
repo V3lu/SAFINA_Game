@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SAFINA_XPBarDecourDECOUR_0: 4027831315917450921
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

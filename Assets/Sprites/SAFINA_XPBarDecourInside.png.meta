@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SAFINA_XPBarDecourInside_0: -2458264601166686352
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

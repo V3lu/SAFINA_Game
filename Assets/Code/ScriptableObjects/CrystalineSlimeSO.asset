@@ -15,4 +15,4 @@ MonoBehaviour:
   _name: Crystaline Slime
   _description: TODO Description
   _movSpeed: 2
-  _hp: 50
+  _hp: 20
