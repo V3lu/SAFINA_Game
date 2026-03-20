@@ -80601,6 +80601,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1615232252043971719, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360872314497071879, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360872314497071879, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360872314497071879, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 2895619710178685949, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
       propertyPath: m_Name
       value: SAFINA
@@ -80643,6 +80659,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5115387024473296594, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5115387024473296594, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7558086193190564200, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
