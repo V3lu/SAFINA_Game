@@ -63,4 +63,24 @@ public class Fireball : MonoBehaviour, IProjectile
             }
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject != null)
+        {
+            if (collision.collider.TryGetComponent<IMob>(out var mob))
+            {
+                mob.LooseHP(Random.Range(_fireballBaseSO.BaseDamageLowest, _fireballBaseSO.BaseDamageHighest));
+                GameObject explosionPrefab = _fireballBaseSO.FireballExplosionPrefab;
+                ObjectPoolManager.SpawnObject(explosionPrefab, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.VFXs);
+                _temporaryCollisionSolution = true;
+            }
+            else if (!collision.collider.TryGetComponent<PlayerCtrl>(out var tile))
+            {
+                GameObject explosionPrefab = _fireballBaseSO.FireballExplosionPrefab;
+                ObjectPoolManager.SpawnObject(explosionPrefab, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.VFXs);
+                _temporaryCollisionSolution = true;
+            }
+        }
+    }
 }
