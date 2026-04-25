@@ -216,6 +216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Selenius
   _hitPrefab: {fileID: 5784736543062994673, guid: e639b17eb94665241a02d6081d57dee3, type: 3}
   _vialaOrb: {fileID: 5034827216173169069, guid: 157417b17b9c75f498057bf2bbceaac2, type: 3}
+  _loadingManagerGO: {fileID: 0}
 --- !u!50 &819115985798104876
 Rigidbody2D:
   serializedVersion: 5

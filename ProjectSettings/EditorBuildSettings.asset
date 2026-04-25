@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/CrystalinePath.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/LoadingScreenBetweenLevels.unity
+    guid: d1dd148126c30314889020fe08771f54
+  - enabled: 1
+    path: Assets/Scenes/LeboliaMorass.unity
+    guid: 71d55ccf6a384c74fa16650e9089e17d
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 08bb9612b9a9b0f488278c4a4df75b9a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
