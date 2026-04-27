@@ -81,6 +81,10 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
         _speedY = Input.GetAxisRaw("Vertical") * _movSpeed;
         _rb.linearVelocity = new Vector2(_speedX, _speedY);
 
+        // Animation of walking depends on velocity
+        float targetAnimSpeed = (_speedX == 0 && _speedY == 0) ? 0f : 1f;
+        _animator.speed = Mathf.Lerp(_animator.speed, targetAnimSpeed, Time.deltaTime * 10f);
+
         Dictionary<GameObject, GameObject> closestEnemyPlusOriginalPrefab = GetClosestEnemy();
         Directions directionToLookAt = Directions.Right;
         if (closestEnemyPlusOriginalPrefab != null)
