@@ -25,6 +25,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     static long _playerXPCurrent = 0;
     static int _playerLvl = 0;
     static XPBarController _xpBarController;
+    static HPBarController _hpBarController;
 
     public static ChosenBasicAttact AttackType = ChosenBasicAttact.NotChosen;
 
@@ -58,6 +59,10 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     {
         this.HP -= hp;
         Debug.Log($"{this.HP} HP remaining");
+        if (_hpBarController != null)
+        {
+            _hpBarController.DrainHearts(Mathf.RoundToInt(hp));
+        }
     }
 
     public void RestoreHP(float hp)
@@ -71,6 +76,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
         _rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
         _xpBarController = GameObject.FindGameObjectWithTag("XPBar").GetComponent<XPBarController>();
+        _hpBarController = GameObject.FindGameObjectWithTag("HPBar").GetComponent<HPBarController>();
         this.HP = 50;
     }
 
