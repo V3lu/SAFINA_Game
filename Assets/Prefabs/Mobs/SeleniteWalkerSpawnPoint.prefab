@@ -45,5 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SeleniteGeodeSpawnPointController
   _seleniteGeodePrefab: {fileID: 4282155420644803861, guid: 53e2c6aca3f97ed48835cce075c6eebc, type: 3}
-  _spawnRate: 4
+  _spawnRate: 8
   _crystalinePathSO: {fileID: 11400000, guid: fe1484c2745ca0b4d8efebe545a0c9c4, type: 2}

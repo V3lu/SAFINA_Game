@@ -20,7 +20,7 @@ public class SeleniteWalkerAoE : MonoBehaviour, IVFX
         if(collision.gameObject.TryGetComponent<PlayerCtrl>(out var player))
         {
             var playerCtrl = player as PlayerCtrl;
-            playerCtrl.LooseHP(20);
+            playerCtrl.LooseHP(1);
         }
     }
 }

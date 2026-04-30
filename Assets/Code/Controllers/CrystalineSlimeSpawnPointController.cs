@@ -10,7 +10,8 @@ public class CrystalineSlimeSpawnPointController : MonoBehaviour
     
     void Start()
     {
-
+        // Start the timer at the spawn rate + 1 second so they don't spawn instantly
+        _spawnTimer = _spawnRate + 1f;
     }
 
     // Update is called once per frame

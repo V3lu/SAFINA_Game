@@ -45,5 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _crystalineSlimePrefab: {fileID: 4165814963773616511, guid: 62375a1fc59940b48b926056044167a5, type: 3}
-  _spawnRate: 2
-  _crystalinePathSO: {fileID: 11400000, guid: fe1484c2745ca0b4d8efebe545a0c9c4, type: 2}
+  _spawnRate: 4
