@@ -10,7 +10,8 @@ public class SeleniteGeodeSpawnPointController : MonoBehaviour
 
     void Start()
     {
-        
+        // Space out the first wave
+        _spawnTimer = _spawnRate + 5f;
     }
 
     // Update is called once per frame

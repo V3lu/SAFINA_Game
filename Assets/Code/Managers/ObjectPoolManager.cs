@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Unity.Burst;
 using UnityEngine;
 using UnityEngine.Pool;
-using static Unity.VisualScripting.Metadata;
 
 public class ObjectPoolManager : MonoBehaviour
 {

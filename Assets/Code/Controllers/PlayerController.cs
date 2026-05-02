@@ -2,9 +2,11 @@ using Assets.Code.Interfaces;
 using Assets.Scripts;
 using NUnit.Framework;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Assets.Code.Interfaces;
 
 public class PlayerCtrl : MonoBehaviour, IDamagable
 {
@@ -16,6 +18,11 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     [SerializeField] float _attackSpeed;
     [SerializeField] float _movSpeed;
 
+    [Header("Damage Settings")]
+    [SerializeField] float _invincibilityDuration = 1.0f;
+    private float _invincibilityTimer = 0f;
+    private SpriteRenderer _spriteRenderer;
+
 
     static float _attackProjectileSpawnTimer;
     static float _speedX, _speedY;
@@ -25,6 +32,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     static long _playerXPCurrent = 0;
     static int _playerLvl = 0;
     static XPBarController _xpBarController;
+    static HPBarController _hpBarController;
 
     public static ChosenBasicAttact AttackType = ChosenBasicAttact.NotChosen;
 
@@ -58,6 +66,35 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     {
         this.HP -= hp;
         Debug.Log($"{this.HP} HP remaining");
+        if (_hpBarController != null)
+        {
+            _hpBarController.DrainHearts(Mathf.RoundToInt(hp));
+        }
+
+        if (this.gameObject.activeInHierarchy)
+        {
+            StartCoroutine(FlashRedOnDamage());
+            StartCoroutine(HitStop(0.08f)); // Creates a massive tactile impact!
+        }
+    }
+
+    private IEnumerator FlashRedOnDamage()
+    {
+        if (_spriteRenderer != null)
+        {
+            _spriteRenderer.color = Color.red;
+            yield return new WaitForSeconds(0.15f);
+            _spriteRenderer.color = Color.white;
+        }
+    }
+
+    private IEnumerator HitStop(float duration)
+    {
+        // "Hit Stop" is a classic 2D indie technique. Freezing the game for a split second gives massive weight to taking damage.
+        float originalTimeScale = Time.timeScale;
+        Time.timeScale = 0.05f; 
+        yield return new WaitForSecondsRealtime(duration);
+        Time.timeScale = originalTimeScale;
     }
 
     public void RestoreHP(float hp)
@@ -70,16 +107,27 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     {
         _rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
         _xpBarController = GameObject.FindGameObjectWithTag("XPBar").GetComponent<XPBarController>();
+        _hpBarController = GameObject.FindGameObjectWithTag("HPBar").GetComponent<HPBarController>();
         this.HP = 50;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (_invincibilityTimer > 0)
+        {
+            _invincibilityTimer -= Time.deltaTime;
+        }
+
         _speedX = Input.GetAxisRaw("Horizontal") * _movSpeed;
         _speedY = Input.GetAxisRaw("Vertical") * _movSpeed;
         _rb.linearVelocity = new Vector2(_speedX, _speedY);
+
+        // Animation of walking depends on velocity
+        float targetAnimSpeed = (_speedX == 0 && _speedY == 0) ? 0f : 1f;
+        _animator.speed = Mathf.Lerp(_animator.speed, targetAnimSpeed, Time.deltaTime * 10f);
 
         Dictionary<GameObject, GameObject> closestEnemyPlusOriginalPrefab = GetClosestEnemy();
         Directions directionToLookAt = Directions.Right;
@@ -89,39 +137,43 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
         }
 
         _attackProjectileSpawnTimer -= Time.deltaTime;
-        if (AttackType == ChosenBasicAttact.Fire)
+
+        if (closestEnemyPlusOriginalPrefab != null)
         {
-            if (_attackProjectileSpawnTimer <= 0)
+            if (AttackType == ChosenBasicAttact.Fire)
             {
-                _attackProjectileSpawnTimer = _attackSpeed;
-                GameObject fireball = ObjectPoolManager.SpawnObject(_fireballPrefab, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Projectiles);
-                if (fireball.TryGetComponent<IProjectile>(out var projectile))
+                if (_attackProjectileSpawnTimer <= 0)
                 {
-                    projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position);
+                    _attackProjectileSpawnTimer = _attackSpeed;
+                    GameObject fireball = ObjectPoolManager.SpawnObject(_fireballPrefab, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Projectiles);
+                    if (fireball.TryGetComponent<IProjectile>(out var projectile))
+                    {
+                        projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position);
+                    }
                 }
             }
-        }
-        else if (AttackType == ChosenBasicAttact.Void)
-        {
-            if (_attackProjectileSpawnTimer <= 0)
+            else if (AttackType == ChosenBasicAttact.Void)
             {
-                _attackProjectileSpawnTimer = _attackSpeed;
-                GameObject voidBolt = ObjectPoolManager.SpawnObject(_voidBoltPrefab, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Projectiles);
-                if (voidBolt.TryGetComponent<IProjectile>(out var projectile))
+                if (_attackProjectileSpawnTimer <= 0)
                 {
-                    projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position);
+                    _attackProjectileSpawnTimer = _attackSpeed;
+                    GameObject voidBolt = ObjectPoolManager.SpawnObject(_voidBoltPrefab, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Projectiles);
+                    if (voidBolt.TryGetComponent<IProjectile>(out var projectile))
+                    {
+                        projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position);
+                    }
                 }
             }
-        }
-        else if (AttackType == ChosenBasicAttact.Energy)
-        {
-            if (_attackProjectileSpawnTimer <= 0)
+            else if (AttackType == ChosenBasicAttact.Energy)
             {
-                _attackProjectileSpawnTimer = _attackSpeed;
-                GameObject energyBlast = ObjectPoolManager.SpawnObject(_energyBlastPrefab, closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Projectiles);
-                if (energyBlast.TryGetComponent<IProjectile>(out var projectile))
+                if (_attackProjectileSpawnTimer <= 0)
                 {
-                    projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position);
+                    _attackProjectileSpawnTimer = _attackSpeed;
+                    GameObject energyBlast = ObjectPoolManager.SpawnObject(_energyBlastPrefab, closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Projectiles);
+                    if (energyBlast.TryGetComponent<IProjectile>(out var projectile))
+                    {
+                        projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position);
+                    }
                 }
             }
         }
@@ -227,5 +279,30 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     public float GetCurrentHP()
     {
         return this.HP;
+    }
+
+    private void TakeContactDamage(float damage)
+    {
+        if (_invincibilityTimer <= 0)
+        {
+            LooseHP(damage);
+            _invincibilityTimer = _invincibilityDuration;
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.GetComponent<IMob>() != null)
+        {
+            TakeContactDamage(1f); // Take 1 damage per hit (adjust as needed)
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collider)
+    {
+        if (collider.gameObject.CompareTag("EnemyProjectile") || collider.gameObject.CompareTag("Enemy") || collider.gameObject.GetComponent<IMob>() != null)
+        {
+            TakeContactDamage(1f); // Take 1 damage per hit (adjust as needed)
+        }
     }
 }
