@@ -59,6 +59,9 @@ TextureImporter:
   - first:
       213: 5210661878541096713
     second: SAFINA_LeboliaMorassDecour_18
+  - first:
+      213: -610473601001749491
+    second: SAFINA_LeboliaMorassDecour_19
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,7 +108,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -157,12 +160,12 @@ TextureImporter:
       name: SAFINA_LeboliaMorassDecour_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
+        x: 7
+        y: 0
+        width: 40
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -179,12 +182,12 @@ TextureImporter:
       name: SAFINA_LeboliaMorassDecour_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
+        x: 49
+        y: 0
+        width: 40
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -201,12 +204,12 @@ TextureImporter:
       name: SAFINA_LeboliaMorassDecour_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
+        x: 92
+        y: 0
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -223,12 +226,12 @@ TextureImporter:
       name: SAFINA_LeboliaMorassDecour_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
+        x: 127
+        y: 0
+        width: 34
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -245,12 +248,12 @@ TextureImporter:
       name: SAFINA_LeboliaMorassDecour_4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 16
-        width: 16
-        height: 16
+        x: 159
+        y: 18
+        width: 17
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -267,12 +270,12 @@ TextureImporter:
       name: SAFINA_LeboliaMorassDecour_5
       rect:
         serializedVersion: 2
-        x: 80
-        y: 16
-        width: 16
-        height: 16
+        x: 176
+        y: 18
+        width: 17
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -289,12 +292,12 @@ TextureImporter:
       name: SAFINA_LeboliaMorassDecour_6
       rect:
         serializedVersion: 2
-        x: 96
-        y: 16
-        width: 16
-        height: 16
+        x: 194
+        y: 23
+        width: 11
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -311,12 +314,12 @@ TextureImporter:
       name: SAFINA_LeboliaMorassDecour_7
       rect:
         serializedVersion: 2
-        x: 112
-        y: 16
-        width: 16
-        height: 16
+        x: 200
+        y: 17
+        width: 6
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -333,12 +336,12 @@ TextureImporter:
       name: SAFINA_LeboliaMorassDecour_8
       rect:
         serializedVersion: 2
-        x: 128
-        y: 16
-        width: 16
-        height: 16
+        x: 210
+        y: 17
+        width: 6
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -355,12 +358,12 @@ TextureImporter:
       name: SAFINA_LeboliaMorassDecour_9
       rect:
         serializedVersion: 2
-        x: 144
-        y: 16
-        width: 16
-        height: 16
+        x: 211
+        y: 23
+        width: 11
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -377,12 +380,12 @@ TextureImporter:
       name: SAFINA_LeboliaMorassDecour_10
       rect:
         serializedVersion: 2
-        x: 160
-        y: 16
-        width: 16
-        height: 16
+        x: 225
+        y: 18
+        width: 15
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -399,12 +402,12 @@ TextureImporter:
       name: SAFINA_LeboliaMorassDecour_11
       rect:
         serializedVersion: 2
-        x: 176
-        y: 16
-        width: 16
-        height: 16
+        x: 241
+        y: 17
+        width: 15
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -421,12 +424,12 @@ TextureImporter:
       name: SAFINA_LeboliaMorassDecour_12
       rect:
         serializedVersion: 2
-        x: 192
-        y: 16
-        width: 16
+        x: 163
+        y: 0
+        width: 11
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -443,12 +446,12 @@ TextureImporter:
       name: SAFINA_LeboliaMorassDecour_13
       rect:
         serializedVersion: 2
-        x: 208
-        y: 16
-        width: 16
+        x: 178
+        y: 0
+        width: 11
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -465,12 +468,12 @@ TextureImporter:
       name: SAFINA_LeboliaMorassDecour_14
       rect:
         serializedVersion: 2
-        x: 224
-        y: 16
-        width: 16
-        height: 16
+        x: 194
+        y: 1
+        width: 11
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -487,12 +490,12 @@ TextureImporter:
       name: SAFINA_LeboliaMorassDecour_15
       rect:
         serializedVersion: 2
-        x: 240
-        y: 16
-        width: 16
-        height: 16
+        x: 200
+        y: 8
+        width: 6
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -509,12 +512,12 @@ TextureImporter:
       name: SAFINA_LeboliaMorassDecour_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
+        x: 210
+        y: 8
+        width: 6
+        height: 7
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -531,12 +534,12 @@ TextureImporter:
       name: SAFINA_LeboliaMorassDecour_17
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
+        x: 211
+        y: 1
+        width: 11
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -553,12 +556,12 @@ TextureImporter:
       name: SAFINA_LeboliaMorassDecour_18
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
+        x: 226
+        y: 1
+        width: 12
+        height: 15
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -575,284 +578,20 @@ TextureImporter:
       name: SAFINA_LeboliaMorassDecour_19
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
+        x: 243
+        y: 1
+        width: 12
+        height: 15
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8f33d8f6ecb119a4493c23dcd4bb0669
-      internalID: -1469020145
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SAFINA_LeboliaMorassDecour_20
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5fdc6710023e28b44838f200c126da06
-      internalID: 1961048921
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SAFINA_LeboliaMorassDecour_21
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f2f0fd89ea1a3049a3c2f04cb613c72
-      internalID: -2053238340
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SAFINA_LeboliaMorassDecour_22
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c57b8d7ad519b24ca0ba10e435ba33e
-      internalID: 709411183
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SAFINA_LeboliaMorassDecour_23
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5fb5fc10e063d4241a972024c616c646
-      internalID: -1371600186
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SAFINA_LeboliaMorassDecour_24
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26cc20c6f172ad04d93069c624d40cd4
-      internalID: -1079461170
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SAFINA_LeboliaMorassDecour_25
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c36a321f8737ddd4dbe8b941b9917cec
-      internalID: 1379259038
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SAFINA_LeboliaMorassDecour_26
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 23c676380895d0c48812aaa8899a9b9f
-      internalID: -1158489062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SAFINA_LeboliaMorassDecour_27
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d095bb3bd7c5e04aaf37093cf1cab33
-      internalID: -1674699102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SAFINA_LeboliaMorassDecour_28
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a07bd379072fea4aa7bf26e56e96256
-      internalID: 278033298
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SAFINA_LeboliaMorassDecour_29
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e816757ac3c6d14384f7f72a5dc6d4f
-      internalID: -79593078
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SAFINA_LeboliaMorassDecour_30
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a45fe756a1d6e444c9e58778c519c2a9
-      internalID: 1670888520
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SAFINA_LeboliaMorassDecour_31
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c41cf3a89eca6bd4bbad493c56082f36
-      internalID: -326180761
+      spriteID: d04898b8e792787f0800000000000000
+      internalID: -610473601001749491
       vertices: []
       indices: 
       edges: []
@@ -861,7 +600,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f131d383bc9ed5a4a9f46393b3774be4
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -869,9 +608,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":2.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
       SAFINA_LeboliaMorassDecour_0: -198346092985590735
       SAFINA_LeboliaMorassDecour_1: 6206708041069062759
@@ -884,21 +621,9 @@ TextureImporter:
       SAFINA_LeboliaMorassDecour_16: 2647507726735178763
       SAFINA_LeboliaMorassDecour_17: -7202789011443010493
       SAFINA_LeboliaMorassDecour_18: 5210661878541096713
-      SAFINA_LeboliaMorassDecour_19: -1469020145
+      SAFINA_LeboliaMorassDecour_19: -610473601001749491
       SAFINA_LeboliaMorassDecour_2: 5374582714940629494
-      SAFINA_LeboliaMorassDecour_20: 1961048921
-      SAFINA_LeboliaMorassDecour_21: -2053238340
-      SAFINA_LeboliaMorassDecour_22: 709411183
-      SAFINA_LeboliaMorassDecour_23: -1371600186
-      SAFINA_LeboliaMorassDecour_24: -1079461170
-      SAFINA_LeboliaMorassDecour_25: 1379259038
-      SAFINA_LeboliaMorassDecour_26: -1158489062
-      SAFINA_LeboliaMorassDecour_27: -1674699102
-      SAFINA_LeboliaMorassDecour_28: 278033298
-      SAFINA_LeboliaMorassDecour_29: -79593078
       SAFINA_LeboliaMorassDecour_3: 8617780350080685251
-      SAFINA_LeboliaMorassDecour_30: 1670888520
-      SAFINA_LeboliaMorassDecour_31: -326180761
       SAFINA_LeboliaMorassDecour_4: 2054370407392504419
       SAFINA_LeboliaMorassDecour_5: -2925405618761772774
       SAFINA_LeboliaMorassDecour_6: -4037043726978708663

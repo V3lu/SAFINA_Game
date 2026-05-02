@@ -1,5 +1,6 @@
 using Assets.Code.Interfaces;
 using System;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Selenius : MonoBehaviour, IMob
@@ -74,7 +75,7 @@ public class Selenius : MonoBehaviour, IMob
 
     private void OnDeath()
     {
-        
+        SceneManager.LoadScene("LoadingScreenBetweenLevels");
     }
 
     private void Movement()

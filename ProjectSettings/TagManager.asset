@@ -15,6 +15,7 @@ TagManager:
   - XPBar
   - EnemyHealthBar
   - HPBar
+  - LoadingManager
   layers:
   - Default
   - TransparentFX
