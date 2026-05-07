@@ -292,7 +292,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.GetComponent<IMob>() != null)
+        if (collision.gameObject.GetComponent<IMob>() != null)
         {
             TakeContactDamage(1f); // Take 1 damage per hit (adjust as needed)
         }
@@ -300,7 +300,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
 
     private void OnTriggerStay2D(Collider2D collider)
     {
-        if (collider.gameObject.CompareTag("EnemyProjectile") || collider.gameObject.CompareTag("Enemy") || collider.gameObject.GetComponent<IMob>() != null)
+        if (collider.gameObject.CompareTag("EnemyProjectile") || collider.gameObject.GetComponent<IMob>() != null)
         {
             TakeContactDamage(1f); // Take 1 damage per hit (adjust as needed)
         }
