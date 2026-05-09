@@ -110,7 +110,7 @@ public class CrystalineSlime : MonoBehaviour, IMob
         this.HP += hp;
     }
 
-    public void resetState()
+    public void ResetState()
     {
         _animator.SetInteger("state", 2);
     }
