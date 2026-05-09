@@ -70,6 +70,17 @@ public class OnAnimationFinishReturnToPool : StateMachineBehaviour
                     ObjectPoolManager.SpawnObject(_vialaOrb, mob.Transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Collectables);
                 }
             }
+
+            if (mob is Mehren mehren)
+            {
+                mehren.ResetState();
+                Random rand = new Random();
+                int chance = rand.Next(11);
+                if (chance < 6)
+                {
+                    ObjectPoolManager.SpawnObject(_vialaOrb, mob.Transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Collectables);
+                }
+            }
         }
     }
 
