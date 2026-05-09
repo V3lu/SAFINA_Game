@@ -1,0 +1,891 @@
+fileFormatVersion: 2
+guid: 21e5004d254893940a509a706a4686a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2858253381389407457
+    second: SAFINA_Mehren_0
+  - first:
+      213: 8744439793112245067
+    second: SAFINA_Mehren_1
+  - first:
+      213: -5046523546204971528
+    second: SAFINA_Mehren_2
+  - first:
+      213: -7176151646860906543
+    second: SAFINA_Mehren_3
+  - first:
+      213: -2633128058615324623
+    second: SAFINA_Mehren_4
+  - first:
+      213: 8083905620070056057
+    second: SAFINA_Mehren_5
+  - first:
+      213: -3527444141392782367
+    second: SAFINA_Mehren_6
+  - first:
+      213: -315460962547305715
+    second: SAFINA_Mehren_7
+  - first:
+      213: 7848863939879958186
+    second: SAFINA_Mehren_8
+  - first:
+      213: 4486769918175760047
+    second: SAFINA_Mehren_9
+  - first:
+      213: 3466523930799087498
+    second: SAFINA_Mehren_10
+  - first:
+      213: 5071590625027663388
+    second: SAFINA_Mehren_11
+  - first:
+      213: 8570226853595246833
+    second: SAFINA_Mehren_12
+  - first:
+      213: 1248819025254370805
+    second: SAFINA_Mehren_13
+  - first:
+      213: 4930312313428732312
+    second: SAFINA_Mehren_14
+  - first:
+      213: 8479963867631211058
+    second: SAFINA_Mehren_15
+  - first:
+      213: 9194961225962141028
+    second: SAFINA_Mehren_16
+  - first:
+      213: 3773155983836275373
+    second: SAFINA_Mehren_17
+  - first:
+      213: 2325886607259175650
+    second: SAFINA_Mehren_18
+  - first:
+      213: 6946694968862236495
+    second: SAFINA_Mehren_19
+  - first:
+      213: -5272800235991121484
+    second: SAFINA_Mehren_20
+  - first:
+      213: -1378588963842722082
+    second: SAFINA_Mehren_21
+  - first:
+      213: -494914713031179093
+    second: SAFINA_Mehren_22
+  - first:
+      213: -4077791067606502110
+    second: SAFINA_Mehren_23
+  - first:
+      213: 6768744405916034356
+    second: SAFINA_Mehren_24
+  - first:
+      213: -4685840502447004718
+    second: SAFINA_Mehren_25
+  - first:
+      213: 5138931422386652974
+    second: SAFINA_Mehren_26
+  - first:
+      213: 3318363532939853269
+    second: SAFINA_Mehren_27
+  - first:
+      213: 4898127250204047211
+    second: SAFINA_Mehren_28
+  - first:
+      213: -4960508732948778309
+    second: SAFINA_Mehren_29
+  - first:
+      213: -6687590533607345762
+    second: SAFINA_Mehren_30
+  - first:
+      213: 9066918302630808559
+    second: SAFINA_Mehren_31
+  - first:
+      213: 7806432553471719482
+    second: SAFINA_Mehren_32
+  - first:
+      213: 1177936212197180741
+    second: SAFINA_Mehren_33
+  - first:
+      213: -8440131040989137691
+    second: SAFINA_Mehren_34
+  - first:
+      213: 4669082802261456664
+    second: SAFINA_Mehren_35
+  - first:
+      213: 45080165610870654
+    second: SAFINA_Mehren_36
+  - first:
+      213: 1205575316141274869
+    second: SAFINA_Mehren_37
+  - first:
+      213: 5216937414725544301
+    second: SAFINA_Mehren_38
+  - first:
+      213: 2486425216061004181
+    second: SAFINA_Mehren_39
+  - first:
+      213: 5935009878708624045
+    second: SAFINA_Mehren_40
+  - first:
+      213: -4092971677215991113
+    second: SAFINA_Mehren_41
+  - first:
+      213: -3951759919966672989
+    second: SAFINA_Mehren_42
+  - first:
+      213: -6556407888196529963
+    second: SAFINA_Mehren_43
+  - first:
+      213: -3713934108049343796
+    second: SAFINA_Mehren_44
+  - first:
+      213: -5068979337019827290
+    second: SAFINA_Mehren_45
+  - first:
+      213: 7915839948389139201
+    second: SAFINA_Mehren_46
+  - first:
+      213: -7999489293078393853
+    second: SAFINA_Mehren_47
+  - first:
+      213: -4963834877555915409
+    second: SAFINA_Mehren_48
+  - first:
+      213: -873485411061140557
+    second: SAFINA_Mehren_49
+  - first:
+      213: -2154067673328108946
+    second: SAFINA_Mehren_50
+  - first:
+      213: 3775349429714490298
+    second: SAFINA_Mehren_51
+  - first:
+      213: -6641545629232935398
+    second: SAFINA_Mehren_52
+  - first:
+      213: -6776448868010700153
+    second: SAFINA_Mehren_53
+  - first:
+      213: 1085649077295417304
+    second: SAFINA_Mehren_54
+  - first:
+      213: -2105615889764644276
+    second: SAFINA_Mehren_55
+  - first:
+      213: -8316365753321373591
+    second: SAFINA_Mehren_56
+  - first:
+      213: -2641543920702413341
+    second: SAFINA_Mehren_57
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SAFINA_Mehren_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e456c38e4e8aa720800000000000000
+      internalID: 2858253381389407457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43ee3c69ad7a5970800000000000000
+      internalID: 8744439793112245067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fddec5829527f9b0800000000000000
+      internalID: -5046523546204971528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df658a1910396c90800000000000000
+      internalID: -7176151646860906543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 130ae1a4bff357bd0800000000000000
+      internalID: -2633128058615324623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9704f02c45dcf2070800000000000000
+      internalID: 8083905620070056057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eb104b1e300c0fc0800000000000000
+      internalID: -3527444141392782367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d037dda0de14f9bf0800000000000000
+      internalID: -315460962547305715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa6fae21b24ccec60800000000000000
+      internalID: 7848863939879958186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae46c9f775344e30800000000000000
+      internalID: 4486769918175760047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8f9bac06219b1030800000000000000
+      internalID: 3466523930799087498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c16a9f29dc8e16640800000000000000
+      internalID: 5071590625027663388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0fe059aef8fe670800000000000000
+      internalID: 8570226853595246833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_13
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd49057942b45110800000000000000
+      internalID: 1248819025254370805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89967a95decfb6440800000000000000
+      internalID: 4930312313428732312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_15
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2325e467532eea570800000000000000
+      internalID: 8479963867631211058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 465b6fc94801b9f70800000000000000
+      internalID: 9194961225962141028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da263b25061fc5430800000000000000
+      internalID: 3773155983836275373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea8585db85374020800000000000000
+      internalID: 2325886607259175650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4fd60ed44e976060800000000000000
+      internalID: 6946694968862236495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b147223f1043d6b0800000000000000
+      internalID: -5272800235991121484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed671e634a44edce0800000000000000
+      internalID: -1378588963842722082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba489afc0b5b129f0800000000000000
+      internalID: -494914713031179093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 225bd0b01a6c867c0800000000000000
+      internalID: -4077791067606502110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435a902cc296fed50800000000000000
+      internalID: 6768744405916034356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_Mehren_25
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d32281c3ec88feb0800000000000000
+      internalID: -4685840502447004718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f6fd1257fbfdffc4f80e5f1be338f2a2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":4.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      SAFINA_Mehren_0: 2858253381389407457
+      SAFINA_Mehren_1: 8744439793112245067
+      SAFINA_Mehren_10: 3466523930799087498
+      SAFINA_Mehren_11: 5071590625027663388
+      SAFINA_Mehren_12: 8570226853595246833
+      SAFINA_Mehren_13: 1248819025254370805
+      SAFINA_Mehren_14: 4930312313428732312
+      SAFINA_Mehren_15: 8479963867631211058
+      SAFINA_Mehren_16: 9194961225962141028
+      SAFINA_Mehren_17: 3773155983836275373
+      SAFINA_Mehren_18: 2325886607259175650
+      SAFINA_Mehren_19: 6946694968862236495
+      SAFINA_Mehren_2: -5046523546204971528
+      SAFINA_Mehren_20: -5272800235991121484
+      SAFINA_Mehren_21: -1378588963842722082
+      SAFINA_Mehren_22: -494914713031179093
+      SAFINA_Mehren_23: -4077791067606502110
+      SAFINA_Mehren_24: 6768744405916034356
+      SAFINA_Mehren_25: -4685840502447004718
+      SAFINA_Mehren_3: -7176151646860906543
+      SAFINA_Mehren_4: -2633128058615324623
+      SAFINA_Mehren_5: 8083905620070056057
+      SAFINA_Mehren_6: -3527444141392782367
+      SAFINA_Mehren_7: -315460962547305715
+      SAFINA_Mehren_8: 7848863939879958186
+      SAFINA_Mehren_9: 4486769918175760047
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
