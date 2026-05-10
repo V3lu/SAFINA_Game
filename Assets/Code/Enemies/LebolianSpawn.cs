@@ -17,6 +17,12 @@ public class LebolianSpawn : MonoBehaviour, IMob
     public float MaxHP { get; set; }
     public float HP { get; set; }
 
+    void OnEnable()
+    {
+        this.HP = MaxHP;
+        _enemyHealthbarController.Sethealth(HP, MaxHP);
+    }
+
     public void LooseHP(float hp)
     {
         this.HP -= hp;
