@@ -477,7 +477,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3854619672923049203, guid: 93a1841c995e897438b55390e81e75aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -591,3 +591,4 @@ MonoBehaviour:
   _enemyHealthbarController: {fileID: 6399437748007571585}
   _lebolianSpawnSO: {fileID: 11400000, guid: df8af8e2b3b97a445bc712459b9cc35b, type: 2}
   _vialaOrb: {fileID: 5034827216173169069, guid: 157417b17b9c75f498057bf2bbceaac2, type: 3}
+  spriteRenderer: {fileID: 7048037905811979656}

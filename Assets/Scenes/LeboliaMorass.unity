@@ -332,6 +332,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0f72f541481bf64284f8eac79796e5e, type: 3}
+--- !u!1001 &124506619
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3260521489908490109, guid: f9edaaf34c92e8e4a9ba52bde0631e63, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260521489908490109, guid: f9edaaf34c92e8e4a9ba52bde0631e63, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260521489908490109, guid: f9edaaf34c92e8e4a9ba52bde0631e63, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260521489908490109, guid: f9edaaf34c92e8e4a9ba52bde0631e63, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260521489908490109, guid: f9edaaf34c92e8e4a9ba52bde0631e63, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260521489908490109, guid: f9edaaf34c92e8e4a9ba52bde0631e63, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260521489908490109, guid: f9edaaf34c92e8e4a9ba52bde0631e63, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260521489908490109, guid: f9edaaf34c92e8e4a9ba52bde0631e63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260521489908490109, guid: f9edaaf34c92e8e4a9ba52bde0631e63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260521489908490109, guid: f9edaaf34c92e8e4a9ba52bde0631e63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200769807000935365, guid: f9edaaf34c92e8e4a9ba52bde0631e63, type: 3}
+      propertyPath: m_Name
+      value: RemorselessOneSpawnPoint
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9edaaf34c92e8e4a9ba52bde0631e63, type: 3}
 --- !u!1001 &124938504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60308,7 +60365,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0061523914, y: 0.28228402}
+  m_Offset: {x: 0.023280442, y: 0.74131536}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -60318,8 +60375,13 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.46639025, y: 0.30500603}
+  m_Size: {x: 0.50064635, y: 1.2230687}
   m_EdgeRadius: 0
+--- !u!212 &1103535996 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2365752510702982819, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
+  m_PrefabInstance: {fileID: 2082184244}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1112844566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62321,7 +62383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2365752510702982819, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2365752510702982819, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
       propertyPath: m_SpriteSortPoint
@@ -62379,6 +62441,10 @@ PrefabInstance:
       propertyPath: _attackSpeed
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 7558086193190564200, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 1103535996}
     m_RemovedComponents:
     - {fileID: 1615232252043971719, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
     m_RemovedGameObjects: []
@@ -62420,3 +62486,4 @@ SceneRoots:
   - {fileID: 764179114}
   - {fileID: 1248847835}
   - {fileID: 1438609799}
+  - {fileID: 124506619}

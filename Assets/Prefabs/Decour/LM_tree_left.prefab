@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5452935886117573849}
   - component: {fileID: 2080433582884140952}
   - component: {fileID: 7859310655776822401}
+  - component: {fileID: 6216393508282565246}
   m_Layer: 0
   m_Name: LM_tree_left
   m_TagString: Untagged
@@ -138,3 +139,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.7851367, y: 0.33557415}
   m_EdgeRadius: 0
+--- !u!114 &6216393508282565246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8879298261951087677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 014177804ade2e04782248b8a67bb8b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RemorselessOneSorting
+  spriteRenderer: {fileID: 2080433582884140952}

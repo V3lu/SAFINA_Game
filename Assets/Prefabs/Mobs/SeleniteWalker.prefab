@@ -539,6 +539,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  spriteRenderer: {fileID: 6212829569913379523}
 --- !u!1 &4825943347490158650
 GameObject:
   m_ObjectHideFlags: 0

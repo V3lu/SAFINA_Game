@@ -7,8 +7,11 @@ public class LebolianSpawn : MonoBehaviour, IMob
     [SerializeField] EnemyHealthbarController _enemyHealthbarController;
     [SerializeField] LebolianSpawnSO _lebolianSpawnSO;
     [SerializeField] VialaTiny _vialaOrb;
+    [SerializeField] private SpriteRenderer spriteRenderer;
 
     Animator _animator;
+    float SortingPrecision = 10f;
+    private const int SortingBase = 1000;
 
     static Transform _playerTransform;
 
@@ -21,6 +24,12 @@ public class LebolianSpawn : MonoBehaviour, IMob
     {
         this.HP = MaxHP;
         _enemyHealthbarController.Sethealth(HP, MaxHP);
+    }
+
+    void LateUpdate()
+    {
+        spriteRenderer.sortingOrder = SortingBase +
+            Mathf.RoundToInt(-transform.position.y * SortingPrecision);
     }
 
     public void LooseHP(float hp)

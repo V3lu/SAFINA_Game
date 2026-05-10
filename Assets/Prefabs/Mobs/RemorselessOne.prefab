@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 8944490884975615726}
   - component: {fileID: 6253456228129453477}
   - component: {fileID: 1039595665532287969}
+  - component: {fileID: 1246949534107275858}
   m_Layer: 0
   m_Name: RemorselessOne
   m_TagString: Untagged
@@ -293,3 +294,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1246949534107275858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5770033627247428634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e82d5841f519c45a8e4796ebe8ec7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RemorselessOne
+  spriteRenderer: {fileID: 5598148279670933259}

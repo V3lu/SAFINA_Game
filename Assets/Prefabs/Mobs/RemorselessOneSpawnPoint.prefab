@@ -44,3 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c1cf80dc6d39941aea0aaf472cf841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RemorselessOneSpawnPointController
+  _remorselessOneGameObject: {fileID: 5770033627247428634, guid: 4edf031ba062e724997e696807a1297d, type: 3}
+  _spawnRate: 0

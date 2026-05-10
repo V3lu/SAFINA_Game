@@ -16,11 +16,13 @@ public class SeleniteGeode : MonoBehaviour, IMob
     [SerializeField] private AnimationCurve _trajectoryAnimationCurve;
     [SerializeField] private AnimationCurve _axisCorrectionAnimationCurve;
     [SerializeField] private AnimationCurve __projectileSpeedAnimationCurve;
+    [SerializeField] SpriteRenderer spriteRenderer;
 
     private GameObject _playerReference;
     private Animator _animator;
-    private SpriteRenderer spriteRenderer;
     private float _attackProjectileSpawnTimer;
+    float SortingPrecision = 10f;
+    private const int SortingBase = 1000;
 
     private enum Actions
     {
@@ -43,6 +45,12 @@ public class SeleniteGeode : MonoBehaviour, IMob
     public Transform Transform { get { return gameObject.transform; } }
     public float MaxHP { get; set; }
     public float HP { get; set; }
+
+    void LateUpdate()
+    {
+        spriteRenderer.sortingOrder = SortingBase +
+            Mathf.RoundToInt(-transform.position.y * SortingPrecision);
+    }
 
     public void MoveTo(Vector3 position, float moveSpeed)
     {

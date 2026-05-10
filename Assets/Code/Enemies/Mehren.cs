@@ -7,8 +7,11 @@ public class Mehren : MonoBehaviour, IMob
     [SerializeField] EnemyHealthbarController _enemyHealthbarController;
     [SerializeField] MehrenSO _mehrenSO;
     [SerializeField] VialaTiny _vialaOrb;
+    [SerializeField] SpriteRenderer spriteRenderer;
 
     Animator _animator;
+    float SortingPrecision = 10f;
+    private const int SortingBase = 1000;
 
     static Transform _playerTransform;
 
@@ -16,6 +19,12 @@ public class Mehren : MonoBehaviour, IMob
 
     public float MaxHP { get; set; }
     public float HP { get; set; }
+
+    void LateUpdate()
+    {
+        spriteRenderer.sortingOrder = SortingBase +
+            Mathf.RoundToInt(-transform.position.y * SortingPrecision);
+    }
 
     void OnEnable()
     {

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8843483511097098805}
   - component: {fileID: 4692058622192476055}
   - component: {fileID: 8078937003917797506}
+  - component: {fileID: 3977050170666835609}
   m_Layer: 0
   m_Name: SAFINA_CrystalinePathDecour_8
   m_TagString: Untagged
@@ -129,3 +130,16 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0067102313, y: -0.23878816}
   m_Size: {x: 0.31249166, y: 0.36617368}
   m_Direction: 0
+--- !u!114 &3977050170666835609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2669636335582623558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 014177804ade2e04782248b8a67bb8b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RemorselessOneSorting
+  spriteRenderer: {fileID: 4692058622192476055}

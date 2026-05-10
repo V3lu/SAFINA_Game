@@ -74,6 +74,7 @@
     <Compile Include="Assets\Code\ScriptableObjects\CrystalineSlimeSO.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\Code\Controllers\SeleniusSpawnPointController.cs" />
+    <Compile Include="Assets\Code\Decour\RemorselessOneSorting.cs" />
     <Compile Include="Assets\Code\ScriptableObjects\GameDataSO.cs" />
     <Compile Include="Assets\Code\ScriptableObjects\VoidBoltBaseSO.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />

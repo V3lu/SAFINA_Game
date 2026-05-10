@@ -14,8 +14,11 @@ public class CrystalineSlime : MonoBehaviour, IMob
     [SerializeField] CrystalineSlimeSO _crystalineSlimeSO;
     [SerializeField] CrystalinePathSO _crystalinePathSO;
     [SerializeField] VialaTiny _vialaOrb;
+    [SerializeField] SpriteRenderer spriteRenderer;
 
     Animator _animator;
+    float SortingPrecision = 10f;
+    private const int SortingBase = 1000;
 
     static Transform _playerTransform;
 
@@ -23,6 +26,12 @@ public class CrystalineSlime : MonoBehaviour, IMob
     public Transform Transform { get { return gameObject.transform; } }
 
     public float MaxHP { get; set; }
+
+    void LateUpdate()
+    {
+        spriteRenderer.sortingOrder = SortingBase +
+            Mathf.RoundToInt(-transform.position.y * SortingPrecision);
+    }
 
     void Start()
     {

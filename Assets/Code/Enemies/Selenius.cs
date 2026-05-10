@@ -8,14 +8,23 @@ public class Selenius : MonoBehaviour, IMob
     [SerializeField] GameObject _hitPrefab;
     [SerializeField] VialaTiny _vialaOrb;
     [SerializeField] EnemyHealthbarController _enemyHealthbarController;
+    [SerializeField] SpriteRenderer spriteRenderer;
 
     Animator _animator;
+    float SortingPrecision = 10f;
+    private const int SortingBase = 1000;
 
     static Transform _playerTransform;
 
     public Transform Transform { get { return gameObject.transform; } }
     public float MaxHP { get; set; } = 200;
     public float HP { get; set; } = 200;
+
+    void LateUpdate()
+    {
+        spriteRenderer.sortingOrder = SortingBase +
+            Mathf.RoundToInt(-transform.position.y * SortingPrecision);
+    }
 
     public void LooseHP(float hp)
     {

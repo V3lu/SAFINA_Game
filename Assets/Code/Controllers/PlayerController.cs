@@ -17,11 +17,14 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     [SerializeField] GameObject _voidBoltPrefab;
     [SerializeField] float _attackSpeed;
     [SerializeField] float _movSpeed;
+    [SerializeField] SpriteRenderer spriteRenderer;
 
     [Header("Damage Settings")]
     [SerializeField] float _invincibilityDuration = 1.0f;
     private float _invincibilityTimer = 0f;
     private SpriteRenderer _spriteRenderer;
+    private float SortingPrecision = 10f;
+    private int SortingBase = 1000;
 
 
     static float _attackProjectileSpawnTimer;
@@ -37,6 +40,13 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     public static ChosenBasicAttact AttackType = ChosenBasicAttact.NotChosen;
 
     public float HP { get; set; }
+
+    void LateUpdate()
+    {
+        spriteRenderer.sortingOrder = SortingBase +
+            Mathf.RoundToInt(-transform.position.y * SortingPrecision);
+    }
+
     public enum ChosenBasicAttact
     {
         Void = 0,

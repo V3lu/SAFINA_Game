@@ -84,7 +84,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 2858253381389407457, guid: 21e5004d254893940a509a706a4686a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -198,6 +198,7 @@ MonoBehaviour:
   _enemyHealthbarController: {fileID: 2691764208023203210}
   _mehrenSO: {fileID: 11400000, guid: 7da5a6fd61e5a2d4e86a15d349e78c8f, type: 2}
   _vialaOrb: {fileID: 5034827216173169069, guid: 157417b17b9c75f498057bf2bbceaac2, type: 3}
+  spriteRenderer: {fileID: 7807825528791800149}
 --- !u!1 &3506634252130601855
 GameObject:
   m_ObjectHideFlags: 0
