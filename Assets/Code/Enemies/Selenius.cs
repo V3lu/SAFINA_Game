@@ -7,6 +7,7 @@ public class Selenius : MonoBehaviour, IMob
 {
     [SerializeField] GameObject _hitPrefab;
     [SerializeField] VialaTiny _vialaOrb;
+    [SerializeField] EnemyHealthbarController _enemyHealthbarController;
 
     Animator _animator;
 
@@ -22,7 +23,12 @@ public class Selenius : MonoBehaviour, IMob
 
         if (this.HP <= 0)
         {
+            _enemyHealthbarController.Sethealth(MaxHP, MaxHP);
             OnDeath();
+        }
+        else
+        {
+            _enemyHealthbarController.Sethealth(HP, MaxHP);
         }
 
         ObjectPoolManager.SpawnObject(_hitPrefab, gameObject.transform.position, Quaternion.identity, ObjectPoolManager.PoolType.VFXs);
@@ -43,9 +49,16 @@ public class Selenius : MonoBehaviour, IMob
         
     }
 
+    void OnEnable()
+    {
+        this.HP = MaxHP;
+        _enemyHealthbarController.Sethealth(HP, MaxHP);
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        _enemyHealthbarController.Sethealth(HP, MaxHP);
         _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         this._animator = GetComponent<Animator>();
     }

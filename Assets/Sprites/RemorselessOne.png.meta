@@ -1,0 +1,827 @@
+fileFormatVersion: 2
+guid: 6b5ba3bc25b983b499a9267fb879f6cc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7404018530635322638
+    second: RemorselessOne_0
+  - first:
+      213: -5626314489847987469
+    second: RemorselessOne_1
+  - first:
+      213: -8264262801600265528
+    second: RemorselessOne_2
+  - first:
+      213: -5636992374497689180
+    second: RemorselessOne_3
+  - first:
+      213: 8641228269106132330
+    second: RemorselessOne_4
+  - first:
+      213: -5113046367023957863
+    second: RemorselessOne_5
+  - first:
+      213: -8876177491949398264
+    second: RemorselessOne_6
+  - first:
+      213: -8040582243663967449
+    second: RemorselessOne_7
+  - first:
+      213: -8682172816273574887
+    second: RemorselessOne_8
+  - first:
+      213: 7551855997495116152
+    second: RemorselessOne_9
+  - first:
+      213: 4239657054716403688
+    second: RemorselessOne_10
+  - first:
+      213: -6420883991729515880
+    second: RemorselessOne_11
+  - first:
+      213: 4297513734875647823
+    second: RemorselessOne_12
+  - first:
+      213: 3467288458804247461
+    second: RemorselessOne_13
+  - first:
+      213: 5635157242173614344
+    second: RemorselessOne_14
+  - first:
+      213: 539236870463202026
+    second: RemorselessOne_15
+  - first:
+      213: -1526368744882573796
+    second: RemorselessOne_16
+  - first:
+      213: -6066012588656375059
+    second: RemorselessOne_17
+  - first:
+      213: -1114659370376910819
+    second: RemorselessOne_18
+  - first:
+      213: -6850557554011471952
+    second: RemorselessOne_19
+  - first:
+      213: 991644060664297200
+    second: RemorselessOne_20
+  - first:
+      213: 7014239246819247190
+    second: RemorselessOne_21
+  - first:
+      213: -986221154923972172
+    second: RemorselessOne_22
+  - first:
+      213: 2433641650447133588
+    second: RemorselessOne_23
+  - first:
+      213: 3258722107029354708
+    second: RemorselessOne_24
+  - first:
+      213: -4399973111401778484
+    second: RemorselessOne_25
+  - first:
+      213: -1524640756815751974
+    second: RemorselessOne_26
+  - first:
+      213: 12521214958214322
+    second: RemorselessOne_27
+  - first:
+      213: -3527566366978720278
+    second: RemorselessOne_28
+  - first:
+      213: 5131585147963128773
+    second: RemorselessOne_29
+  - first:
+      213: 1697005521069010851
+    second: RemorselessOne_30
+  - first:
+      213: 2099980945652781512
+    second: RemorselessOne_31
+  - first:
+      213: -1546267573472190201
+    second: RemorselessOne_32
+  - first:
+      213: 1064168138221378926
+    second: RemorselessOne_33
+  - first:
+      213: -7627713123057103386
+    second: RemorselessOne_34
+  - first:
+      213: 5350420069924100504
+    second: RemorselessOne_35
+  - first:
+      213: -7211786539449529230
+    second: RemorselessOne_36
+  - first:
+      213: -6379073124680306885
+    second: RemorselessOne_37
+  - first:
+      213: 2032191570823732939
+    second: RemorselessOne_38
+  - first:
+      213: -1489760990292503024
+    second: RemorselessOne_39
+  - first:
+      213: -214770327797702137
+    second: RemorselessOne_40
+  - first:
+      213: 6917897886464978538
+    second: RemorselessOne_41
+  - first:
+      213: 2686789023161865525
+    second: RemorselessOne_42
+  - first:
+      213: -5809352943101903235
+    second: RemorselessOne_43
+  - first:
+      213: 6497124685938417379
+    second: RemorselessOne_44
+  - first:
+      213: 1345603145637261958
+    second: RemorselessOne_45
+  - first:
+      213: -4695521181860709524
+    second: RemorselessOne_46
+  - first:
+      213: 4305359100483834809
+    second: RemorselessOne_47
+  - first:
+      213: 2365296009087285768
+    second: RemorselessOne_48
+  - first:
+      213: 2928556643470873317
+    second: RemorselessOne_49
+  - first:
+      213: 7075654119741890123
+    second: RemorselessOne_50
+  - first:
+      213: 2983630996927494423
+    second: RemorselessOne_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RemorselessOne_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e059dec10ab50c660800000000000000
+      internalID: 7404018530635322638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f24afde7c05be1b0800000000000000
+      internalID: -5626314489847987469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c2442494c07f4d80800000000000000
+      internalID: -8264262801600265528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a1ca7c2d4165c1b0800000000000000
+      internalID: -5636992374497689180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a65722bd35fcbe770800000000000000
+      internalID: 8641228269106132330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9987f655b6fca09b0800000000000000
+      internalID: -5113046367023957863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 807d90d599b71d480800000000000000
+      internalID: -8876177491949398264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72b881bdc0d1a6090800000000000000
+      internalID: -8040582243663967449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 914f57fd2d9b28780800000000000000
+      internalID: -8682172816273574887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 871899da4059dc860800000000000000
+      internalID: 7551855997495116152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ef99dbe0a946da30800000000000000
+      internalID: 4239657054716403688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_11
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89258f0670074e6a0800000000000000
+      internalID: -6420883991729515880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4f00a009f5d3ab30800000000000000
+      internalID: 4297513734875647823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5abb6d89b784e1030800000000000000
+      internalID: 3467288458804247461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8096a39c7a9143e40800000000000000
+      internalID: 5635157242173614344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae2a0c1a311cb7700800000000000000
+      internalID: 539236870463202026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1ee30da6bf31dae0800000000000000
+      internalID: -1526368744882573796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_17
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deac61290b131dba0800000000000000
+      internalID: -6066012588656375059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d18af17553fe780f0800000000000000
+      internalID: -1114659370376910819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bff6cf433eede0a0800000000000000
+      internalID: -6850557554011471952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6758be40703cd00800000000000000
+      internalID: 991644060664297200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 654c3449e65975160800000000000000
+      internalID: 7014239246819247190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b9f7c6b51d3052f0800000000000000
+      internalID: -986221154923972172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RemorselessOne_23
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b2f75ef2806c120800000000000000
+      internalID: 2433641650447133588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 57c62c0841ca18d448d963235362fd28
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":4.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      RemorselessOne_0: 7404018530635322638
+      RemorselessOne_1: -5626314489847987469
+      RemorselessOne_10: 4239657054716403688
+      RemorselessOne_11: -6420883991729515880
+      RemorselessOne_12: 4297513734875647823
+      RemorselessOne_13: 3467288458804247461
+      RemorselessOne_14: 5635157242173614344
+      RemorselessOne_15: 539236870463202026
+      RemorselessOne_16: -1526368744882573796
+      RemorselessOne_17: -6066012588656375059
+      RemorselessOne_18: -1114659370376910819
+      RemorselessOne_19: -6850557554011471952
+      RemorselessOne_2: -8264262801600265528
+      RemorselessOne_20: 991644060664297200
+      RemorselessOne_21: 7014239246819247190
+      RemorselessOne_22: -986221154923972172
+      RemorselessOne_23: 2433641650447133588
+      RemorselessOne_3: -5636992374497689180
+      RemorselessOne_4: 8641228269106132330
+      RemorselessOne_5: -5113046367023957863
+      RemorselessOne_6: -8876177491949398264
+      RemorselessOne_7: -8040582243663967449
+      RemorselessOne_8: -8682172816273574887
+      RemorselessOne_9: 7551855997495116152
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
