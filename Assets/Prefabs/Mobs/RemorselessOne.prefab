@@ -667,6 +667,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 5598148279670933259}
   _hitPrefab: {fileID: 5784736543062994673, guid: e639b17eb94665241a02d6081d57dee3, type: 3}
   _enemyHealthbarController: {fileID: 7526965994485111573}
+  _remorselessOneProjectilePrefab: {fileID: 5448382594124928041, guid: 5b25039813c329e4eb8fc233f50cf982, type: 3}
 --- !u!1 &8627011021568043534
 GameObject:
   m_ObjectHideFlags: 0

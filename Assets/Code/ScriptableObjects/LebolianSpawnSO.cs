@@ -5,8 +5,8 @@ public class LebolianSpawnSO : ScriptableObject
 {
     [SerializeField] string _name = "Lebolian Spawn";
     [SerializeField] string _description = "TODO Description";
-    [SerializeField] float _movSpeed = 1.7f;
-    [SerializeField] float _hp = 50;
+    [SerializeField] float _movSpeed = 1.3f;
+    [SerializeField] float _hp = 40;
 
 
     public string Name => _name;

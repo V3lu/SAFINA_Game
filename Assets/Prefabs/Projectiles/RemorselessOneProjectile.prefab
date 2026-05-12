@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8404468070052705295}
   - component: {fileID: 6555724536045278256}
   - component: {fileID: 2969681697965739509}
+  - component: {fileID: -1919764321498847650}
   m_Layer: 0
   m_Name: RemorselessOneProjectile
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.515272, y: 7.460929, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -179,3 +180,15 @@ PolygonCollider2D:
       - {x: 0.3465624, y: 0.050390244}
       - {x: 0.22264338, y: 0.12781239}
   m_UseDelaunayMesh: 1
+--- !u!114 &-1919764321498847650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5448382594124928041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccc608e346385a47b3c1ddd998be65e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RemorselessOneProjectile

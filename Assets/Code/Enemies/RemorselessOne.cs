@@ -6,12 +6,15 @@ public class RemorselessOne : MonoBehaviour, IMob
     [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] GameObject _hitPrefab;
     [SerializeField] EnemyHealthbarController _enemyHealthbarController;
+    [SerializeField] GameObject _remorselessOneProjectilePrefab;
 
     float SortingPrecision = 10f;
     int SortingBase = 2000;
     Animator _animator;
+    float _attackSpeed = 1.2f;
 
     static Transform _playerTransform;
+    static float _attackProjectileSpawnTimer;
 
     public Transform Transform { get { return gameObject.transform; } }
 
@@ -37,8 +40,24 @@ public class RemorselessOne : MonoBehaviour, IMob
         {
             _animator.SetInteger("directionToLook", 0);
         }
+
+        OnAttack();
     }
 
+    void OnAttack()
+    {
+        _attackProjectileSpawnTimer -= Time.deltaTime;
+
+        if (_attackProjectileSpawnTimer <= 0)
+        {
+            _attackProjectileSpawnTimer = _attackSpeed;
+            GameObject remorselessOneProjectile = ObjectPoolManager.SpawnObject(_remorselessOneProjectilePrefab, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Projectiles);
+            if (remorselessOneProjectile.TryGetComponent<IProjectile>(out var projectile))
+            {
+                projectile.SetTarget(_playerTransform.transform.position);
+            }
+        }
+    }
     void OnDeath()
     {
         if (transform.position.x >= _playerTransform.position.x)
