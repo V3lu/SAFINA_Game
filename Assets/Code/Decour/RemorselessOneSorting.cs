@@ -4,7 +4,7 @@ public class RemorselessOneSorting : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer spriteRenderer;
     private const float SortingPrecision = 10f;
-    private const int SortingBase = 1000;
+    private const int SortingBase = 1010;
 
 
     void Start()
