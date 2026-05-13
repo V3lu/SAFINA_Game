@@ -1,12 +1,10 @@
 using Assets.Code.Interfaces;
 using Assets.Scripts;
-using NUnit.Framework;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using Assets.Code.Interfaces;
+using UnityEngine.InputSystem;
 
 public class PlayerCtrl : MonoBehaviour, IDamagable
 {
@@ -25,6 +23,9 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     private SpriteRenderer _spriteRenderer;
     private float SortingPrecision = 10f;
     private int SortingBase = 1000;
+    private CharacterController _characterController;
+    private Vector3 moveInput;
+    private Vector3 velocity;
 
 
     static float _attackProjectileSpawnTimer;
@@ -45,6 +46,11 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     {
         spriteRenderer.sortingOrder = SortingBase +
             Mathf.RoundToInt(-transform.position.y * SortingPrecision);
+    }
+
+    public void Move(InputAction.CallbackContext context)
+    {
+        moveInput = context.ReadValue<Vector2>();
     }
 
     public enum ChosenBasicAttact
@@ -131,9 +137,8 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
             _invincibilityTimer -= Time.deltaTime;
         }
 
-        _speedX = Input.GetAxisRaw("Horizontal") * _movSpeed;
-        _speedY = Input.GetAxisRaw("Vertical") * _movSpeed;
-        _rb.linearVelocity = new Vector2(_speedX, _speedY);
+        Vector3 move = new Vector3(moveInput.x, moveInput.y);
+        _rb.linearVelocity = move * _movSpeed;
 
         Dictionary<GameObject, GameObject> closestEnemyPlusOriginalPrefab = GetClosestEnemy();
         Directions directionToLookAt = Directions.Right;

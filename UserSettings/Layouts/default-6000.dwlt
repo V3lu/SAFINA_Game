@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2048
     height: 1188.8
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 313.6
     width: 1273.6
     height: 523.19995
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 226}
+  m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 24}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 168}
   m_MaxSize: {x: 24288, y: 24288}
   vertical: 0
-  controlID: 68
+  controlID: 26
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -279,7 +279,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 168}
   m_MaxSize: {x: 16192, y: 24288}
   vertical: 1
-  controlID: 69
+  controlID: 27
   draggingID: 0
 --- !u!114 &12
 MonoBehaviour:
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 112}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 0
-  controlID: 70
+  controlID: 28
   draggingID: 0
 --- !u!114 &13
 MonoBehaviour:
@@ -937,9 +937,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 0ab591958a1e32e49b0c89b93bb1a73b, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: e800a94790af83e4b87f28494f91c518, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -3933840259241281303, guid: 0ab591958a1e32e49b0c89b93bb1a73b, type: 2}
+  - m_Target: {fileID: 696051797810338405, guid: e800a94790af83e4b87f28494f91c518, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -1177,18 +1177,18 @@ MonoBehaviour:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 45.99994}
     m_SelectedIDs:
-    - m_Data: 53602
+    - m_Data: 53620
     m_LastClickedID:
-      m_Data: 53602
+      m_Data: 53620
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 53602
-    - m_Data: 53604
-    - m_Data: 53606
-    - m_Data: 53608
-    - m_Data: 53610
+    - m_Data: 53620
+    - m_Data: 53622
+    - m_Data: 53624
+    - m_Data: 53626
+    - m_Data: 53628
     - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1222,11 +1222,11 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 53602
-    - m_Data: 53604
-    - m_Data: 53606
-    - m_Data: 53608
-    - m_Data: 53610
+    - m_Data: 53620
+    - m_Data: 53622
+    - m_Data: 53624
+    - m_Data: 53626
+    - m_Data: 53628
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1389,20 +1389,8 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -20272
-      - m_Data: -18772
-      - m_Data: -16052
-      - m_Data: -14222
-      - m_Data: -12488
-      - m_Data: -11490
+      - m_Data: -19148
       - m_Data: -1314
-      - m_Data: -12
-      - m_Data: 51040
-      - m_Data: 57080
-      - m_Data: 57414
-      - m_Data: 60816
-      - m_Data: 62912
-      - m_Data: 63708
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

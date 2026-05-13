@@ -60520,6 +60520,63 @@ SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 2365752510702982819, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
   m_PrefabInstance: {fileID: 2082184244}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1103535997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103535973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: bb93fe331f70d3246a251393a1440249, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1103535999}
+        m_TargetAssemblyTypeName: PlayerCtrl, Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 5716edf3-aff2-4644-a71c-930b9d5ae962
+    m_ActionName: 'Gameplay/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Gameplay
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &1103535999 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7558086193190564200, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
+  m_PrefabInstance: {fileID: 2082184244}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103535973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346798243b0d3dd4baf93049dbb33fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1112844566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62597,6 +62654,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2895619710178685949, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1103535992}
+    - targetCorrespondingSourceObject: {fileID: 2895619710178685949, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1103535997}
   m_SourcePrefab: {fileID: 100100000, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
 --- !u!4 &2083803150 stripped
 Transform:
