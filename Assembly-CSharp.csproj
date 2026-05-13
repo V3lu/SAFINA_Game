@@ -112,6 +112,7 @@
     <Compile Include="Assets\Code\Controllers\FireballSkillChooseController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Code\Controllers\MehrenSpawnPointController.cs" />
+    <Compile Include="Assets\Code\Managers\TimeManager.cs" />
     <Compile Include="Assets\Code\Controllers\LebolianSpawnSpawnPointController.cs" />
     <Compile Include="Assets\Code\ScriptableObjects\XPSO.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />

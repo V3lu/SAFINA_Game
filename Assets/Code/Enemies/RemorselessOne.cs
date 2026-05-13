@@ -12,6 +12,7 @@ public class RemorselessOne : MonoBehaviour, IMob
     int SortingBase = 2000;
     Animator _animator;
     float _attackSpeed = 1.2f;
+    string HighscoreKey = "Highscore";
 
     static Transform _playerTransform;
     static float _attackProjectileSpawnTimer;
@@ -68,6 +69,26 @@ public class RemorselessOne : MonoBehaviour, IMob
         {
             _animator.SetInteger("state", 0);
         }
+
+        TrySetHighscore((int)TimeManager._time);
+
+    }
+
+    public int GetHighscore()
+    {
+        return PlayerPrefs.GetInt(HighscoreKey, 0); // 0 is the default if none saved
+    }
+
+    public void TrySetHighscore(int newScore)
+    {
+        PlayerPrefs.SetInt(HighscoreKey, newScore);
+        PlayerPrefs.Save(); // forces immediate write to disk
+        Debug.Log("New highscore saved: " + newScore);
+    }
+
+    public void ResetHighscore()
+    {
+        PlayerPrefs.DeleteKey(HighscoreKey);
     }
 
     void LateUpdate()

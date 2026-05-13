@@ -16,6 +16,7 @@ TagManager:
   - EnemyHealthBar
   - HPBar
   - LoadingManager
+  - TimeText
   layers:
   - Default
   - TransparentFX
