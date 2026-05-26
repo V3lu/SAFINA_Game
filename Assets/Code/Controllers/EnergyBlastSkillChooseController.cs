@@ -9,6 +9,7 @@ public class EnergyBlastSkillChooseController : MonoBehaviour, IAutoAttackTypeSe
     [SerializeField] Sprite _hooveredSprite;
     [SerializeField] Canvas _canvas;
     [SerializeField] Canvas _barsCanvas;
+    [SerializeField] Canvas _tutorialCanvas;
 
     static GameObject _safina;
 
@@ -31,6 +32,10 @@ public class EnergyBlastSkillChooseController : MonoBehaviour, IAutoAttackTypeSe
         Animator animator = _safina.GetComponent<Animator>();
         int state = animator.GetInteger("State");
         _canvas.gameObject.SetActive(false);
+        if (_tutorialCanvas != null)
+        {
+            _tutorialCanvas.gameObject.SetActive(false);
+        }
         // Fallback: find BarsCanvas at runtime if not assigned via Inspector
         if (_barsCanvas == null)
         {

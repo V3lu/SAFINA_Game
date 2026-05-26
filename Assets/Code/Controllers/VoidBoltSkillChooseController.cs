@@ -10,6 +10,7 @@ public class VoidBoltSkillChooseController : MonoBehaviour, IAutoAttackTypeSelec
     [SerializeField] Sprite _hooveredSprite;
     [SerializeField] Canvas _canvas;
     [SerializeField] Canvas _barsCanvas;
+    [SerializeField] Canvas _tutorialCanvas;
 
     static GameObject _safina;
 
@@ -30,6 +31,10 @@ public class VoidBoltSkillChooseController : MonoBehaviour, IAutoAttackTypeSelec
     public void Selected()
     {
         _canvas.gameObject.SetActive(false);
+        if (_tutorialCanvas != null)
+        {
+            _tutorialCanvas.gameObject.SetActive(false);
+        }
         // Fallback: find BarsCanvas at runtime if not assigned via Inspector
         if (_barsCanvas == null)
         {
@@ -45,9 +50,9 @@ public class VoidBoltSkillChooseController : MonoBehaviour, IAutoAttackTypeSelec
         // Notify HUDManager that attack was selected
         if (HUDManager.Instance != null)
             HUDManager.Instance.OnAttackSelected();
+
         Animator animator = _safina.GetComponent<Animator>();
         int state = animator.GetInteger("State");
-
         if (state == 0)
         {
             animator.SetInteger("State", 6);

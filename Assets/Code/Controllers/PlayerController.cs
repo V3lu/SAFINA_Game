@@ -23,13 +23,10 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     private SpriteRenderer _spriteRenderer;
     private float SortingPrecision = 10f;
     private int SortingBase = 1000;
-    private CharacterController _characterController;
     private Vector3 moveInput;
-    private Vector3 velocity;
 
 
     static float _attackProjectileSpawnTimer;
-    static float _speedX, _speedY;
     static Rigidbody2D _rb;
     static Animator _animator;
     static long _playerXPTotal = 0;
