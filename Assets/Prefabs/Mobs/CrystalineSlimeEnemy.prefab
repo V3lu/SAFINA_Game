@@ -528,6 +528,7 @@ MonoBehaviour:
   _crystalineSlimeSO: {fileID: 11400000, guid: 4199e47f6c9d486428573f6e6967406d, type: 2}
   _crystalinePathSO: {fileID: 11400000, guid: fe1484c2745ca0b4d8efebe545a0c9c4, type: 2}
   _vialaOrb: {fileID: 5034827216173169069, guid: 157417b17b9c75f498057bf2bbceaac2, type: 3}
+  spriteRenderer: {fileID: 3823062163339892627}
 --- !u!50 &-4995249348836857608
 Rigidbody2D:
   serializedVersion: 5

@@ -40,7 +40,7 @@ public class OnAnimationFinishReturnToPool : StateMachineBehaviour
 
             if(mob is CrystalineSlime crystalineSlime)
             {
-                crystalineSlime.resetState();
+                crystalineSlime.ResetState();
                 Random rand = new Random();
                 int chance = rand.Next(11);
                 if (chance < 9)
@@ -55,6 +55,28 @@ public class OnAnimationFinishReturnToPool : StateMachineBehaviour
                 Random rand = new Random();
                 int chance = rand.Next(11);
                 if (chance < 7)
+                {
+                    ObjectPoolManager.SpawnObject(_vialaOrb, mob.Transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Collectables);
+                }
+            }
+
+            if (mob is LebolianSpawn lebolianSpawn)
+            {
+                lebolianSpawn.ResetState();
+                Random rand = new Random();
+                int chance = rand.Next(11);
+                if (chance < 5)
+                {
+                    ObjectPoolManager.SpawnObject(_vialaOrb, mob.Transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Collectables);
+                }
+            }
+
+            if (mob is Mehren mehren)
+            {
+                mehren.ResetState();
+                Random rand = new Random();
+                int chance = rand.Next(11);
+                if (chance < 6)
                 {
                     ObjectPoolManager.SpawnObject(_vialaOrb, mob.Transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Collectables);
                 }

@@ -1,0 +1,799 @@
+fileFormatVersion: 2
+guid: 93a1841c995e897438b55390e81e75aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3854619672923049203
+    second: SAFINA_LebolianSpawn_0
+  - first:
+      213: 3856634299372924030
+    second: SAFINA_LebolianSpawn_1
+  - first:
+      213: -5835563006737641157
+    second: SAFINA_LebolianSpawn_2
+  - first:
+      213: -5546620947106752818
+    second: SAFINA_LebolianSpawn_3
+  - first:
+      213: 4560914376875761948
+    second: SAFINA_LebolianSpawn_4
+  - first:
+      213: -4745237109205904234
+    second: SAFINA_LebolianSpawn_5
+  - first:
+      213: -5573085653574654608
+    second: SAFINA_LebolianSpawn_6
+  - first:
+      213: -4278629129349236631
+    second: SAFINA_LebolianSpawn_7
+  - first:
+      213: -6578922218682819515
+    second: SAFINA_LebolianSpawn_8
+  - first:
+      213: 389389961466564010
+    second: SAFINA_LebolianSpawn_9
+  - first:
+      213: 7544176772254417589
+    second: SAFINA_LebolianSpawn_10
+  - first:
+      213: 7177421323684487616
+    second: SAFINA_LebolianSpawn_11
+  - first:
+      213: 9155762303158214763
+    second: SAFINA_LebolianSpawn_12
+  - first:
+      213: -480899212299561167
+    second: SAFINA_LebolianSpawn_13
+  - first:
+      213: 351910742109002953
+    second: SAFINA_LebolianSpawn_14
+  - first:
+      213: -7221912027017121822
+    second: SAFINA_LebolianSpawn_15
+  - first:
+      213: 4356055179452811371
+    second: SAFINA_LebolianSpawn_16
+  - first:
+      213: 2877767590196434706
+    second: SAFINA_LebolianSpawn_17
+  - first:
+      213: -3308003625788652348
+    second: SAFINA_LebolianSpawn_18
+  - first:
+      213: 3637336495202921575
+    second: SAFINA_LebolianSpawn_19
+  - first:
+      213: -4462759468099067072
+    second: SAFINA_LebolianSpawn_20
+  - first:
+      213: 371532235051262461
+    second: SAFINA_LebolianSpawn_21
+  - first:
+      213: -101347401410085153
+    second: SAFINA_LebolianSpawn_22
+  - first:
+      213: 8758389969097171870
+    second: SAFINA_LebolianSpawn_23
+  - first:
+      213: -2100820029532653885
+    second: SAFINA_LebolianSpawn_24
+  - first:
+      213: -9102743520682130474
+    second: SAFINA_LebolianSpawn_25
+  - first:
+      213: -5470770046914660313
+    second: SAFINA_LebolianSpawn_26
+  - first:
+      213: 5374713061454480175
+    second: SAFINA_LebolianSpawn_27
+  - first:
+      213: 3677218647005450444
+    second: SAFINA_LebolianSpawn_28
+  - first:
+      213: -5562338492724095730
+    second: SAFINA_LebolianSpawn_29
+  - first:
+      213: 6956506961362120264
+    second: SAFINA_LebolianSpawn_30
+  - first:
+      213: -7309470729933762731
+    second: SAFINA_LebolianSpawn_31
+  - first:
+      213: -2104659345293781550
+    second: SAFINA_LebolianSpawn_32
+  - first:
+      213: 724052958762180987
+    second: SAFINA_LebolianSpawn_33
+  - first:
+      213: 3750829965617242752
+    second: SAFINA_LebolianSpawn_34
+  - first:
+      213: 2221701256969971071
+    second: SAFINA_LebolianSpawn_35
+  - first:
+      213: -5905638897158559115
+    second: SAFINA_LebolianSpawn_36
+  - first:
+      213: 7592421889613806567
+    second: SAFINA_LebolianSpawn_37
+  - first:
+      213: -7554014790851292456
+    second: SAFINA_LebolianSpawn_38
+  - first:
+      213: -1229764173157019056
+    second: SAFINA_LebolianSpawn_39
+  - first:
+      213: -3232215873415765528
+    second: SAFINA_LebolianSpawn_40
+  - first:
+      213: 2717946923324378399
+    second: SAFINA_LebolianSpawn_41
+  - first:
+      213: 650291466661326144
+    second: SAFINA_LebolianSpawn_42
+  - first:
+      213: -1209970714703079686
+    second: SAFINA_LebolianSpawn_43
+  - first:
+      213: -6095808813132156530
+    second: SAFINA_LebolianSpawn_44
+  - first:
+      213: -7593861860134156316
+    second: SAFINA_LebolianSpawn_45
+  - first:
+      213: -3469478318415104487
+    second: SAFINA_LebolianSpawn_46
+  - first:
+      213: -1405444871348003600
+    second: SAFINA_LebolianSpawn_47
+  - first:
+      213: -6661882069178115978
+    second: SAFINA_LebolianSpawn_48
+  - first:
+      213: 522042626635976295
+    second: SAFINA_LebolianSpawn_49
+  - first:
+      213: -2182590734490812742
+    second: SAFINA_LebolianSpawn_50
+  - first:
+      213: 5190306522656156885
+    second: SAFINA_LebolianSpawn_51
+  - first:
+      213: 449365703137633568
+    second: SAFINA_LebolianSpawn_52
+  - first:
+      213: -7287121913401136242
+    second: SAFINA_LebolianSpawn_53
+  - first:
+      213: 6952840964680765057
+    second: SAFINA_LebolianSpawn_54
+  - first:
+      213: -7415622098015085640
+    second: SAFINA_LebolianSpawn_55
+  - first:
+      213: 5097799768692741513
+    second: SAFINA_LebolianSpawn_56
+  - first:
+      213: -7002589068816494321
+    second: SAFINA_LebolianSpawn_57
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d03703384d3a18ac0800000000000000
+      internalID: -3854619672923049203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ce5b24674858530800000000000000
+      internalID: 3856634299372924030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b311efe0d5ae30fa0800000000000000
+      internalID: -5835563006737641157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec616f7c2a17603b0800000000000000
+      internalID: -5546620947106752818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c11e6a4067f9b4f30800000000000000
+      internalID: 4560914376875761948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 694d7c29df7852eb0800000000000000
+      internalID: -4745237109205904234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0756bd3202c68a2b0800000000000000
+      internalID: -5573085653574654608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 968ff7bd9714f94c0800000000000000
+      internalID: -4278629129349236631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_8
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c5c764919f2b4a0800000000000000
+      internalID: -6578922218682819515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad415c5b14676500800000000000000
+      internalID: 389389961466564010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_10
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b24af8bdcc42b860800000000000000
+      internalID: 7544176772254417589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c127819aa25b9360800000000000000
+      internalID: 7177421323684487616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_12
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 128
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6068af2e4dcf0f70800000000000000
+      internalID: 9155762303158214763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_13
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1379e1ed6b08359f0800000000000000
+      internalID: -480899212299561167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cc1d0894fc32e400800000000000000
+      internalID: 351910742109002953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2efe586564d96cb90800000000000000
+      internalID: -7221912027017121822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_16
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6809493b11d37c30800000000000000
+      internalID: 4356055179452811371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_17
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2175acf4062efe720800000000000000
+      internalID: 2877767590196434706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c4c9299a3c9712d0800000000000000
+      internalID: -3308003625788652348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c622d554a6a7230800000000000000
+      internalID: 3637336495202921575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043a1f198e71112c0800000000000000
+      internalID: -4462759468099067072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SAFINA_LebolianSpawn_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df166dc6992f72500800000000000000
+      internalID: 371532235051262461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bd644240e26bba04a9de466e5820b8ab
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":4.0},"gridSpriteSize":{"x":48.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      SAFINA_LebolianSpawn_0: -3854619672923049203
+      SAFINA_LebolianSpawn_1: 3856634299372924030
+      SAFINA_LebolianSpawn_10: 7544176772254417589
+      SAFINA_LebolianSpawn_11: 7177421323684487616
+      SAFINA_LebolianSpawn_12: 9155762303158214763
+      SAFINA_LebolianSpawn_13: -480899212299561167
+      SAFINA_LebolianSpawn_14: 351910742109002953
+      SAFINA_LebolianSpawn_15: -7221912027017121822
+      SAFINA_LebolianSpawn_16: 4356055179452811371
+      SAFINA_LebolianSpawn_17: 2877767590196434706
+      SAFINA_LebolianSpawn_18: -3308003625788652348
+      SAFINA_LebolianSpawn_19: 3637336495202921575
+      SAFINA_LebolianSpawn_2: -5835563006737641157
+      SAFINA_LebolianSpawn_20: -4462759468099067072
+      SAFINA_LebolianSpawn_21: 371532235051262461
+      SAFINA_LebolianSpawn_3: -5546620947106752818
+      SAFINA_LebolianSpawn_4: 4560914376875761948
+      SAFINA_LebolianSpawn_5: -4745237109205904234
+      SAFINA_LebolianSpawn_6: -5573085653574654608
+      SAFINA_LebolianSpawn_7: -4278629129349236631
+      SAFINA_LebolianSpawn_8: -6578922218682819515
+      SAFINA_LebolianSpawn_9: 389389961466564010
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

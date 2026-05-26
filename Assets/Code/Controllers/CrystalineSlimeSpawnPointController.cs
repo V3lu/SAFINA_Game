@@ -19,7 +19,7 @@ public class CrystalineSlimeSpawnPointController : MonoBehaviour
     {
         _spawnTimer -= Time.deltaTime;
 
-        if(_spawnTimer <= 0)
+        if (_spawnTimer <= 0)
         {
             _spawnTimer = _spawnRate;
             ObjectPoolManager.SpawnObject(_crystalineSlimePrefab, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Mobs);

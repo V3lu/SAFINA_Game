@@ -7,8 +7,12 @@ public class Selenius : MonoBehaviour, IMob
 {
     [SerializeField] GameObject _hitPrefab;
     [SerializeField] VialaTiny _vialaOrb;
+    [SerializeField] EnemyHealthbarController _enemyHealthbarController;
+    [SerializeField] SpriteRenderer spriteRenderer;
 
     Animator _animator;
+    float SortingPrecision = 10f;
+    private const int SortingBase = 1000;
 
     static Transform _playerTransform;
 
@@ -16,13 +20,24 @@ public class Selenius : MonoBehaviour, IMob
     public float MaxHP { get; set; } = 200;
     public float HP { get; set; } = 200;
 
+    void LateUpdate()
+    {
+        spriteRenderer.sortingOrder = SortingBase +
+            Mathf.RoundToInt(-transform.position.y * SortingPrecision);
+    }
+
     public void LooseHP(float hp)
     {
         this.HP -= hp;
 
         if (this.HP <= 0)
         {
+            _enemyHealthbarController.Sethealth(MaxHP, MaxHP);
             OnDeath();
+        }
+        else
+        {
+            _enemyHealthbarController.Sethealth(HP, MaxHP);
         }
 
         ObjectPoolManager.SpawnObject(_hitPrefab, gameObject.transform.position, Quaternion.identity, ObjectPoolManager.PoolType.VFXs);
@@ -43,9 +58,16 @@ public class Selenius : MonoBehaviour, IMob
         
     }
 
+    void OnEnable()
+    {
+        this.HP = MaxHP;
+        _enemyHealthbarController.Sethealth(HP, MaxHP);
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        _enemyHealthbarController.Sethealth(HP, MaxHP);
         _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         this._animator = GetComponent<Animator>();
     }
