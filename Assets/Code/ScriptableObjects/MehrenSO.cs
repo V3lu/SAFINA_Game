@@ -6,7 +6,7 @@ public class MehrenSO : ScriptableObject
     [SerializeField] string _name = "Mehren";
     [SerializeField] string _description = "TODO Description";
     [SerializeField] float _movSpeed = 2.5f;
-    [SerializeField] float _hp = 24;
+    [SerializeField] float _hp = 14;
 
 
     public string Name => _name;

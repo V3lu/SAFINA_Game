@@ -9,6 +9,7 @@ public class FireballSkillChooseController : MonoBehaviour, IAutoAttackTypeSelec
     [SerializeField] Sprite _hooveredSprite;
     [SerializeField] Canvas _canvas;
     [SerializeField] Canvas _barsCanvas;
+    [SerializeField] Canvas _tutorialCanvas;
 
 
     static GameObject _safina;
@@ -33,12 +34,12 @@ public class FireballSkillChooseController : MonoBehaviour, IAutoAttackTypeSelec
         Animator animator = _safina.GetComponent<Animator>();
         int state = animator.GetInteger("State");
         _canvas.gameObject.SetActive(false);
+        _tutorialCanvas.gameObject.SetActive(false);
         if (_barsCanvas != null)
         {
             _barsCanvas.enabled = true;
         }
         Time.timeScale = 1f;
-
         if (state == 0)
         {
             animator.SetInteger("State", 4);

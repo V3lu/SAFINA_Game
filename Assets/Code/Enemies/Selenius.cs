@@ -88,11 +88,6 @@ public class Selenius : MonoBehaviour, IMob
         {
             _animator.SetInteger("directionToLook", 0);
         }
-
-        if (Vector3.Distance(transform.position, _playerTransform.position) < 1f)
-        {
-            OnDeath();
-        }
     }
 
     private void OnDeath()

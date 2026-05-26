@@ -10,6 +10,7 @@ public class VoidBoltSkillChooseController : MonoBehaviour, IAutoAttackTypeSelec
     [SerializeField] Sprite _hooveredSprite;
     [SerializeField] Canvas _canvas;
     [SerializeField] Canvas _barsCanvas;
+    [SerializeField] Canvas _tutorialCanvas;
 
     static GameObject _safina;
 
@@ -30,14 +31,14 @@ public class VoidBoltSkillChooseController : MonoBehaviour, IAutoAttackTypeSelec
     public void Selected()
     {
         _canvas.gameObject.SetActive(false);
+        _tutorialCanvas.gameObject.SetActive(false);
         if (_barsCanvas != null)
         {
             _barsCanvas.enabled = true;
         }
-        Time.timeScale = 1f;
         Animator animator = _safina.GetComponent<Animator>();
         int state = animator.GetInteger("State");
-
+        Time.timeScale = 1f;
         if (state == 0)
         {
             animator.SetInteger("State", 6);
