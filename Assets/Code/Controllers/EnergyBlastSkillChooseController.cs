@@ -31,11 +31,21 @@ public class EnergyBlastSkillChooseController : MonoBehaviour, IAutoAttackTypeSe
         Animator animator = _safina.GetComponent<Animator>();
         int state = animator.GetInteger("State");
         _canvas.gameObject.SetActive(false);
+        // Fallback: find BarsCanvas at runtime if not assigned via Inspector
+        if (_barsCanvas == null)
+        {
+            var found = GameObject.Find("BarsCanvas");
+            if (found != null) _barsCanvas = found.GetComponent<Canvas>();
+        }
         if (_barsCanvas != null)
         {
             _barsCanvas.enabled = true;
         }
         Time.timeScale = 1f;
+
+        // Notify HUDManager that attack was selected
+        if (HUDManager.Instance != null)
+            HUDManager.Instance.OnAttackSelected();
 
         if (state == 0)
         {

@@ -1,12 +1,10 @@
 using Assets.Code.Interfaces;
 using Assets.Scripts;
-using NUnit.Framework;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using Assets.Code.Interfaces;
+using UnityEngine.InputSystem;
 
 public class PlayerCtrl : MonoBehaviour, IDamagable
 {
@@ -17,11 +15,17 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     [SerializeField] GameObject _voidBoltPrefab;
     [SerializeField] float _attackSpeed;
     [SerializeField] float _movSpeed;
+    [SerializeField] SpriteRenderer spriteRenderer;
 
     [Header("Damage Settings")]
     [SerializeField] float _invincibilityDuration = 1.0f;
     private float _invincibilityTimer = 0f;
     private SpriteRenderer _spriteRenderer;
+    private float SortingPrecision = 10f;
+    private int SortingBase = 1000;
+    private CharacterController _characterController;
+    private Vector3 moveInput;
+    private Vector3 velocity;
 
 
     static float _attackProjectileSpawnTimer;
@@ -37,6 +41,18 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     public static ChosenBasicAttact AttackType = ChosenBasicAttact.NotChosen;
 
     public float HP { get; set; }
+
+    void LateUpdate()
+    {
+        spriteRenderer.sortingOrder = SortingBase +
+            Mathf.RoundToInt(-transform.position.y * SortingPrecision);
+    }
+
+    public void Move(InputAction.CallbackContext context)
+    {
+        moveInput = context.ReadValue<Vector2>();
+    }
+
     public enum ChosenBasicAttact
     {
         Void = 0,
@@ -108,8 +124,17 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
         _rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
-        _xpBarController = GameObject.FindGameObjectWithTag("XPBar").GetComponent<XPBarController>();
-        _hpBarController = GameObject.FindGameObjectWithTag("HPBar").GetComponent<HPBarController>();
+        var xpBarObj = GameObject.FindGameObjectWithTag("XPBar");
+        if (xpBarObj != null)
+            _xpBarController = xpBarObj.GetComponent<XPBarController>();
+        else
+            Debug.LogWarning("[PlayerCtrl] XPBar not found. It may be created later by HUDManager.");
+
+        var hpBarObj = GameObject.FindGameObjectWithTag("HPBar");
+        if (hpBarObj != null)
+            _hpBarController = hpBarObj.GetComponent<HPBarController>();
+        else
+            Debug.LogWarning("[PlayerCtrl] HPBar not found. It may be created later by HUDManager.");
         this.HP = 50;
     }
 
@@ -121,13 +146,8 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
             _invincibilityTimer -= Time.deltaTime;
         }
 
-        _speedX = Input.GetAxisRaw("Horizontal") * _movSpeed;
-        _speedY = Input.GetAxisRaw("Vertical") * _movSpeed;
-        _rb.linearVelocity = new Vector2(_speedX, _speedY);
-
-        // Animation of walking depends on velocity
-        float targetAnimSpeed = (_speedX == 0 && _speedY == 0) ? 0f : 1f;
-        _animator.speed = Mathf.Lerp(_animator.speed, targetAnimSpeed, Time.deltaTime * 10f);
+        Vector3 move = new Vector3(moveInput.x, moveInput.y);
+        _rb.linearVelocity = move * _movSpeed;
 
         Dictionary<GameObject, GameObject> closestEnemyPlusOriginalPrefab = GetClosestEnemy();
         Directions directionToLookAt = Directions.Right;
@@ -253,7 +273,8 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
 
     public void GainXP(long XP)
     {
-        _xpBarController.AddXP(XP);
+        if (_xpBarController != null)
+            _xpBarController.AddXP(XP);
         _playerXPTotal += XP;
         _playerXPCurrent += XP;
 
@@ -261,8 +282,11 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
         {
             _playerLvl += 1;
             _playerXPCurrent = 0;
-            _xpBarController.ResetMaskAfterLevelUp();
-            _xpBarController.LevelUp();
+            if (_xpBarController != null)
+            {
+                _xpBarController.ResetMaskAfterLevelUp();
+                _xpBarController.LevelUp();
+            }
         }
     }
 
@@ -292,7 +316,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.GetComponent<IMob>() != null)
+        if (collision.gameObject.GetComponent<IMob>() != null)
         {
             TakeContactDamage(1f); // Take 1 damage per hit (adjust as needed)
         }
@@ -300,9 +324,23 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
 
     private void OnTriggerStay2D(Collider2D collider)
     {
-        if (collider.gameObject.CompareTag("EnemyProjectile") || collider.gameObject.CompareTag("Enemy") || collider.gameObject.GetComponent<IMob>() != null)
+        if (collider.gameObject.CompareTag("EnemyProjectile") || collider.gameObject.GetComponent<IMob>() != null)
         {
             TakeContactDamage(1f); // Take 1 damage per hit (adjust as needed)
         }
+    }
+
+    /// <summary>
+    /// Called by HUDManager after HUD is created, to re-bind bar controllers.
+    /// </summary>
+    public void RebindHUDControllers()
+    {
+        var xpBarObj = GameObject.FindGameObjectWithTag("XPBar");
+        if (xpBarObj != null)
+            _xpBarController = xpBarObj.GetComponent<XPBarController>();
+
+        var hpBarObj = GameObject.FindGameObjectWithTag("HPBar");
+        if (hpBarObj != null)
+            _hpBarController = hpBarObj.GetComponent<HPBarController>();
     }
 }

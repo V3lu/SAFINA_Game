@@ -15,12 +15,31 @@ public class StartMenuController : MonoBehaviour
 
     void Start()
     {
+        // Runtime fallbacks — find canvases if not set via Inspector
+        if (_startMenuCanvas == null)
+        {
+            var found = GameObject.Find("StartMenuCanvas");
+            if (found != null) _startMenuCanvas = found.GetComponent<Canvas>();
+        }
+        if (_basicAttackChoosingCanvas == null)
+        {
+            var found = GameObject.Find("BasicAttackChoosingCanvas");
+            if (found != null) _basicAttackChoosingCanvas = found.GetComponent<Canvas>();
+        }
+        if (_barsCanvas == null)
+        {
+            var found = GameObject.Find("BarsCanvas");
+            if (found != null) _barsCanvas = found.GetComponent<Canvas>();
+        }
+
         // Stop the game (mobs won't spawn, player can't move)
         Time.timeScale = 0f;
 
         // Ensure starting canvas setup
-        _basicAttackChoosingCanvas.gameObject.SetActive(false);
-        _startMenuCanvas.gameObject.SetActive(true);
+        if (_basicAttackChoosingCanvas != null)
+            _basicAttackChoosingCanvas.gameObject.SetActive(false);
+        if (_startMenuCanvas != null)
+            _startMenuCanvas.gameObject.SetActive(true);
 
         // Hide bars but keep GameObjects active so scripts can find them
         if (_barsCanvas != null)
@@ -48,7 +67,15 @@ public class StartMenuController : MonoBehaviour
     public void Selected()
     {
         // Hide start menu and show attack choosing canvas
-        _startMenuCanvas.gameObject.SetActive(false);
-        _basicAttackChoosingCanvas.gameObject.SetActive(true);
+        if (_startMenuCanvas != null)
+            _startMenuCanvas.gameObject.SetActive(false);
+        if (_basicAttackChoosingCanvas != null)
+            _basicAttackChoosingCanvas.gameObject.SetActive(true);
+
+        // Rebind player HUD controllers (HPBar may have been created after Player.Start())
+        if (GameManager.Player != null)
+        {
+            GameManager.Player.RebindHUDControllers();
+        }
     }
-}
+}
