@@ -75,9 +75,15 @@ public class HPBarController : MonoBehaviour
 
     public void RestoreAllHearts()
     {
+        StopAllCoroutines();
+        if (_heartAnimators == null) return;
         foreach (var anim in _heartAnimators)
         {
-            anim.Play("HeartFull", 0, 0f);
+            if (anim != null)
+            {
+                anim.ResetTrigger("Drain");
+                anim.Play("HeartFull", 0, 0f);
+            }
         }
         _currentHearts = _heartAnimators.Count;
     }

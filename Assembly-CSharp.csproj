@@ -102,6 +102,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Code\Managers\HUDManager.cs" />
     <Compile Include="Assets\Code\ScriptableObjects\CrystalinePathSO.cs" />
+    <Compile Include="Assets\Code\Utils\RankingData.cs" />
     <Compile Include="Assets\Code\Enemies\RemorselessOne.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Code\VFX\EnemyHitVFX.cs" />

@@ -86494,8 +86494,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7558086193190564200, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
+      propertyPath: _movSpeed
+      value: 2.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 7558086193190564200, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
       propertyPath: _attackSpeed
-      value: 0.6
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 7558086193190564200, guid: f5fa79ef64582254dbf7fda7612d9f65, type: 3}
       propertyPath: spriteRenderer

@@ -59864,7 +59864,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4076483727510284211, guid: 46ac9a515b3ff68439f262b6b9acf1d6, type: 3}
       propertyPath: _spawnRate
-      value: 2
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 4076483727510284211, guid: 46ac9a515b3ff68439f262b6b9acf1d6, type: 3}
       propertyPath: _lebolianSpawnPrefab
@@ -61113,7 +61113,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7455689756997103592, guid: fcfba01b9ce63144e8008e412e789291, type: 3}
       propertyPath: _spawnRate
-      value: 2
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 7455689756997103592, guid: fcfba01b9ce63144e8008e412e789291, type: 3}
       propertyPath: _mehrenPrefab

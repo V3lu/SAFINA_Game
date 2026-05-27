@@ -25,6 +25,8 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     private float SortingPrecision = 10f;
     private int SortingBase = 1000;
     private Vector3 moveInput;
+    private bool _isDead = false;
+    private bool _deathTriggered = false;
 
 
     static float _attackProjectileSpawnTimer;
@@ -83,6 +85,8 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
 
     public void LooseHP(float hp)
     {
+        if (_isDead) return;
+
         this.HP -= hp;
         Debug.Log($"{this.HP} HP remaining");
         if (_hpBarController != null)
@@ -95,6 +99,12 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
             StartCoroutine(FlashRedOnDamage());
             StartCoroutine(HitStop(0.08f)); // Creates a massive tactile impact!
             PlaySFX(_playerDamageSFX, 1f, 0f, 0); // Priority 0 so it never gets culled
+        }
+
+        if (this.HP <= 0)
+        {
+            this.HP = 0;
+            _isDead = true;
         }
     }
 
@@ -136,10 +146,18 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
 
         var hpBarObj = GameObject.FindGameObjectWithTag("HPBar");
         if (hpBarObj != null)
+        {
             _hpBarController = hpBarObj.GetComponent<HPBarController>();
+        }
         else
+        {
             Debug.LogWarning("[PlayerCtrl] HPBar not found. It may be created later by HUDManager.");
-        this.HP = 50;
+        }
+        this.HP = 7;
+        if (_hpBarController != null)
+        {
+            _hpBarController.RestoreAllHearts();
+        }
 
         // Load sound effects if they haven't been loaded yet
         if (_fireballSFX == null)
@@ -208,6 +226,18 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     // Update is called once per frame
     void Update()
     {
+        // Check for death — trigger death sequence once
+        if (_isDead && !_deathTriggered)
+        {
+            _deathTriggered = true;
+            if (HUDManager.Instance != null)
+            {
+                HUDManager.Instance.TriggerDeathSequence(TimeManager._time);
+            }
+            return;
+        }
+        if (_isDead) return;
+
         // Development cheat: Pressing ']' adds 1 XP
 #if ENABLE_INPUT_SYSTEM
         if (Keyboard.current != null && Keyboard.current.rightBracketKey.wasPressedThisFrame)
@@ -430,6 +460,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
 
     public void TakeContactDamage(float damage)
     {
+        if (_isDead) return;
         if (_invincibilityTimer <= 0)
         {
             LooseHP(damage);
@@ -513,5 +544,18 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
         {
             _xpBarController.Refresh();
         }
+    }
+
+    /// <summary>
+    /// Resets all static and instance state for a fresh game start.
+    /// Called by HUDManager when restarting after death.
+    /// </summary>
+    public static void ResetAllState()
+    {
+        _playerXPTotal = 0;
+        _playerXPCurrent = 0;
+        _playerLvl = 0;
+        AttackType = ChosenBasicAttact.NotChosen;
+        _attackProjectileSpawnTimer = 0f;
     }
 }
