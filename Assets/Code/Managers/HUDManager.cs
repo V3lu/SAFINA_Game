@@ -532,6 +532,12 @@ public class HUDManager : MonoBehaviour
         // Rebind the player in GameManager now that she is active
         GameManager.FindActivePlayer();
 
+        if (GameManager.Player != null)
+        {
+            GameManager.Player.RebindHUDControllers();
+            Debug.Log("[HUDManager] Successfully rebound HUD controllers to player after attack select.");
+        }
+
         // Intercept skill selection controllers' deactivation and override it to proceed with the tutorial
         if (_tutorialCanvasObj != null)
         {

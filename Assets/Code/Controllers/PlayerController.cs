@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Assets.Code.Utils;
 
 public class PlayerCtrl : MonoBehaviour, IDamagable
 {
@@ -37,6 +38,8 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     static AudioClip _fireballSFX;
     static AudioClip[] _energyBlastSFXs;
     static AudioClip[] _voidBoltSFXs;
+    static AudioClip _playerDamageSFX;
+    static AudioClip _coinSFX;
 
     public static ChosenBasicAttact AttackType = ChosenBasicAttact.NotChosen;
 
@@ -91,6 +94,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
         {
             StartCoroutine(FlashRedOnDamage());
             StartCoroutine(HitStop(0.08f)); // Creates a massive tactile impact!
+            PlaySFX(_playerDamageSFX, 1f, 0f, 0); // Priority 0 so it never gets culled
         }
     }
 
@@ -153,9 +157,19 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
             _voidBoltSFXs = Resources.LoadAll<AudioClip>("Audio/VoidBolt");
             Debug.Log($"[PlayerCtrl] VoidBolt SFXs loaded count: {(_voidBoltSFXs != null ? _voidBoltSFXs.Length : 0)}");
         }
+        if (_playerDamageSFX == null)
+        {
+            _playerDamageSFX = Resources.Load<AudioClip>("Audio/sfx_damage_player");
+            Debug.Log($"[PlayerCtrl] Player damage SFX loaded: {_playerDamageSFX != null}");
+        }
+        if (_coinSFX == null)
+        {
+            _coinSFX = Resources.Load<AudioClip>("Audio/sfx_coin_single2");
+            Debug.Log($"[PlayerCtrl] Coin SFX loaded: {_coinSFX != null}");
+        }
     }
 
-    private void PlaySFX(AudioClip clip)
+    private void PlaySFX(AudioClip clip, float volume = 1f, float pitchRandomness = 0f, int priority = 128)
     {
         if (clip != null)
         {
@@ -169,7 +183,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
             {
                 Debug.LogWarning("[PlayerCtrl] Camera.main not found when playing SFX. Playing at player position.");
             }
-            AudioSource.PlayClipAtPoint(clip, playPos);
+            AudioUtil.PlaySFX(clip, playPos, volume, pitchRandomness, priority);
         }
         else
         {
@@ -177,13 +191,18 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
         }
     }
 
-    private void PlayRandomSFX(AudioClip[] clips)
+    private void PlayRandomSFX(AudioClip[] clips, float volume = 1f, float pitchRandomness = 0f, int priority = 128)
     {
         if (clips != null && clips.Length > 0)
         {
             int index = UnityEngine.Random.Range(0, clips.Length);
-            PlaySFX(clips[index]);
+            PlaySFX(clips[index], volume, pitchRandomness, priority);
         }
+    }
+
+    public static void PlayPersistentSFX(AudioClip clip, Vector3 position, float volume = 1f)
+    {
+        AudioUtil.PlayPersistentSFX(clip, position, volume);
     }
 
     // Update is called once per frame
@@ -244,7 +263,8 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
                     {
                         projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position);
                     }
-                    PlaySFX(_fireballSFX);
+                    // Pitch randomness of keeps it from sounding repetitive
+                    PlaySFX(_fireballSFX, 0.2f, 0.3f);
                 }
             }
             else if (AttackType == ChosenBasicAttact.Void)
@@ -257,7 +277,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
                     {
                         projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position);
                     }
-                    PlayRandomSFX(_voidBoltSFXs);
+                    PlayRandomSFX(_voidBoltSFXs, 0.4f, 0.1f);
                 }
             }
             else if (AttackType == ChosenBasicAttact.Energy)
@@ -270,7 +290,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
                     {
                         projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position);
                     }
-                    PlayRandomSFX(_energyBlastSFXs);
+                    PlayRandomSFX(_energyBlastSFXs, 0.7f, 0.1f);
                 }
             }
         }
@@ -375,6 +395,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
 
     public void GainXP(long XP)
     {
+        PlaySFX(_coinSFX, 0.4f);
         if (_xpBarController != null)
             _xpBarController.AddXP(XP);
         _playerXPTotal += XP;
@@ -407,7 +428,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
         return this.HP;
     }
 
-    private void TakeContactDamage(float damage)
+    public void TakeContactDamage(float damage)
     {
         if (_invincibilityTimer <= 0)
         {
@@ -416,12 +437,22 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        OnCollisionStay2D(collision);
+    }
+
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.GetComponent<IMob>() != null)
+        if (collision.gameObject.GetComponent<IMob>() != null || collision.gameObject.GetComponentInParent<IMob>() != null)
         {
             TakeContactDamage(1f); // Take 1 damage per hit (adjust as needed)
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        OnTriggerStay2D(collider);
     }
 
     private void OnTriggerStay2D(Collider2D collider)
@@ -429,7 +460,9 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
         bool isEnemyProjectile = false;
         // Identify enemy projectile by specific script component to bypass missing tag issues
         if (collider.gameObject.GetComponent<SeleniteWalkerProjectile>() != null ||
-            collider.gameObject.GetComponent<RemorselessOneProjectile>() != null)
+            collider.gameObject.GetComponentInParent<SeleniteWalkerProjectile>() != null ||
+            collider.gameObject.GetComponent<RemorselessOneProjectile>() != null ||
+            collider.gameObject.GetComponentInParent<RemorselessOneProjectile>() != null)
         {
             isEnemyProjectile = true;
         }
@@ -449,7 +482,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
             }
         }
 
-        if (isEnemyProjectile || collider.gameObject.GetComponent<IMob>() != null)
+        if (isEnemyProjectile || collider.gameObject.GetComponent<IMob>() != null || collider.gameObject.GetComponentInParent<IMob>() != null)
         {
             TakeContactDamage(1f); // Take 1 damage per hit (adjust as needed)
         }

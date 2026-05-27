@@ -16,6 +16,7 @@ public class RemorselessOne : MonoBehaviour, IMob
 
     static Transform _playerTransform;
     static float _attackProjectileSpawnTimer;
+    AudioClip _deathSFX;
 
     public Transform Transform { get { return gameObject.transform; } }
 
@@ -26,13 +27,30 @@ public class RemorselessOne : MonoBehaviour, IMob
     void Start()
     {
         _enemyHealthbarController.Sethealth(HP, MaxHP);
-        _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         this._animator = GetComponent<Animator>();
+        _deathSFX = Resources.Load<AudioClip>("Audio/boss_deathscream");
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (_playerTransform == null)
+        {
+            if (GameManager.Player != null)
+            {
+                _playerTransform = GameManager.Player.transform;
+            }
+            else
+            {
+                var playerObj = GameObject.FindGameObjectWithTag("Player");
+                if (playerObj != null)
+                {
+                    _playerTransform = playerObj.transform;
+                }
+            }
+            if (_playerTransform == null) return;
+        }
+
         if (transform.position.x >= _playerTransform.position.x)
         {
             _animator.SetInteger("directionToLook", 1);
@@ -72,6 +90,7 @@ public class RemorselessOne : MonoBehaviour, IMob
 
         TrySetHighscore((int)TimeManager._time);
 
+        PlayerCtrl.PlayPersistentSFX(_deathSFX, transform.position);
     }
 
     public int GetHighscore()

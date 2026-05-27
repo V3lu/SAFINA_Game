@@ -22,7 +22,17 @@ public class LebolianSpawnSpawnPointController : MonoBehaviour
         if (_spawnTimer <= 0)
         {
             _spawnTimer = _spawnRate;
-            ObjectPoolManager.SpawnObject(_lebolianSpawnPrefab, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Mobs);
+            
+            bool playerTooClose = false;
+            if (GameManager.Player != null && Vector3.Distance(transform.position, GameManager.Player.transform.position) < 5f)
+            {
+                playerTooClose = true;
+            }
+
+            if (!playerTooClose)
+            {
+                ObjectPoolManager.SpawnObject(_lebolianSpawnPrefab, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Mobs);
+            }
         }
     }
 }

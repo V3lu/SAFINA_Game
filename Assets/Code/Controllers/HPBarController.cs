@@ -50,20 +50,28 @@ public class HPBarController : MonoBehaviour
 
     private IEnumerator DrainHeartsCoroutine(int amount)
     {
+        Debug.Log($"[HPBarController] DrainHeartsCoroutine started with amount: {amount}, current hearts: {_currentHearts}, animators count: {(_heartAnimators != null ? _heartAnimators.Count : 0)}");
         for (int i = 0; i < amount; i++)
         {
             if (_currentHearts > 0)
             {
                 _currentHearts--;
-                _heartAnimators[_currentHearts].SetTrigger("Drain");
+                Debug.Log($"[HPBarController] Draining heart index {_currentHearts}");
+                if (_heartAnimators != null && _heartAnimators.Count > _currentHearts)
+                {
+                    _heartAnimators[_currentHearts].SetTrigger("Drain");
+                    Debug.Log($"[HPBarController] Set Drain trigger on heart index {_currentHearts}");
+                }
                 yield return new WaitForSeconds(0.3f);
             }
             else
             {
+                Debug.Log($"[HPBarController] No more hearts to drain.");
                 break;
             }
         }
     }
+
 
     public void RestoreAllHearts()
     {
