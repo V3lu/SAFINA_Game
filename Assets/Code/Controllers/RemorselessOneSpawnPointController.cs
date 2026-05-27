@@ -7,7 +7,7 @@ public class RemorselessOneSpawnPointController : MonoBehaviour
 
     float _spawnTimer;
     bool _exists = false;
-
+    int _startingLevel = -1;
 
     void Start()
     {
@@ -17,9 +17,21 @@ public class RemorselessOneSpawnPointController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (_startingLevel == -1)
+        {
+            if (GameManager.Player != null)
+            {
+                _startingLevel = GameManager.Player.GetCurrentLvl();
+            }
+            else
+            {
+                return;
+            }
+        }
+
         _spawnTimer -= Time.deltaTime;
 
-        if (_spawnTimer <= 0 && !_exists && GameManager.Player.GetCurrentLvl() > 0)
+        if (_spawnTimer <= 0 && !_exists && GameManager.Player.GetCurrentLvl() >= _startingLevel + 2)
         {
             _spawnTimer = _spawnRate;
             ObjectPoolManager.SpawnObject(_remorselessOneGameObject, transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Mobs);

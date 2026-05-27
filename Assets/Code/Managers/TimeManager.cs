@@ -10,9 +10,24 @@ public class TimeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _time += Time.deltaTime;
-        this._textMeshProUGUI = GameObject.FindGameObjectWithTag("TimeText").GetComponent<TextMeshProUGUI>();
-        _textMeshProUGUI.text = _time.ToString("F2");
+        if (HUDManager.Instance != null && HUDManager.Instance.IsTutorialActive())
+        {
+            _time = 0f;
+        }
+        else
+        {
+            _time += Time.deltaTime;
+        }
+        
+        var timeTextObj = GameObject.FindGameObjectWithTag("TimeText");
+        if (timeTextObj != null)
+        {
+            _textMeshProUGUI = timeTextObj.GetComponent<TextMeshProUGUI>();
+            if (_textMeshProUGUI != null)
+            {
+                _textMeshProUGUI.text = _time.ToString("F2");
+            }
+        }
     }
 
     void Awake()

@@ -38,47 +38,61 @@ public class OnAnimationFinishReturnToPool : StateMachineBehaviour
         {
             ObjectPoolManager.ReturnObjectToPool(animator.gameObject, ObjectPoolManager.PoolType.Mobs);
 
-            if(mob is CrystalineSlime crystalineSlime)
+            bool isBossActive = GameManager.Player != null && GameManager.Player.IsBossActive();
+
+            if (mob is CrystalineSlime crystalineSlime)
             {
                 crystalineSlime.ResetState();
-                Random rand = new Random();
-                int chance = rand.Next(11);
-                if (chance < 9)
+                if (!isBossActive)
                 {
-                    ObjectPoolManager.SpawnObject(_vialaOrb, mob.Transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Collectables);
+                    Random rand = new Random();
+                    int chance = rand.Next(11);
+                    if (chance < 9)
+                    {
+                        ObjectPoolManager.SpawnObject(_vialaOrb, mob.Transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Collectables);
+                    }
                 }
             }
 
             if (mob is SeleniteGeode seleniteGeode)
             {
                 seleniteGeode.ResetState();
-                Random rand = new Random();
-                int chance = rand.Next(11);
-                if (chance < 7)
+                if (!isBossActive)
                 {
-                    ObjectPoolManager.SpawnObject(_vialaOrb, mob.Transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Collectables);
+                    Random rand = new Random();
+                    int chance = rand.Next(11);
+                    if (chance < 7)
+                    {
+                        ObjectPoolManager.SpawnObject(_vialaOrb, mob.Transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Collectables);
+                    }
                 }
             }
 
             if (mob is LebolianSpawn lebolianSpawn)
             {
                 lebolianSpawn.ResetState();
-                Random rand = new Random();
-                int chance = rand.Next(11);
-                if (chance < 5)
+                if (!isBossActive)
                 {
-                    ObjectPoolManager.SpawnObject(_vialaOrb, mob.Transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Collectables);
+                    Random rand = new Random();
+                    int chance = rand.Next(11);
+                    if (chance < 5)
+                    {
+                        ObjectPoolManager.SpawnObject(_vialaOrb, mob.Transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Collectables);
+                    }
                 }
             }
 
             if (mob is Mehren mehren)
             {
                 mehren.ResetState();
-                Random rand = new Random();
-                int chance = rand.Next(11);
-                if (chance < 6)
+                if (!isBossActive)
                 {
-                    ObjectPoolManager.SpawnObject(_vialaOrb, mob.Transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Collectables);
+                    Random rand = new Random();
+                    int chance = rand.Next(11);
+                    if (chance < 6)
+                    {
+                        ObjectPoolManager.SpawnObject(_vialaOrb, mob.Transform.position, Quaternion.identity, ObjectPoolManager.PoolType.Collectables);
+                    }
                 }
             }
         }

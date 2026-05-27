@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class LoadingManager : MonoBehaviour
 {
     public Slider progressBar;
+    [SerializeField] string _targetScene = "LeboliaMorass";
+    [SerializeField] float _loadingDuration = 3f;
 
     void Start()
     {
@@ -14,16 +16,15 @@ public class LoadingManager : MonoBehaviour
 
     IEnumerator LoadAsync()
     {
-        AsyncOperation op = SceneManager.LoadSceneAsync("LeboliaMorass");
+        AsyncOperation op = SceneManager.LoadSceneAsync(_targetScene);
         op.allowSceneActivation = false;
 
         float elapsed = 0f;
-        float duration = 3f;
 
-        while (elapsed < duration)
+        while (elapsed < _loadingDuration)
         {
             elapsed += Time.deltaTime;
-            progressBar.value = elapsed / duration; // bar fills over 3 seconds
+            progressBar.value = elapsed / _loadingDuration;
             yield return null;
         }
 
@@ -31,3 +32,4 @@ public class LoadingManager : MonoBehaviour
         op.allowSceneActivation = true;
     }
 }
+

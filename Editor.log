@@ -1,0 +1,1029 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/staging' branch; Version is '6000.3.11f1 (3000ef702840) revision 3145967'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-bogac" at "2026-05-26T18:45:20.5203392Z"
+OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 16347 MB
+BatchMode: 0, IsHumanControllingUs: 1, StartBugReporterOnCrash: 1, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-05-26T18:45:20Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Unity.exe
+-projectpath
+C:\Users\bogac\Desktop\SAFINA_Game
+-acceptSoftwareTermsForThisRunOnly
+-useHub
+-hubIPC
+-cloudEnvironment
+production
+-licensingIpc
+LicenseClient-bogac
+-hubSessionId
+c9b777c2-0d50-40f5-8f5e-865588a4a48f
+-accessToken
+p6ThK16oThrqp_royHsTIwETlecmBOFpqHnHmp-j0pk007f
+Successfully changed project path to: C:\Users\bogac\Desktop\SAFINA_Game
+C:/Users/bogac/Desktop/SAFINA_Game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [16548]  Target information:
+
+Player connection [16548]  * "[IP] 192.168.0.19 [Port] 55504 [Flags] 2 [Guid] 1943785231 [EditorId] 1943785231 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-B703FIK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [16548] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [16548] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-996" after 0.9 seconds.
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.0'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-bogac"
+[Licensing::IpcConnector] LicenseClient-bogac channel disconnected successfully.
+[Licensing::IpcConnector] Channel LicenseClient-bogac-6000.3.11 doesn't exist
+[Licensing::Module] Successfully launched the LicensingClient (PId: 3852)
+Starting IPC server.
+Waiting for clients to connect on \\.\pipe\Unity-LicenseClient-bogac-6000.3.11, press Ctrl-C to exit.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-bogac-6000.3.11" at "2026-05-26T18:45:23.1845847Z"
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.0+23225a6
+  Session Id:              fa33b48781ec4640bbb227cae4b4ca3c
+  Correlation Id:          7177c33243e403bdf917012c992a85ed
+  External correlation Id: 5577396008031650199
+  Machine Id:              H80lzNNuL0W7iIl2UGJIkqIKAYA=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-bogac-6000.3.11" (connect: 0.37s, validation: 0.05s, handshake: 0.63s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-bogac-6000.3.11-notifications" at "2026-05-26T18:45:23.8713882Z"
+[Licensing::Module] Connected to LicensingClient (PId: 3852, launch time: 0.01, total connection time: 1.06s)
+[Licensing::Client] Successfully updated the access token
+[Licensing::Module] Successfully updated the access token p6ThK16oTh...
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 7972543270989-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 3.40s
+[Licensing::Module] Licensing is initialized (took 2.33s).
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Artifact Garbage Collection - Removed 31 unused hashed content files
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.11f1 (3000ef702840)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/bogac/Desktop/SAFINA_Game/Assets
+[D3D12 Device Filter] Vendor Name: NVIDIA
+[D3D12 Device Filter] Device Name: NVIDIA GeForce GTX 1070
+[D3D12 Device Filter] Driver Version: 32.0.15.6094
+[D3D12 Device Filter] Feature Level: 12.1
+[D3D12 Device Filter] Graphics Memory: 8067 MB
+[D3D12 Device Filter] Processor Count: 4
+[D3D12 Device Filter] Device Type: Discrete
+[D3D12 Device Filter] D3D12 API denied by user filter: {"Processor Count Comparator": Less Than Or Equal To"Processor Count": "4", "Device Type:": Do Not Care}
+GfxDevice: creating device client; kGfxThreadingModeThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
+    Vendor:   NVIDIA
+    VRAM:     8067 MB
+    Driver:   32.0.15.6094
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56996
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002716 seconds.
+- Loaded All Assemblies, in  0.617 seconds
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.668 seconds
+Domain Reload Profiling: 1281ms
+	BeginReloadAssembly (193ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (11ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (75ms)
+	LoadAllAssembliesAndSetupDomain (269ms)
+		LoadAssemblies (178ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (265ms)
+			TypeCache.Refresh (262ms)
+				TypeCache.ScanAssembly (243ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (669ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (613ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (60ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (146ms)
+			ProcessInitializeOnLoadAttributes (184ms)
+			ProcessInitializeOnLoadMethodAttributes (216ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 66 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.2d.animation@13.0.4 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.2d.animation@7396d8477ca9)
+    com.unity.2d.aseprite@3.0.1 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.2d.aseprite@809e3a168ff7)
+    com.unity.2d.psdimporter@12.0.1 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.2d.psdimporter@9abe0f7cac7e)
+    com.unity.2d.spriteshape@13.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.2d.spriteshape@0738bab11647)
+    com.unity.2d.tilemap.extras@6.0.1 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.2d.tilemap.extras@3dde84bf3867)
+    com.unity.cinemachine@3.1.4 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.cinemachine@b66fdb7cd1f2)
+    com.unity.collab-proxy@2.11.4 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.collab-proxy@a5329f833fa8)
+    com.unity.ide.visualstudio@2.0.26 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f)
+    com.unity.inputsystem@1.19.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.inputsystem@21a28c3a6c83)
+    com.unity.timeline@1.8.11 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.timeline@bfd27f8016ff)
+    com.unity.visualscripting@1.9.10 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.visualscripting@eb6004dcc707)
+    com.unity.splines@2.8.3 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.splines@56b2023b4b9f)
+    com.unity.2d.common@12.0.2 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.2d.common@800085e896ad)
+    com.unity.mathematics@1.3.3 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.mathematics@19a9377c4ffa)
+    com.unity.collections@2.6.2 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.collections@aea9d3bd5e19)
+    com.unity.searcher@4.9.4 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.searcher@d45a78918735)
+    com.unity.burst@1.8.28 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.burst@07790c2d06d9)
+    com.unity.settings-manager@2.1.1 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.settings-manager@0b8638c5ce86)
+    com.unity.nuget.mono-cecil@1.11.6 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.test-framework.performance@3.2.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.test-framework.performance@0840f58e4562)
+  Built-in packages:
+    com.unity.2d.sprite@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.2d.sprite@d14b9d497a24)
+    com.unity.2d.tilemap@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.2d.tilemap@f011712243ad)
+    com.unity.multiplayer.center@1.0.1 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.multiplayer.center@f01f4ba8d00a)
+    com.unity.render-pipelines.universal@17.3.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.render-pipelines.universal@e9f15c489688)
+    com.unity.test-framework@1.6.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.test-framework@0b7a23ab2e1d)
+    com.unity.ugui@2.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.ugui@f17df9b1ab21)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.vr@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.vr)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.0.5 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.ext.nunit@d8c07649098d)
+    com.unity.render-pipelines.core@17.3.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.render-pipelines.core@84bf82d10e47)
+    com.unity.shadergraph@17.3.0 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.shadergraph@4eb612570652)
+    com.unity.render-pipelines.universal-config@17.0.3 (location: C:\Users\bogac\Desktop\SAFINA_Game\Library\PackageCache\com.unity.render-pipelines.universal-config@8dc1aab4af1d)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.03 seconds
+A meta data file (.meta) exists but its folder 'Assets/_Recovery' can't be found, and has been created. Empty directories cannot be stored in version control, so it's assumed that the meta data file is for an empty directory in version control. When moving or deleting folders outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+A meta data file (.meta) exists but its folder 'Assets/Tiles/Materials' can't be found, and has been created. Empty directories cannot be stored in version control, so it's assumed that the meta data file is for an empty directory in version control. When moving or deleting folders outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:80
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\bogac\Desktop\SAFINA_Game\
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 50.6706ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aEDbg.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/bogac/Desktop/SAFINA_Game
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.runtime.interopservices.windowsruntime has duplicate hint path. Ignoring "C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll" in favor of "C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll"
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.componentmodel.composition has duplicate hint path. Ignoring "C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ComponentModel.Composition.dll" in favor of "C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ComponentModel.Composition.dll"
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.burst@07790c2d06d9\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Mono.Cecil, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff\Mono.Cecil.dll
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 74.0516ms
+ExitCode: 4 Duration: 0s801ms
+[ 825/1067  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aEDbg-inputdata.json
+*** Tundra requires additional run (0.75 seconds), 2 items updated, 877 evaluated
+Starting: C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Data\netcorerun\netcorerun.exe "C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aEDbg.dag.json" "Library/Bee/1900b0aEDbg-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: C:/Users/bogac/Desktop/SAFINA_Game
+ExitCode: 0 Duration: 1s210ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aEDbg.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aEDbg.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/bogac/Desktop/SAFINA_Game
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Current configuration matches the requested one, skipping
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 1.5449ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.dll, with 138 defines and 332 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with Library\Bee\artifacts\1900b0aEDbg.dag\Unity.Collections.dll
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil.Rocks, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.burst@07790c2d06d9\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 496.5478ms
+ExitCode: 0 Duration: 2s588ms
+Finished compiling graph: 1071 nodes, 20267 flattened edges (16687 ToBuild, 170 ToUse), maximum node priority 1214
+[ 537/1067  0s] WriteText Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.rsp
+[ 825/1067  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[1063/1067  1s] Csc Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.dll (+2 others)
+Assets\Code\Enemies\SeleniteWalker.cs(40,33): warning CS0414: The field 'SeleniteGeode._distanceFromPlayer' is assigned but its value is never used
+[1064/1067  0s] ILPostProcess Library/Bee/artifacts/1900b0aEDbg.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.dll, with 138 defines and 332 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[1065/1067  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+[1066/1067  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+*** Tundra build success (2.55 seconds), 6 items updated, 1067 evaluated
+Assets\Code\Enemies\SeleniteWalker.cs(40,33): warning CS0414: The field 'SeleniteGeode._distanceFromPlayer' is assigned but its value is never used
+AssetDatabase: script compilation time: 5.518834s
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.447 seconds
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) (LibraryAssetImporter) -> (artifact id: '7edc7537baa82b116029e8251b0139a3') in 0.0296563 seconds
+Start importing Assets/Resources/UI using Guid(cc4897921b391c6469c5e9ea7491885d) (DefaultImporter) -> (artifact id: 'c534140396b27d9f6c31536d9530aa8c') in 0.003178 seconds
+Refreshing native plugins compatible for Editor in 2.82 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  7.379 seconds
+Domain Reload Profiling: 8818ms
+	BeginReloadAssembly (366ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (148ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (956ms)
+		LoadAssemblies (599ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (500ms)
+			TypeCache.Refresh (336ms)
+				TypeCache.ScanAssembly (317ms)
+			BuildScriptInfoCaches (135ms)
+			ResolveRequiredComponents (24ms)
+	FinalizeReload (7379ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (7033ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (35ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (419ms)
+			ProcessInitializeOnLoadAttributes (6271ms)
+			ProcessInitializeOnLoadMethodAttributes (287ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (40ms)
+Start importing Assets/Scenes/LeboliaMorass.unity using Guid(71d55ccf6a384c74fa16650e9089e17d) (DefaultImporter) -> (artifact id: '984f06629ed5412d714ab6d43a44632a') in 0.0011319 seconds
+Start importing Assets/Scenes/CrystalinePath.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) (DefaultImporter) -> (artifact id: 'dd93988f4b1022eab68fce3487faad04') in 0.0010275 seconds
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset using Guid(0161d805a3764c089bef00bfe00793f5) (NativeFormatImporter) -> (artifact id: 'a89437d3ca799b33538672e0fbd58e83') in 0.0093318 seconds
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset using Guid(5302535af1044152a457ed104f1f4b91) (NativeFormatImporter) -> (artifact id: 'e3975442ced852c81dd45a10f2ab4b5b') in 0.0038582 seconds
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) (NativeFormatImporter) -> (artifact id: '0f7f1f6452cf5dc418a76322cc1b27cd') in 0.0050946 seconds
+Start importing Assets/Prefabs/Decour/LM_tree_right.prefab using Guid(d0f72f541481bf64284f8eac79796e5e) (PrefabImporter) -> (artifact id: '8f0d49333ddab84f6da95a9b23d4e911') in 0.013462 seconds
+Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_5.prefab using Guid(51ce89b2c4de24c499eeeff27022a713) (PrefabImporter) -> (artifact id: '69f9b2a091f480c42267ec3b84a23e33') in 0.0041283 seconds
+Start importing Assets/Prefabs/Mobs/CrystalineSlimeEnemy.prefab using Guid(62375a1fc59940b48b926056044167a5) (PrefabImporter) -> (artifact id: 'e1f5bafc1dda350f0bc963dc92cce21d') in 0.023104 seconds
+Start importing Assets/Prefabs/Mobs/SeleniteWalker.prefab using Guid(53e2c6aca3f97ed48835cce075c6eebc) (PrefabImporter) -> (artifact id: '9ebf2650e61c7c8016596127626919f9') in 0.0138485 seconds
+Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_1.prefab using Guid(63dd289b0722bc14b976f1b7fc68087d) (PrefabImporter) -> (artifact id: 'a2e31f61da82a404fd2f130cc65f4df2') in 0.0036114 seconds
+Start importing Assets/Prefabs/Decour/LM_otree_right.prefab using Guid(b3a7e081a484b8d48a098955af76d5cc) (PrefabImporter) -> (artifact id: '984cc3fb4b1ce7aedb6e70f2925a8861') in 0.0036145 seconds
+Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_7.prefab using Guid(65f3ed59dd4be474c9e63a970556c1dd) (PrefabImporter) -> (artifact id: '1f692e19f341a400cf6977de91371015') in 0.0034339 seconds
+Start importing Assets/Prefabs/Mobs/Selenius.prefab using Guid(7617ac6b9b0986a4385e328ae018ec4a) (PrefabImporter) -> (artifact id: 'dfefb9d4f821a0917760ae0b911d0b06') in 0.0092066 seconds
+Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_0.prefab using Guid(17703bbe4b9bbeb4fbe6704b3924a7e2) (PrefabImporter) -> (artifact id: 'f978f810acca8ae9c5d3a8a7ae7e6e0f') in 0.0033107 seconds
+Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_8.prefab using Guid(38a95ea3ee9217947b057f2374a041b7) (PrefabImporter) -> (artifact id: '2d962e469158aebdae102697b69b6bc3') in 0.0033833 seconds
+Start importing Assets/Prefabs/Decour/LM_tree_left.prefab using Guid(ba9b58cfda8b4ee4a8a4e3e1e26de688) (PrefabImporter) -> (artifact id: 'e9faf576eeee22f3a282866727718468') in 0.0035728 seconds
+Start importing Assets/Prefabs/Decour/LM_otree_left.prefab using Guid(fac1b29c1b27222439f58705a429fb2b) (PrefabImporter) -> (artifact id: '70a561c200d29ddac31f1410a3db3bf8') in 0.0034564 seconds
+Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_4.prefab using Guid(4b321728fe086204784765bf1346c67a) (PrefabImporter) -> (artifact id: '5b70d6b7f39d384c311218cabb22f428') in 0.0034691 seconds
+Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_6.prefab using Guid(6b6fc5390cfe75b4788b7dccb4586506) (PrefabImporter) -> (artifact id: 'adafd0dffa46d65312ffdc0628805f8f') in 0.0036519 seconds
+Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_2.prefab using Guid(dc84385abad7ae141bfa07af740a9444) (PrefabImporter) -> (artifact id: 'aaf3983342a0a78a278f7ebac11fb2c3') in 0.0036964 seconds
+Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_11.prefab using Guid(0dc6e3aafa69133478317d51e3a662ac) (PrefabImporter) -> (artifact id: '3a177cbbfeb44fb144d50935b8b5600d') in 0.0047686 seconds
+Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_10.prefab using Guid(cd724eeff035ad6458c33368f8e1221d) (PrefabImporter) -> (artifact id: '1077fd19b6ee1474f92e3b0df8d2bb85') in 0.0035757 seconds
+Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_3.prefab using Guid(1e101197e7854d34b8a4c41e090c8a48) (PrefabImporter) -> (artifact id: 'f415215c51c887228238683cb7280dec') in 0.0034266 seconds
+Refreshing native plugins compatible for Editor in 2.17 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4236764cd8844c64184f5174b4385e5e): Total: 16.647 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=23 (actual=23, local cache=0, cache server=0)
+		Asset DB Process Time: managed=13 ms, native=8537 ms
+		Asset DB Callback time: managed=884 ms, native=45 ms
+		Scripting: domain reloads=1, domain reload time=1447 ms, compile time=5521 ms, other=197 ms
+		Project Asset Count: scripts=1551, non-scripts=3559
+		Asset File Changes: new=0, changed=32, moved=0, deleted=45
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.002ms
+	InvokePackagesCallback: 38.357ms
+	ApplyChangesToAssetFolders: 0.858ms
+	Scan: 234.030ms
+	OnSourceAssetsModified: 1.514ms
+	CategorizeAssetsWithTransientArtifact: 94.692ms
+	ProcessAssetsWithTransientArtifactChanges: 153.681ms
+	UnregisterDeletedAssets: 0.012ms
+	CategorizeAssets: 95.473ms
+	ImportOutOfDateAssets: 7581.800ms (1872.535ms without children)
+		ImportManagerImport: 185.104ms (10.269ms without children)
+			ImportInProcess: 174.527ms
+			UpdateCategorizedAssets: 0.307ms
+		CompileScripts: 5520.546ms
+		ReloadNativeAssets: 0.059ms
+		UnloadImportedAssets: 1.201ms
+		ReloadImportedAssets: 0.003ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.656ms
+		InitializingProgressBar: 0.010ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 0.686ms
+	PostProcessAllAssets: 886.222ms
+	Hotreload: 6.848ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.004ms
+	UnloadStreamsBegin: 3.739ms
+	PersistCurrentRevisions: 0.751ms
+	UnloadStreamsEnd: 0.001ms
+	GenerateScriptTypeHashes: 5.714ms
+	Untracked: 7549.090ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Scanning for USB devices : 3.162ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-SAFINA
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7311 unused Assets / (5.7 MB). Loaded Objects now: 8163.
+Memory consumption went from 252.1 MB to 246.4 MB.
+Total: 14.439000 ms (FindLiveObjects: 0.854700 ms CreateObjectMapping: 1.402200 ms MarkObjects: 8.651600 ms  DeleteObjects: 3.529600 ms)
+
+[LAYOUT] About to load UserSettings\Layouts\default-6000.dwlt, keepMainWindow=False
+Duplicate identifier 3. File: "UserSettings\Layouts\default-6000.dwlt".
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditorInternal.InternalEditorUtility:LoadSerializedFileAndForget (string)
+UnityEditor.WindowLayout:LoadWindowLayout_Internal (string,UnityEditor.WindowLayout/LoadWindowLayoutFlags)
+UnityEditor.WindowLayout:LoadWindowLayout_Internal (string,bool,bool,bool,bool)
+UnityEditor.WindowLayout:LoadLastUsedLayoutForCurrentMode (bool)
+UnityEditor.WindowLayout:LoadCurrentModeLayout (bool)
+UnityEditor.WindowLayout:LoadDefaultWindowPreferences ()
+
+[C:\build\output\unity\unity\Runtime\Serialize\SerializedFile.cpp line 1170]
+
+Duplicate identifier 4. File: "UserSettings\Layouts\default-6000.dwlt".
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditorInternal.InternalEditorUtility:LoadSerializedFileAndForget (string)
+UnityEditor.WindowLayout:LoadWindowLayout_Internal (string,UnityEditor.WindowLayout/LoadWindowLayoutFlags)
+UnityEditor.WindowLayout:LoadWindowLayout_Internal (string,bool,bool,bool,bool)
+UnityEditor.WindowLayout:LoadLastUsedLayoutForCurrentMode (bool)
+UnityEditor.WindowLayout:LoadCurrentModeLayout (bool)
+UnityEditor.WindowLayout:LoadDefaultWindowPreferences ()
+
+[C:\build\output\unity\unity\Runtime\Serialize\SerializedFile.cpp line 1170]
+
+Error loading the file 'UserSettings\Layouts\default-6000.dwlt'. File has multiple objects with same identifiers. Probably caused by a merge.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditorInternal.InternalEditorUtility:LoadSerializedFileAndForget (string)
+UnityEditor.WindowLayout:LoadWindowLayout_Internal (string,UnityEditor.WindowLayout/LoadWindowLayoutFlags)
+UnityEditor.WindowLayout:LoadWindowLayout_Internal (string,bool,bool,bool,bool)
+UnityEditor.WindowLayout:LoadLastUsedLayoutForCurrentMode (bool)
+UnityEditor.WindowLayout:LoadCurrentModeLayout (bool)
+UnityEditor.WindowLayout:LoadDefaultWindowPreferences ()
+
+[ line 0]
+
+[LAYOUT] Failed to load window layout "UserSettings\Layouts\default-6000.dwlt": UnityEditor.LayoutException: No windows found in layout.
+  at UnityEditor.WindowLayout.LoadWindowLayout_Internal (System.String path, UnityEditor.WindowLayout+LoadWindowLayoutFlags flags) [0x00128] in <2e4eaf245b924ed1b8c17467295ae042>:0 
+[LAYOUT] About to load C:/Users/bogac/AppData/Roaming/Unity/Editor-5.x/Preferences\Layouts\current\default-6000.dwlt, keepMainWindow=False
+Unity Version Control: NotConfiguredClientException: Unity VCS client is not correctly configured for the current user: Client config file C:\Users\bogac\AppData\Local\plastic4\client.conf not found. Please execute 'cm configure' to perform a text mode configuration or 'plastic --configure' for graphical mode.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Unity.PlasticSCM.Editor.UI.UnityPlasticGuiMessage:LogMessage (string,string,Codice.Client.Common.GuiMessage/GuiMessageType) (at ./Library/PackageCache/com.unity.collab-proxy@a5329f833fa8/Editor/UI/UnityPlasticGuiMessage.cs:241)
+Unity.PlasticSCM.Editor.UI.UnityPlasticGuiMessage:Codice.Client.Common.GuiMessage.IGuiMessage.ShowMessage (string,string,Codice.Client.Common.GuiMessage/GuiMessageType) (at ./Library/PackageCache/com.unity.collab-proxy@a5329f833fa8/Editor/UI/UnityPlasticGuiMessage.cs:29)
+Codice.Client.Common.GuiMessage:ShowError (string)
+Unity.PlasticSCM.Editor.PlasticApp/<>c__DisplayClass27_0:<HandleLog>b__0 () (at ./Library/PackageCache/com.unity.collab-proxy@a5329f833fa8/Editor/PlasticApp.cs:303)
+Unity.PlasticSCM.Editor.UI.GUIActionRunner:RunGUIAction (Unity.PlasticSCM.Editor.UI.GUIActionRunner/ActionDelegate) (at ./Library/PackageCache/com.unity.collab-proxy@a5329f833fa8/Editor/UI/GUIActionRunner.cs:16)
+Unity.PlasticSCM.Editor.PlasticApp:HandleLog (string,string,UnityEngine.LogType) (at ./Library/PackageCache/com.unity.collab-proxy@a5329f833fa8/Editor/PlasticApp.cs:295)
+UnityEngine.Application:CallLogCallback (string,string,UnityEngine.LogType,bool)
+UnityEditorInternal.InternalEditorUtility:LoadSerializedFileAndForget (string)
+UnityEditor.WindowLayout:LoadWindowLayout_Internal (string,UnityEditor.WindowLayout/LoadWindowLayoutFlags)
+UnityEditor.WindowLayout:LoadWindowLayout_Internal (string,bool,bool,bool,bool)
+UnityEditor.WindowLayout:LoadLastUsedLayoutForCurrentMode (bool)
+UnityEditor.WindowLayout:LoadCurrentModeLayout (bool)
+UnityEditor.WindowLayout:LoadDefaultWindowPreferences ()
+
+(Filename: ./Library/PackageCache/com.unity.collab-proxy@a5329f833fa8/Editor/UI/UnityPlasticGuiMessage.cs Line: 241)
+
+NotConfiguredClientException: Unity VCS client is not correctly configured for the current user: Client config file C:\Users\bogac\AppData\Local\plastic4\client.conf not found. Please execute 'cm configure' to perform a text mode configuration or 'plastic --configure' for graphical mode.
+  at Codice.Client.Common.ClientConfig.get_SafeData () [0x00034] in <2dec5742036d4daeadd5b65221e67916>:0 
+  at Codice.Client.Common.ClientConfig.IsSymlinkSupportEnabledOnWindows () [0x00001] in <2dec5742036d4daeadd5b65221e67916>:0 
+  at Codice.Client.Common.Platform.GetPath (System.String path, System.Boolean preserveName, System.Boolean solveLastElement) [0x00069] in <2dec5742036d4daeadd5b65221e67916>:0 
+  at Codice.Client.Common.Platform.GetSymLinkPath (System.String path) [0x00001] in <2dec5742036d4daeadd5b65221e67916>:0 
+  at Codice.Client.BaseCommands.BaseCommandsImpl.GetWorkspaceFromPath (System.String path, System.Boolean doPlatformGetSymLinkPath) [0x00014] in <2dec5742036d4daeadd5b65221e67916>:0 
+  at Codice.Client.BaseCommands.BaseCommandsImpl.GetWorkspaceFromPath (System.String path) [0x00001] in <2dec5742036d4daeadd5b65221e67916>:0 
+  at PlasticGui.PlasticAPI.GetWorkspaceFromPath (System.String wkPath) [0x00007] in <2dec5742036d4daeadd5b65221e67916>:0 
+  at Unity.PlasticSCM.Editor.FindWorkspace.InfoForApplicationPath (System.String path, PlasticGui.IPlasticAPI plasticApi) [0x00016] in .\Library\PackageCache\com.unity.collab-proxy@a5329f833fa8\Editor\FindWorkspace.cs:29 
+  at Unity.PlasticSCM.Editor.UVCSPlugin.Enable () [0x0004c] in .\Library\PackageCache\com.unity.collab-proxy@a5329f833fa8\Editor\UVCSPlugin.cs:171 
+  at Unity.PlasticSCM.Editor.UVCSWindow.OnEnable () [0x00087] in .\Library\PackageCache\com.unity.collab-proxy@a5329f833fa8\Editor\UVCSWindow.cs:450 
+UnityEditorInternal.InternalEditorUtility:LoadSerializedFileAndForget_Injected(ManagedSpanWrapper&)
+UnityEditorInternal.InternalEditorUtility:LoadSerializedFileAndForget(String)
+UnityEditor.WindowLayout:LoadWindowLayout_Internal(String, LoadWindowLayoutFlags)
+UnityEditor.WindowLayout:LoadWindowLayout_Internal(String, Boolean, Boolean, Boolean, Boolean)
+UnityEditor.WindowLayout:LoadLastUsedLayoutForCurrentMode(Boolean)
+UnityEditor.WindowLayout:LoadCurrentModeLayout(Boolean)
+UnityEditor.WindowLayout:LoadDefaultWindowPreferences()
+
+(Filename: ./Library/PackageCache/com.unity.collab-proxy@a5329f833fa8/Editor/FindWorkspace.cs Line: 29)
+
+[LAYOUT] About to save layout C:\Users\bogac\Desktop\SAFINA_Game\UserSettings\Layouts\default-6000.dwlt
+Duplicate identifier 3. File: "Library/Unused/f7db6f52c23b23547a2e7862c93f4045".
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForgetInternal (string,UnityEngine.Object[],bool)
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForget (UnityEngine.Object[],string,bool)
+UnityEditor.WindowLayout:SaveWindowLayout (string,bool)
+UnityEditor.WindowLayout:SaveWindowLayout (string)
+UnityEditor.WindowLayout:SaveCurrentLayoutPerMode (string)
+UnityEditor.WindowLayout:SaveDefaultWindowPreferences ()
+UnityEditor.WindowLayout:LoadWindowLayout_Internal (string,UnityEditor.WindowLayout/LoadWindowLayoutFlags)
+UnityEditor.WindowLayout:LoadWindowLayout_Internal (string,bool,bool,bool,bool)
+UnityEditor.WindowLayout:LoadLastUsedLayoutForCurrentMode (bool)
+UnityEditor.WindowLayout:LoadCurrentModeLayout (bool)
+UnityEditor.WindowLayout:LoadDefaultWindowPreferences ()
+
+[C:\build\output\unity\unity\Runtime\Serialize\SerializedFile.cpp line 1170]
+
+Duplicate identifier 4. File: "Library/Unused/f7db6f52c23b23547a2e7862c93f4045".
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForgetInternal (string,UnityEngine.Object[],bool)
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForget (UnityEngine.Object[],string,bool)
+UnityEditor.WindowLayout:SaveWindowLayout (string,bool)
+UnityEditor.WindowLayout:SaveWindowLayout (string)
+UnityEditor.WindowLayout:SaveCurrentLayoutPerMode (string)
+UnityEditor.WindowLayout:SaveDefaultWindowPreferences ()
+UnityEditor.WindowLayout:LoadWindowLayout_Internal (string,UnityEditor.WindowLayout/LoadWindowLayoutFlags)
+UnityEditor.WindowLayout:LoadWindowLayout_Internal (string,bool,bool,bool,bool)
+UnityEditor.WindowLayout:LoadLastUsedLayoutForCurrentMode (bool)
+UnityEditor.WindowLayout:LoadCurrentModeLayout (bool)
+UnityEditor.WindowLayout:LoadDefaultWindowPreferences ()
+
+[C:\build\output\unity\unity\Runtime\Serialize\SerializedFile.cpp line 1170]
+
+Error loading the file 'C:\Users\bogac\Desktop\SAFINA_Game\UserSettings\Layouts\default-6000.dwlt'. File has multiple objects with same identifiers. Probably caused by a merge.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForgetInternal (string,UnityEngine.Object[],bool)
+UnityEditorInternal.InternalEditorUtility:SaveToSerializedFileAndForget (UnityEngine.Object[],string,bool)
+UnityEditor.WindowLayout:SaveWindowLayout (string,bool)
+UnityEditor.WindowLayout:SaveWindowLayout (string)
+UnityEditor.WindowLayout:SaveCurrentLayoutPerMode (string)
+UnityEditor.WindowLayout:SaveDefaultWindowPreferences ()
+UnityEditor.WindowLayout:LoadWindowLayout_Internal (string,UnityEditor.WindowLayout/LoadWindowLayoutFlags)
+UnityEditor.WindowLayout:LoadWindowLayout_Internal (string,bool,bool,bool,bool)
+UnityEditor.WindowLayout:LoadLastUsedLayoutForCurrentMode (bool)
+UnityEditor.WindowLayout:LoadCurrentModeLayout (bool)
+UnityEditor.WindowLayout:LoadDefaultWindowPreferences ()
+
+[ line 0]
+
+[LAYOUT] About to save layout C:/Users/bogac/AppData/Roaming/Unity/Editor-5.x/Preferences\Layouts\current\default-6000.dwlt
+[MODES] ModeService[default].InitializeCurrentMode
+[MODES] ModeService[default].RaiseModeChanged(default, default)
+This project uses Input Manager, which is marked for deprecation. To manage input in your project, use the <a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@latest">Input System package</a> instead.
+<RI> Initializing input.
+Using Windows.Gaming.Input
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+[Project] Loading completed in 25.475 seconds
+	Project init time: 				23.017 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		3.207 seconds
+		Asset Database init time: 		0.328 seconds
+		Global illumination init time: 	0.004 seconds
+		Assemblies load time: 			1.318 seconds
+		Unity extensions init time: 	0.011 seconds
+		Asset Database refresh time: 	16.647 seconds
+	Scene opening time: 			2.293 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1779821145976,"processId":996,"projectLoad":25.4746101,"projectInit":23.0174523,"templateInit":0.0,"packageManagerInit":3.2074857,"assetDatabaseInit":0.3281014,"globalIlluminationInit":0.0041698,"assembliesLoad":1.3177315,"unityExtensionsInit":0.0106298,"assetDatabaseRefresh":16.647245,"sceneOpening":2.2926265}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1779821145976,"processId":996,"editorVersion":"6000.3.11f1 (3000ef702840)","branch":"6000.3/staging","buildType":"Release","platform":"Windows"}
+Asset Pipeline Refresh (id=709c8fd61c962da4d89f3f870ff8f3e8): Total: 0.069 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Asset Pipeline Refresh (id=fb35f466aad2cf146a1aa13ca043eff1): Total: 0.054 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Unexpected error in Burst compilation: System.AggregateException: One or more errors occurred. (Unable to load the unmanaged library `C:\Users\bogac\Desktop\SAFINA_Game\Library\BurstCache\JIT\3fb801e9e101a9d894efb28d7b270f9c.dll`, error code 4551) ---> System.DllNotFoundException: Unable to load the unmanaged library `C:\Users\bogac\Desktop\SAFINA_Game\Library\BurstCache\JIT\3fb801e9e101a9d894efb28d7b270f9c.dll`, error code 4551
+  at Burst.Backend.UnmanagedLibrary+WindowsUnmanagedLibrary.LoadLibrary (System.String name, System.Boolean addPlatformPrefix, System.Boolean addPlatformFileExtension, System.Boolean addArchitecturePostfix) [0x00050] in <c6081d66416a4b579fa919569b56c9a2>:0 
+  at Burst.Backend.UnmanagedLibrary.LoadLibrary (System.String name, System.Boolean addPlatformPrefix, System.Boolean addPlatformFileExtension, System.Boolean addArchitecturePostfix) [0x00020] in <c6081d66416a4b579fa919569b56c9a2>:0 
+  at Burst.Compiler.IL.Client.CompilerClient.OnLibraryCompiled (Burst.Compiler.IL.Server.CompilationMessage+Types+LibraryCompiledMessage e) [0x0020c] in <1a03c5c66b684dd7977b2882874450e5>:0 
+  at Burst.Compiler.IL.Client.CompilerClient+<>c__DisplayClass59_0.<ScheduleCompilation>b__0 () [0x000f3] in <1a03c5c66b684dd7977b2882874450e5>:0 
+  at Burst.Compiler.IL.Client.CompilerClient+<>c__DisplayClass59_0.<ScheduleCompilation>b__0 () [0x00224] in <1a03c5c66b684dd7977b2882874450e5>:0 
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.DllNotFoundException: Unable to load the unmanaged library `C:\Users\bogac\Desktop\SAFINA_Game\Library\BurstCache\JIT\3fb801e9e101a9d894efb28d7b270f9c.dll`, error code 4551
+  at Burst.Backend.UnmanagedLibrary+WindowsUnmanagedLibrary.LoadLibrary (System.String name, System.Boolean addPlatformPrefix, System.Boolean addPlatformFileExtension, System.Boolean addArchitecturePostfix) [0x00050] in <c6081d66416a4b579fa919569b56c9a2>:0 
+  at Burst.Backend.UnmanagedLibrary.LoadLibrary (System.String name, System.Boolean addPlatformPrefix, System.Boolean addPlatformFileExtension, System.Boolean addArchitecturePostfix) [0x00020] in <c6081d66416a4b579fa919569b56c9a2>:0 
+  at Burst.Compiler.IL.Client.CompilerClient.OnLibraryCompiled (Burst.Compiler.IL.Server.CompilationMessage+Types+LibraryCompiledMessage e) [0x0020c] in <1a03c5c66b684dd7977b2882874450e5>:0 
+  at Burst.Compiler.IL.Client.CompilerClient+<>c__DisplayClass59_0.<ScheduleCompilation>b__0 () [0x000f3] in <1a03c5c66b684dd7977b2882874450e5>:0 
+  at Burst.Compiler.IL.Client.CompilerClient+<>c__DisplayClass59_0.<ScheduleCompilation>b__0 () [0x00224] in <1a03c5c66b684dd7977b2882874450e5>:0 <---
+Request Asset Garbage Collect because used heap size increased from 246.7 MB to 0.70 GB, exceeding the threshold of 256.0 MB.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Created GICache directory at C:/Users/bogac/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.025s, timestamps: [28.533 - 28.558]
+Unloading 75 unused Assets / (126.2 KB). Loaded Objects now: 9583.
+Memory consumption went from 0.70 GB to 0.69 GB.
+Total: 27.295200 ms (FindLiveObjects: 0.672100 ms CreateObjectMapping: 0.397700 ms MarkObjects: 25.900800 ms  DeleteObjects: 0.323500 ms)
+
+[Licensing::Client] Successfully updated the access token
+[Licensing::Module] Successfully updated access token: "p6ThK16o"... (expires: 2026-05-26T19:17:08Z)
+Project ID request failed, Reason: The requested URL returned error: 403 (403).
+Unknown Unity Connect error (400). Please contact support at support@unity.com while processing request "https://services.unity.com/api/unity/legacy/v1/projects/2d918220-b3ea-4423-8fce-a8ea2f590e6c", HTTP error code 403
+.Scanning for USB devices : 2.954ms
+Asset Pipeline Refresh (id=de0fb590388f31d439e6a06d0dc0583b): Total: 0.005 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+TrimDiskCacheJob: Current cache size 0mb
+Scanning for USB devices : 3.142ms
+Scanning for USB devices : 3.930ms
+Scanning for USB devices : 6.554ms
+Asset Pipeline Refresh (id=fad6aa9fdfd72214e999f4241d47e954): Total: 0.006 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Start Indexing on Editor startup
+[Indexing] Starting Initial Indexing for Assets
+Starting new worker id: 0 with log in C:/Users/bogac/Desktop/SAFINA_Game/Logs/AssetImportWorker0.log
+Starting new worker id: 1 with log in C:/Users/bogac/Desktop/SAFINA_Game/Logs/AssetImportWorker1.log
+Starting new worker id: 2 with log in C:/Users/bogac/Desktop/SAFINA_Game/Logs/AssetImportWorker2.log
+Starting new worker id: 3 with log in C:/Users/bogac/Desktop/SAFINA_Game/Logs/AssetImportWorker3.log
+Starting new worker id: 4 with log in C:/Users/bogac/Desktop/SAFINA_Game/Logs/AssetImportWorker4.log
+Worker ready: AssetImportWorker1 1
+Worker ready: AssetImportWorker3 3
+Worker ready: AssetImportWorker0 0
+Worker ready: AssetImportWorker4 4
+Worker ready: AssetImportWorker2 2
+[Worker0] Start importing Assets/Code/Controllers/FireballSkillChooseController.cs using Guid(668d5e3a94b669a4a95900fe00b2c2cb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker0] (ScriptedImporter)
+[Worker3] Start importing Assets/Prefabs/Mobs/Selenius.prefab using Guid(7617ac6b9b0986a4385e328ae018ec4a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker3] (ScriptedImporter)
+[Worker1] Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset using Guid(5302535af1044152a457ed104f1f4b91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker1] (ScriptedImporter)
+[Worker0]  -> (artifact id: 'f0c9a2b45f3edbd165642248b76c1dff') in 0.3061059 seconds
+[Worker0] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker0] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker0] Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_11.prefab using Guid(0dc6e3aafa69133478317d51e3a662ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker0] (ScriptedImporter)
+[Worker1]  -> (artifact id: 'e830179bff801657c75d8d14026fcf16') in 0.6990541 seconds
+[Worker0]  -> (artifact id: '94e032adcde85ec817b1087255df8f82') in 0.2747756 seconds
+[Worker3]  -> (artifact id: '3fb2e38bfaead332679c0afdea98583c') in 0.795859 seconds
+[Worker1] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker1] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker0] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker0] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker3] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker0] Start importing Assets/Scenes/LeboliaMorass.unity using Guid(71d55ccf6a384c74fa16650e9089e17d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker1] Start importing Assets/Code/Controllers/CrystalineSlimeSpawnPointController.cs using Guid(91593a60e22e4874284e0ce29cfc9ee7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker1] (ScriptedImporter)
+[Worker0] (ScriptedImporter)
+[Worker3] Start importing Assets/Prefabs/Decour/LM_otree_left.prefab using Guid(fac1b29c1b27222439f58705a429fb2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker1]  -> (artifact id: '50708d19dd6a3fd9e92888c7ec646e22') in 0.046349 seconds
+[Worker3] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker3] (ScriptedImporter)
+[Worker4] Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_1.prefab using Guid(63dd289b0722bc14b976f1b7fc68087d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker4] (ScriptedImporter)
+[Worker0]  -> (artifact id: 'a0d0e2cbe84fbe876ddfcd090a64d89b') in 0.1090012 seconds
+[Worker3]  -> (artifact id: '10824f0ff25ee6b398bcd56234c24e0f') in 0.077329 seconds
+[Worker1] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker1] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker1] Start importing Assets/Prefabs/Decour/LM_tree_left.prefab using Guid(ba9b58cfda8b4ee4a8a4e3e1e26de688) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker1] (ScriptedImporter)
+[Worker0] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker0] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker3] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker2] Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset using Guid(0161d805a3764c089bef00bfe00793f5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker2] (ScriptedImporter)
+[Worker0] Start importing Assets/Code/Managers/GameManager.cs using Guid(bf381b244d343d341b41b0b1af0f13cf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker3] Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_0.prefab using Guid(17703bbe4b9bbeb4fbe6704b3924a7e2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker0] (ScriptedImporter)
+[Worker3] (ScriptedImporter)
+[Worker0]  -> (artifact id: '71c1c58d5c04d9e924af9fe46f13a94c') in 0.0241238 seconds
+[Worker3] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker3]  -> (artifact id: 'bb5dd5f2c7e52f999a6b85466878f1a9') in 0.0872528 seconds
+[Worker1]  -> (artifact id: '3f231334f71f144feadf7f438b999831') in 0.2907513 seconds
+[Worker0] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker0] Start importing Assets/Code/Controllers/PlayerController.cs using Guid(346798243b0d3dd4baf93049dbb33fcd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker0] (ScriptedImporter)
+[Worker0]  -> (artifact id: '9b9552d55dd0894d82d89a2bf3ed9260') in 0.0154074 seconds
+[Worker0] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker3] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker3] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker3] Start importing Assets/Code/Controllers/StartMenuController.cs using Guid(63ffb23528ecddb44a73c6ddad60eea6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker3] (ScriptedImporter)
+[Worker4]  -> (artifact id: '73cec9507a6fe8674b2457fc5ee3ca5a') in 0.6823438 seconds
+[Worker3]  -> (artifact id: '3012eb71f45e9a6e6833d08bae4b5ffb') in 0.0163218 seconds
+[Worker1] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker1] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker1] Start importing Assets/Prefabs/Mobs/SeleniteWalker.prefab using Guid(53e2c6aca3f97ed48835cce075c6eebc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker1] (ScriptedImporter)
+[Worker0] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker0] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker0] Start importing Assets/Scenes/CrystalinePath.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker0] (ScriptedImporter)
+[Worker3] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker3] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker4] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker4] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker3] Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_5.prefab using Guid(51ce89b2c4de24c499eeeff27022a713) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker3] (ScriptedImporter)
+[Worker4] Start importing Assets/Code/Enemies/Selenius.cs using Guid(d805540094ad0b546a70fa6e03336477) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker4] (ScriptedImporter)
+[Worker4]  -> (artifact id: 'a6b6ba13108276ebf8b4ee0d23b49e35') in 0.0105401 seconds
+[Worker0]  -> (artifact id: '1d63365a1a4c7d5a5737b0051024976a') in 0.0947267 seconds
+[Worker1]  -> (artifact id: 'f7f38331eb4e5602fb3c7034be28e406') in 0.3719528 seconds
+[Worker3]  -> (artifact id: '77bb203c5db873b5e2ab524e6683b6c9') in 0.0536866 seconds
+[Worker2]  -> (artifact id: 'a58848d8d382f32c3014f2b7b2ffd0fa') in 0.9053933 seconds
+[Worker4] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker4] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker0] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker0] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker1] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker2] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker2] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker3] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker1] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker4] Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_8.prefab using Guid(38a95ea3ee9217947b057f2374a041b7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker4] (ScriptedImporter)
+[Worker0] Start importing Assets/Code/Controllers/SeleniusSpawnPointController.cs using Guid(d39a477398ab68149b53b33e583959de) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker0] (ScriptedImporter)
+[Worker0]  -> (artifact id: '6d53017f86f3772bfe1f72bf4cc203d7') in 0.0107757 seconds
+[Worker3] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker2] Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_6.prefab using Guid(6b6fc5390cfe75b4788b7dccb4586506) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker2] (ScriptedImporter)
+[Worker1] Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_10.prefab using Guid(cd724eeff035ad6458c33368f8e1221d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker1] (ScriptedImporter)
+[Worker3] Start importing Assets/Code/Managers/LoadingManager.cs using Guid(71587bf0e48ee894eab13fff0c8ba2a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker3] (ScriptedImporter)
+[Worker4]  -> (artifact id: 'f9e92f766fff29b57be2363ae4240fe5') in 0.0470726 seconds
+[Worker3]  -> (artifact id: '7e5b8c079ad05206f69ee85e96efc08e') in 0.0275738 seconds
+[Worker1]  -> (artifact id: '3f760c07c1b5f805d90e7c062bea7380') in 0.0528248 seconds
+[Worker3] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker3] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker0] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker0] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker4] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker4] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker2]  -> (artifact id: '835dad762d52da398edde08b8ca33faf') in 0.2122584 seconds
+[Worker4] Start importing Assets/Code/Controllers/OnAnimationFinishReturnToPool.cs using Guid(9776ab3983e29ec47b72af3c96ca664f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker3] Start importing Assets/InputSystem_Actions.inputactions using Guid(2bcd2660ca9b64942af0de543d8d7100) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker3] (ScriptedImporter)
+[Worker1] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker1] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker4] (ScriptedImporter)
+[Worker0] Start importing Assets/Prefabs/Mobs/CrystalineSlimeEnemy.prefab using Guid(62375a1fc59940b48b926056044167a5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker0] (ScriptedImporter)
+[Worker4]  -> (artifact id: 'b96096c8a84f5f6d3b3d4027cc1a14cc') in 0.0250178 seconds
+[Worker1] Start importing Assets/Code/Enemies/CrystalineSlime.cs using Guid(6871b3b818506624ca9315d933676323) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker1] (ScriptedImporter)
+[Worker1]  -> (artifact id: '5155d43b267cd1a1e6cddd43c4dae0f8') in 0.0196936 seconds
+[Worker2] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker2] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker2] Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_3.prefab using Guid(1e101197e7854d34b8a4c41e090c8a48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker2] (ScriptedImporter)
+[Worker4] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker2]  -> (artifact id: 'cc5464a121bdd800a72631be1a3433ae') in 0.0388083 seconds
+[Worker4] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker0]  -> (artifact id: '5c85b8fdf06a7cc704f3a72e0662c53b') in 0.2146211 seconds
+[Worker1] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker1] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker4] Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_7.prefab using Guid(65f3ed59dd4be474c9e63a970556c1dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker4] (ScriptedImporter)
+[Worker1] Start importing Assets/Prefabs/Decour/LM_otree_right.prefab using Guid(b3a7e081a484b8d48a098955af76d5cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker1] (ScriptedImporter)
+[Worker4]  -> (artifact id: 'c555f41a6cc800b9ba23e9b2f1454ba0') in 0.0385621 seconds
+[Worker1]  -> (artifact id: '50873c1d2fd2019d7337b5388e08483c') in 0.0440337 seconds
+[Worker0] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker0] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker2] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker2] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker0] Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_4.prefab using Guid(4b321728fe086204784765bf1346c67a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker0] (ScriptedImporter)
+[Worker2] Start importing Assets/Prefabs/Decour/LM_tree_right.prefab using Guid(d0f72f541481bf64284f8eac79796e5e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker2] (ScriptedImporter)
+[Worker4] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker0]  -> (artifact id: '9deb8075132219b3b3fe73e2a5a28964') in 0.0521015 seconds
+[Worker4] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker2]  -> (artifact id: '80d54d8a7a270b687233cfd6a108a479') in 0.0474681 seconds
+[Worker1] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker1] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker4] Start importing Assets/Code/Enemies/SeleniteWalker.cs using Guid(a02ec1fb5b25f11408fc6f1d6a95eaed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker4] (ScriptedImporter)
+[Worker4]  -> (artifact id: 'f07e9aebd9c307a27afa132a5c742923') in 0.0121127 seconds
+[Worker1] Start importing Assets/Code/Controllers/EnergyBlastSkillChooseController.cs using Guid(01c7deede3bad1c499d9483abe9f5aa1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker1] (ScriptedImporter)
+[Worker1]  -> (artifact id: 'f35b62521cf93be6708cdc61c1f03fed') in 0.0083191 seconds
+[Worker0] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker0] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker2] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker2] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker4] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker0] Start importing Assets/Prefabs/Decour/SAFINA_CrystalinePathDecour_2.prefab using Guid(dc84385abad7ae141bfa07af740a9444) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker0] (ScriptedImporter)
+[Worker2] Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker2] (ScriptedImporter)
+[Worker4] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker1] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker1] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker0]  -> (artifact id: 'ea7e1da2bfed075f4ac32a7550881639') in 0.0422686 seconds
+[Worker4] Start importing Assets/Code/Controllers/VoidBoltSkillChooseController.cs using Guid(cf8a60397c9af164bafe218be0b40a98) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker4] (ScriptedImporter)
+[Worker4]  -> (artifact id: '5808b99b1fd203cafa2c002ecf0310b3') in 0.0131739 seconds
+[Worker2]  -> (artifact id: '8e7cfc19214dc92cdda0baad3131ab46') in 0.0689604 seconds
+[Worker0] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker0] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker4] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker4] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker2] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker2] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+[Worker3]  -> (artifact id: 'dbb5dbd62cc43e33b0d946ce060529b7') in 0.8743474 seconds
+[Worker3] Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+[Worker3] To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Asset Pipeline Refresh (id=6c6eecaa593b5fe4dbc1c53545ac2f67): Total: 0.007 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+SpriteAtlasPacking completed in 0.006833 sec
+Reloading assemblies for play mode.
+Reloading assemblies after forced synchronous recompile.
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.712 seconds
+Refreshing native plugins compatible for Editor in 3.18 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Unity Version Control: NotConfiguredClientException: Unity VCS client is not correctly configured for the current user: Client config file C:\Users\bogac\AppData\Local\plastic4\client.conf not found. Please execute 'cm configure' to perform a text mode configuration or 'plastic --configure' for graphical mode.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Unity.PlasticSCM.Editor.UI.UnityPlasticGuiMessage:LogMessage (string,string,Codice.Client.Common.GuiMessage/GuiMessageType) (at ./Library/PackageCache/com.unity.collab-proxy@a5329f833fa8/Editor/UI/UnityPlasticGuiMessage.cs:241)
+Unity.PlasticSCM.Editor.UI.UnityPlasticGuiMessage:Codice.Client.Common.GuiMessage.IGuiMessage.ShowMessage (string,string,Codice.Client.Common.GuiMessage/GuiMessageType) (at ./Library/PackageCache/com.unity.collab-proxy@a5329f833fa8/Editor/UI/UnityPlasticGuiMessage.cs:29)
+Codice.Client.Common.GuiMessage:ShowError (string)
+Unity.PlasticSCM.Editor.PlasticApp/<>c__DisplayClass27_0:<HandleLog>b__0 () (at ./Library/PackageCache/com.unity.collab-proxy@a5329f833fa8/Editor/PlasticApp.cs:303)
+Unity.PlasticSCM.Editor.UI.GUIActionRunner:RunGUIAction (Unity.PlasticSCM.Editor.UI.GUIActionRunner/ActionDelegate) (at ./Library/PackageCache/com.unity.collab-proxy@a5329f833fa8/Editor/UI/GUIActionRunner.cs:16)
+Unity.PlasticSCM.Editor.PlasticApp:HandleLog (string,string,UnityEngine.LogType) (at ./Library/PackageCache/com.unity.collab-proxy@a5329f833fa8/Editor/PlasticApp.cs:295)
+UnityEngine.Application:CallLogCallback (string,string,UnityEngine.LogType,bool)
+
+(Filename: ./Library/PackageCache/com.unity.collab-proxy@a5329f833fa8/Editor/UI/UnityPlasticGuiMessage.cs Line: 241)
+
+NotConfiguredClientException: Unity VCS client is not correctly configured for the current user: Client config file C:\Users\bogac\AppData\Local\plastic4\client.conf not found. Please execute 'cm configure' to perform a text mode configuration or 'plastic --configure' for graphical mode.
+  at Codice.Client.Common.ClientConfig.get_SafeData () [0x00034] in <2dec5742036d4daeadd5b65221e67916>:0 
+  at Codice.Client.Common.ClientConfig.IsSymlinkSupportEnabledOnWindows () [0x00001] in <2dec5742036d4daeadd5b65221e67916>:0 
+  at Codice.Client.Common.Platform.GetPath (System.String path, System.Boolean preserveName, System.Boolean solveLastElement) [0x00069] in <2dec5742036d4daeadd5b65221e67916>:0 
+  at Codice.Client.Common.Platform.GetSymLinkPath (System.String path) [0x00001] in <2dec5742036d4daeadd5b65221e67916>:0 
+  at Codice.Client.BaseCommands.BaseCommandsImpl.GetWorkspaceFromPath (System.String path, System.Boolean doPlatformGetSymLinkPath) [0x00014] in <2dec5742036d4daeadd5b65221e67916>:0 
+  at Codice.Client.BaseCommands.BaseCommandsImpl.GetWorkspaceFromPath (System.String path) [0x00001] in <2dec5742036d4daeadd5b65221e67916>:0 
+  at PlasticGui.PlasticAPI.GetWorkspaceFromPath (System.String wkPath) [0x00007] in <2dec5742036d4daeadd5b65221e67916>:0 
+  at Unity.PlasticSCM.Editor.FindWorkspace.InfoForApplicationPath (System.String path, PlasticGui.IPlasticAPI plasticApi) [0x00016] in .\Library\PackageCache\com.unity.collab-proxy@a5329f833fa8\Editor\FindWorkspace.cs:29 
+  at Unity.PlasticSCM.Editor.UVCSPlugin.Enable () [0x0004c] in .\Library\PackageCache\com.unity.collab-proxy@a5329f833fa8\Editor\UVCSPlugin.cs:171 
+  at Unity.PlasticSCM.Editor.UVCSWindow.OnEnable () [0x00087] in .\Library\PackageCache\com.unity.collab-proxy@a5329f833fa8\Editor\UVCSWindow.cs:450 
+
+(Filename: ./Library/PackageCache/com.unity.collab-proxy@a5329f833fa8/Editor/FindWorkspace.cs Line: 29)
+
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.492 seconds
+Domain Reload Profiling: 5202ms
+	BeginReloadAssembly (1101ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (223ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (576ms)
+	RebuildCommonClasses (60ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (474ms)
+		LoadAssemblies (281ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (390ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (347ms)
+			ResolveRequiredComponents (23ms)
+	FinalizeReload (3492ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1372ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (27ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (358ms)
+			ProcessInitializeOnLoadAttributes (806ms)
+			ProcessInitializeOnLoadMethodAttributes (164ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (1297ms)
+Asset Pipeline Refresh (id=6f480435fabd1c2498133ad4eedf57e7): Total: 5.429 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=3644 ms
+		Asset DB Callback time: managed=45 ms, native=0 ms
+		Scripting: domain reloads=1, domain reload time=1738 ms, compile time=1 ms, other=0 ms
+		Project Asset Count: scripts=1551, non-scripts=3559
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 2.917ms
+	ApplyChangesToAssetFolders: 0.454ms
+	Scan: 0.000ms
+	OnSourceAssetsModified: 0.001ms
+	CategorizeAssetsWithTransientArtifact: 0.003ms
+	ProcessAssetsWithTransientArtifactChanges: 7.621ms
+	CategorizeAssets: 73.345ms
+	ImportOutOfDateAssets: 3511.629ms (3503.497ms without children)
+		CompileScripts: 1.274ms
+		CollectScriptTypesHashes: 2.140ms
+		ReloadNativeAssets: 1.255ms
+		UnloadImportedAssets: 1.750ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.893ms
+		InitializingProgressBar: 0.000ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.000ms
+		OnDemandSchedulerStart: 0.820ms
+	PostProcessAllAssets: 45.012ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.253ms
+	UnloadStreamsBegin: 1.725ms
+	PersistCurrentRevisions: 0.229ms
+	UnloadStreamsEnd: 0.001ms
+	GenerateScriptTypeHashes: 6.619ms
+	Untracked: 1786.271ms
+
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            0.665 ms
+	Integration:            339.242 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.016 ms
+	Total Operation Time:   339.925 ms
+[HUDManager] No BarsCanvas found in scene, creating one.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+HUDManager:SetupBarsCanvas (UnityEngine.SceneManagement.Scene) (at Assets/Code/Managers/HUDManager.cs:132)
+HUDManager/<SetupSceneDelayed>d__14:MoveNext () (at Assets/Code/Managers/HUDManager.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Code/Managers/HUDManager.cs Line: 132)
+
+[HUDManager] HPBar created and added to BarsCanvas.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+HUDManager:SetupHPBar () (at Assets/Code/Managers/HUDManager.cs:211)
+HUDManager/<SetupSceneDelayed>d__14:MoveNext () (at Assets/Code/Managers/HUDManager.cs:75)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/Code/Managers/HUDManager.cs Line: 211)
+
+[Licensing::Client] Successfully resolved entitlement details
+Asset Pipeline Refresh (id=92f6cd535cd98dd40845565e0bbf8e39): Total: 0.007 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=6f29cafae6c239f4389e90862f7905e4): Total: 0.004 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=017b4ed9442dfed438f1b10af8cd3b74): Total: 0.011 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            0.484 ms
+	Integration:            283.408 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.050 ms
+	Total Operation Time:   283.942 ms
+Unloading 122 unused Assets / (240.2 KB). Loaded Objects now: 9399.
+Memory consumption went from 0.74 GB to 0.74 GB.
+Total: 22.577600 ms (FindLiveObjects: 0.736100 ms CreateObjectMapping: 0.443200 ms MarkObjects: 21.214300 ms  DeleteObjects: 0.182900 ms)
+
+[Licensing::Client] Successfully resolved entitlement details
+Asset Pipeline Refresh (id=347b37128df6404418da5497b52b52a0): Total: 0.017 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+[Worker2] Start importing Assets/Scenes/CrystalinePath.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) 
+[Worker2] (PreviewImporter)
+[Worker2]  -> (artifact id: 'b1e831256296a0dbd6c8028a4890631c') in 0.0135247 seconds

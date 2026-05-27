@@ -1,17 +1,56 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    static GameManager _instance;
+
     public static PlayerCtrl Player { get; private set; }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Awake()
     {
-        Player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCtrl>();
+        // Singleton pattern with DontDestroyOnLoad
+        if (_instance != null && _instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        _instance = this;
+
+        FindPlayer();
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnEnable()
     {
-        
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        FindPlayer();
+    }
+
+    static void FindPlayer()
+    {
+        var playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+        {
+            Player = playerObj.GetComponent<PlayerCtrl>();
+        }
+        else
+        {
+            Player = null;
+            Debug.LogWarning("[GameManager] Player not found in scene. This is expected during loading screens.");
+        }
+    }
+
+    public static void FindActivePlayer()
+    {
+        FindPlayer();
     }
 }

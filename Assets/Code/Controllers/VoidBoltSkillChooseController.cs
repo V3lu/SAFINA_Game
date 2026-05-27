@@ -31,14 +31,34 @@ public class VoidBoltSkillChooseController : MonoBehaviour, IAutoAttackTypeSelec
     public void Selected()
     {
         _canvas.gameObject.SetActive(false);
-        _tutorialCanvas.gameObject.SetActive(false);
+        if (_tutorialCanvas != null)
+        {
+            _tutorialCanvas.gameObject.SetActive(false);
+        }
+        // Fallback: find BarsCanvas at runtime if not assigned via Inspector
+        if (_barsCanvas == null)
+        {
+            var found = GameObject.Find("BarsCanvas");
+            if (found != null) _barsCanvas = found.GetComponent<Canvas>();
+        }
         if (_barsCanvas != null)
         {
             _barsCanvas.enabled = true;
         }
+        Time.timeScale = 1f;
+
+        // Notify HUDManager that attack was selected
+        if (HUDManager.Instance != null)
+            HUDManager.Instance.OnAttackSelected();
+
+        if (_safina == null)
+        {
+            var playerCtrl = FindFirstObjectByType<PlayerCtrl>(FindObjectsInactive.Include);
+            if (playerCtrl != null) _safina = playerCtrl.gameObject;
+        }
+
         Animator animator = _safina.GetComponent<Animator>();
         int state = animator.GetInteger("State");
-        Time.timeScale = 1f;
         if (state == 0)
         {
             animator.SetInteger("State", 6);
