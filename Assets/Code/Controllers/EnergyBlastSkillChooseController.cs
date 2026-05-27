@@ -29,6 +29,12 @@ public class EnergyBlastSkillChooseController : MonoBehaviour, IAutoAttackTypeSe
     }
     public void Selected()
     {
+        if (_safina == null)
+        {
+            var playerCtrl = FindFirstObjectByType<PlayerCtrl>(FindObjectsInactive.Include);
+            if (playerCtrl != null) _safina = playerCtrl.gameObject;
+        }
+
         Animator animator = _safina.GetComponent<Animator>();
         int state = animator.GetInteger("State");
         _canvas.gameObject.SetActive(false);

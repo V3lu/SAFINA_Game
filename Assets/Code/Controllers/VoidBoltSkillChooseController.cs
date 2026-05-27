@@ -51,6 +51,12 @@ public class VoidBoltSkillChooseController : MonoBehaviour, IAutoAttackTypeSelec
         if (HUDManager.Instance != null)
             HUDManager.Instance.OnAttackSelected();
 
+        if (_safina == null)
+        {
+            var playerCtrl = FindFirstObjectByType<PlayerCtrl>(FindObjectsInactive.Include);
+            if (playerCtrl != null) _safina = playerCtrl.gameObject;
+        }
+
         Animator animator = _safina.GetComponent<Animator>();
         int state = animator.GetInteger("State");
         if (state == 0)

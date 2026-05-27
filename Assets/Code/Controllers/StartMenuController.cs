@@ -72,6 +72,12 @@ public class StartMenuController : MonoBehaviour
         if (_basicAttackChoosingCanvas != null)
             _basicAttackChoosingCanvas.gameObject.SetActive(true);
 
+        // Transition the tutorial to the AttackSelect step
+        if (HUDManager.Instance != null)
+        {
+            HUDManager.Instance.TransitionToStep(HUDManager.TutorialStep.AttackSelect);
+        }
+
         // Rebind player HUD controllers (HPBar may have been created after Player.Start())
         if (GameManager.Player != null)
         {

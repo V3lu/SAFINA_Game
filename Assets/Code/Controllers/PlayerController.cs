@@ -34,6 +34,9 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     static int _playerLvl = 0;
     static XPBarController _xpBarController;
     static HPBarController _hpBarController;
+    static AudioClip _fireballSFX;
+    static AudioClip[] _energyBlastSFXs;
+    static AudioClip[] _voidBoltSFXs;
 
     public static ChosenBasicAttact AttackType = ChosenBasicAttact.NotChosen;
 
@@ -133,11 +136,85 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
         else
             Debug.LogWarning("[PlayerCtrl] HPBar not found. It may be created later by HUDManager.");
         this.HP = 50;
+
+        // Load sound effects if they haven't been loaded yet
+        if (_fireballSFX == null)
+        {
+            _fireballSFX = Resources.Load<AudioClip>("Audio/Fireball/fireball");
+            Debug.Log($"[PlayerCtrl] Fireball SFX loaded: {_fireballSFX != null}");
+        }
+        if (_energyBlastSFXs == null || _energyBlastSFXs.Length == 0)
+        {
+            _energyBlastSFXs = Resources.LoadAll<AudioClip>("Audio/EnergyBlast");
+            Debug.Log($"[PlayerCtrl] EnergyBlast SFXs loaded count: {(_energyBlastSFXs != null ? _energyBlastSFXs.Length : 0)}");
+        }
+        if (_voidBoltSFXs == null || _voidBoltSFXs.Length == 0)
+        {
+            _voidBoltSFXs = Resources.LoadAll<AudioClip>("Audio/VoidBolt");
+            Debug.Log($"[PlayerCtrl] VoidBolt SFXs loaded count: {(_voidBoltSFXs != null ? _voidBoltSFXs.Length : 0)}");
+        }
+    }
+
+    private void PlaySFX(AudioClip clip)
+    {
+        if (clip != null)
+        {
+            // Use camera's Z coordinate to ensure the sound is close to the AudioListener and audible in 2D
+            Vector3 playPos = transform.position;
+            if (Camera.main != null)
+            {
+                playPos = new Vector3(transform.position.x, transform.position.y, Camera.main.transform.position.z);
+            }
+            else
+            {
+                Debug.LogWarning("[PlayerCtrl] Camera.main not found when playing SFX. Playing at player position.");
+            }
+            AudioSource.PlayClipAtPoint(clip, playPos);
+        }
+        else
+        {
+            Debug.LogWarning("[PlayerCtrl] PlaySFX called with null clip!");
+        }
+    }
+
+    private void PlayRandomSFX(AudioClip[] clips)
+    {
+        if (clips != null && clips.Length > 0)
+        {
+            int index = UnityEngine.Random.Range(0, clips.Length);
+            PlaySFX(clips[index]);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        // Development cheat: Pressing ']' adds 1 XP
+#if ENABLE_INPUT_SYSTEM
+        if (Keyboard.current != null && Keyboard.current.rightBracketKey.wasPressedThisFrame)
+        {
+            GainXP(1);
+        }
+#elif ENABLE_LEGACY_INPUT_MANAGER
+        if (Input.GetKeyDown(KeyCode.RightBracket))
+        {
+            GainXP(1);
+        }
+#endif
+
+        // Development cheat: Pressing '[' jumps to the next map
+#if ENABLE_INPUT_SYSTEM
+        if (Keyboard.current != null && Keyboard.current.leftBracketKey.wasPressedThisFrame)
+        {
+            JumpToNextMap();
+        }
+#elif ENABLE_LEGACY_INPUT_MANAGER
+        if (Input.GetKeyDown(KeyCode.LeftBracket))
+        {
+            JumpToNextMap();
+        }
+#endif
+
         if (_invincibilityTimer > 0)
         {
             _invincibilityTimer -= Time.deltaTime;
@@ -167,6 +244,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
                     {
                         projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position);
                     }
+                    PlaySFX(_fireballSFX);
                 }
             }
             else if (AttackType == ChosenBasicAttact.Void)
@@ -179,6 +257,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
                     {
                         projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position);
                     }
+                    PlayRandomSFX(_voidBoltSFXs);
                 }
             }
             else if (AttackType == ChosenBasicAttact.Energy)
@@ -191,6 +270,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
                     {
                         projectile.SetTarget(closestEnemyPlusOriginalPrefab.ElementAt(0).Key.transform.position);
                     }
+                    PlayRandomSFX(_energyBlastSFXs);
                 }
             }
         }
@@ -268,6 +348,31 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
         }
     }
 
+    public bool IsBossActive()
+    {
+        string currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        if (currentScene == "CrystalinePath")
+        {
+            var selenius = FindAnyObjectByType<Selenius>();
+            return selenius != null && selenius.HP > 0;
+        }
+        else if (currentScene == "LeboliaMorass")
+        {
+            var remorseless = FindAnyObjectByType<RemorselessOne>();
+            return remorseless != null && remorseless.HP > 0;
+        }
+        return false;
+    }
+
+    private void JumpToNextMap()
+    {
+        string currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        if (currentScene == "CrystalinePath")
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("LoadingScreenBetweenLevels");
+        }
+    }
+
     public void GainXP(long XP)
     {
         if (_xpBarController != null)
@@ -321,7 +426,30 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
 
     private void OnTriggerStay2D(Collider2D collider)
     {
-        if (collider.gameObject.CompareTag("EnemyProjectile") || collider.gameObject.GetComponent<IMob>() != null)
+        bool isEnemyProjectile = false;
+        // Identify enemy projectile by specific script component to bypass missing tag issues
+        if (collider.gameObject.GetComponent<SeleniteWalkerProjectile>() != null ||
+            collider.gameObject.GetComponent<RemorselessOneProjectile>() != null)
+        {
+            isEnemyProjectile = true;
+        }
+        else
+        {
+            // Fallback safe tag check
+            try
+            {
+                if (collider.gameObject.CompareTag("EnemyProjectile"))
+                {
+                    isEnemyProjectile = true;
+                }
+            }
+            catch (System.Exception)
+            {
+                // Ignore missing tag exceptions
+            }
+        }
+
+        if (isEnemyProjectile || collider.gameObject.GetComponent<IMob>() != null)
         {
             TakeContactDamage(1f); // Take 1 damage per hit (adjust as needed)
         }
@@ -332,12 +460,25 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     /// </summary>
     public void RebindHUDControllers()
     {
-        var xpBarObj = GameObject.FindGameObjectWithTag("XPBar");
-        if (xpBarObj != null)
-            _xpBarController = xpBarObj.GetComponent<XPBarController>();
+        if (HUDManager.Instance != null && HUDManager.Instance.BarsCanvas != null)
+        {
+            _xpBarController = HUDManager.Instance.BarsCanvas.GetComponentInChildren<XPBarController>(true);
+            _hpBarController = HUDManager.Instance.BarsCanvas.GetComponentInChildren<HPBarController>(true);
+        }
+        else
+        {
+            var xpBarObj = GameObject.FindGameObjectWithTag("XPBar");
+            if (xpBarObj != null)
+                _xpBarController = xpBarObj.GetComponent<XPBarController>();
 
-        var hpBarObj = GameObject.FindGameObjectWithTag("HPBar");
-        if (hpBarObj != null)
-            _hpBarController = hpBarObj.GetComponent<HPBarController>();
+            var hpBarObj = GameObject.FindGameObjectWithTag("HPBar");
+            if (hpBarObj != null)
+                _hpBarController = hpBarObj.GetComponent<HPBarController>();
+        }
+
+        if (_xpBarController != null)
+        {
+            _xpBarController.Refresh();
+        }
     }
 }

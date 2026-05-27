@@ -48,4 +48,9 @@ public class GameManager : MonoBehaviour
             Debug.LogWarning("[GameManager] Player not found in scene. This is expected during loading screens.");
         }
     }
+
+    public static void FindActivePlayer()
+    {
+        FindPlayer();
+    }
 }
