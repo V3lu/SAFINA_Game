@@ -38,12 +38,28 @@ public class CrystalineSlime : MonoBehaviour, IMob
         this.HP = _crystalineSlimeSO.HP;
         this.MaxHP = _crystalineSlimeSO.HP;
         _enemyHealthbarController.Sethealth(HP, MaxHP);
-        _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         _animator = this.GetComponent<Animator>();
     }
 
     void Update()
     {
+        if (_playerTransform == null)
+        {
+            if (GameManager.Player != null)
+            {
+                _playerTransform = GameManager.Player.transform;
+            }
+            else
+            {
+                var playerObj = GameObject.FindGameObjectWithTag("Player");
+                if (playerObj != null)
+                {
+                    _playerTransform = playerObj.transform;
+                }
+            }
+            if (_playerTransform == null) return;
+        }
+
         if(!(_animator.GetInteger("state") == 1 || _animator.GetInteger("state") == 0))
         {
             Movement();
@@ -60,6 +76,10 @@ public class CrystalineSlime : MonoBehaviour, IMob
 
         if (Vector3.Distance(transform.position, _playerTransform.position) < 1f)
         {
+            if (GameManager.Player != null)
+            {
+                GameManager.Player.TakeContactDamage(1f);
+            }
             _crystalinePathSO.RemoveEnemyFromList(this);
             OnDeath();
         }

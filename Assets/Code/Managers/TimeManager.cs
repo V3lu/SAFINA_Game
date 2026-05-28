@@ -6,10 +6,13 @@ public class TimeManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI _textMeshProUGUI;
 
     public static float _time;
+    public static bool IsStopped = false;
 
     // Update is called once per frame
     void Update()
     {
+        if (IsStopped) return;
+
         if (HUDManager.Instance != null && HUDManager.Instance.IsTutorialActive())
         {
             _time = 0f;

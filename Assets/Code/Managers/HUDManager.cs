@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.TextCore.LowLevel;
+using Assets.Code.Utils;
 
 /// <summary>
 /// Persistent HUD manager that survives scene transitions.
@@ -56,6 +57,10 @@ public class HUDManager : MonoBehaviour
         Finished
     }
     TutorialStep _currentTutorialStep = TutorialStep.StartMenu;
+
+    // Death state
+    bool _deathSequenceActive = false;
+    GameObject _deathOverlay;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     static void Bootstrap()
@@ -177,6 +182,17 @@ public class HUDManager : MonoBehaviour
         {
             GameManager.Player.RebindHUDControllers();
             Debug.Log("[HUDManager] Successfully rebound HUD controllers to player.");
+        }
+
+        // Reset hearts when entering any gameplay scene
+        if (scene.name != LOADING_SCREEN && _hpBarController != null)
+        {
+            _hpBarController.RestoreAllHearts();
+            if (GameManager.Player != null)
+            {
+                GameManager.Player.HP = 7;
+            }
+            Debug.Log($"[HUDManager] Restored all hearts for scene: {scene.name}");
         }
 
         PlaySceneSoundtrack(scene.name);
@@ -531,6 +547,12 @@ public class HUDManager : MonoBehaviour
 
         // Rebind the player in GameManager now that she is active
         GameManager.FindActivePlayer();
+
+        if (GameManager.Player != null)
+        {
+            GameManager.Player.RebindHUDControllers();
+            Debug.Log("[HUDManager] Successfully rebound HUD controllers to player after attack select.");
+        }
 
         // Intercept skill selection controllers' deactivation and override it to proceed with the tutorial
         if (_tutorialCanvasObj != null)
@@ -982,5 +1004,321 @@ public class HUDManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    // ========================
+    // DEATH SEQUENCE
+    // ========================
+
+    public void TriggerDeathSequence(float survivalTime)
+    {
+        if (_deathSequenceActive) return;
+        _deathSequenceActive = true;
+
+        // Stop the timer
+        TimeManager.IsStopped = true;
+
+        StartCoroutine(DeathSequenceCoroutine(survivalTime, false));
+    }
+
+    public void TriggerWinSequence(float survivalTime)
+    {
+        if (_deathSequenceActive) return;
+        _deathSequenceActive = true;
+
+        // Stop the timer
+        TimeManager.IsStopped = true;
+
+        StartCoroutine(DeathSequenceCoroutine(survivalTime, true));
+    }
+
+    IEnumerator DeathSequenceCoroutine(float survivalTime, bool won)
+    {
+        // Phase 1: Freeze and tint
+        Time.timeScale = 0f;
+
+        // Stop soundtrack
+        if (_soundtrackSource != null && _soundtrackSource.isPlaying)
+        {
+            _soundtrackSource.Stop();
+        }
+
+        // Create red overlay
+        _deathOverlay = new GameObject("DeathOverlay");
+        _deathOverlay.layer = 5;
+        DontDestroyOnLoad(_deathOverlay);
+
+        Canvas deathCanvas = _deathOverlay.AddComponent<Canvas>();
+        deathCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
+        deathCanvas.sortingOrder = 100; // Above everything
+
+        var scaler = _deathOverlay.AddComponent<CanvasScaler>();
+        scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+        scaler.referenceResolution = new Vector2(1920, 1080);
+
+        _deathOverlay.AddComponent<GraphicRaycaster>();
+
+        // Tint background based on win/loss
+        GameObject tintGO = new GameObject("Tint");
+        tintGO.layer = 5;
+        RectTransform tintRect = tintGO.AddComponent<RectTransform>();
+        tintRect.SetParent(deathCanvas.transform, false);
+        tintRect.anchorMin = Vector2.zero;
+        tintRect.anchorMax = Vector2.one;
+        tintRect.anchoredPosition = Vector2.zero;
+        tintRect.sizeDelta = Vector2.zero;
+        Image tintImg = tintGO.AddComponent<Image>();
+        tintImg.color = won ? new Color(0f, 0.4f, 0f, 0.4f) : new Color(0.6f, 0f, 0f, 0.4f); // Green for win, Red for loss
+        tintImg.raycastTarget = true;
+
+        yield return null; // Wait one frame for UI to update
+
+        // Phase 2: Show input screen
+        ShowDeathInputUI(deathCanvas, survivalTime, won);
+    }
+
+    void ShowDeathInputUI(Canvas parentCanvas, float survivalTime, bool won)
+    {
+        // Get Pixelify font
+        TMP_FontAsset font = _pixelifyFontAsset;
+        if (font == null) LoadPixelifyFont();
+        font = _pixelifyFontAsset;
+
+        // Container panel
+        GameObject containerGO = new GameObject("DeathPanel");
+        containerGO.layer = 5;
+        RectTransform containerRect = containerGO.AddComponent<RectTransform>();
+        containerRect.SetParent(parentCanvas.transform, false);
+        containerRect.anchorMin = new Vector2(0.5f, 0.5f);
+        containerRect.anchorMax = new Vector2(0.5f, 0.5f);
+        containerRect.anchoredPosition = Vector2.zero;
+        containerRect.sizeDelta = new Vector2(550f, 400f);
+
+        Image containerImg = containerGO.AddComponent<Image>();
+        containerImg.color = new Color(0.08f, 0.08f, 0.12f, 0.95f);
+
+        Outline containerOutline = containerGO.AddComponent<Outline>();
+        containerOutline.effectColor = won ? new Color(0.1f, 0.8f, 0.1f, 1f) : new Color(0.8f, 0.1f, 0.1f, 1f); // Green outline for win, Red for loss
+        containerOutline.effectDistance = new Vector2(3f, -3f);
+
+        // "YOU DIED" / "YOU WON" title
+        GameObject titleGO = new GameObject("TitleText");
+        titleGO.layer = 5;
+        RectTransform titleRect = titleGO.AddComponent<RectTransform>();
+        titleRect.SetParent(containerGO.transform, false);
+        titleRect.anchorMin = new Vector2(0.5f, 1f);
+        titleRect.anchorMax = new Vector2(0.5f, 1f);
+        titleRect.anchoredPosition = new Vector2(0f, -50f);
+        titleRect.sizeDelta = new Vector2(400f, 60f);
+
+        TextMeshProUGUI titleText = titleGO.AddComponent<TextMeshProUGUI>();
+        if (font != null) titleText.font = font;
+        titleText.text = won ? "<color=#33FF33>VICTORY</color>" : "<color=#FF3333>YOU DIED</color>";
+        titleText.fontSize = 48;
+        titleText.alignment = TextAlignmentOptions.Center;
+
+        // Survival time display
+        GameObject timeGO = new GameObject("TimeText");
+        timeGO.layer = 5;
+        RectTransform timeRect = timeGO.AddComponent<RectTransform>();
+        timeRect.SetParent(containerGO.transform, false);
+        timeRect.anchorMin = new Vector2(0.5f, 1f);
+        timeRect.anchorMax = new Vector2(0.5f, 1f);
+        timeRect.anchoredPosition = new Vector2(0f, -110f);
+        timeRect.sizeDelta = new Vector2(400f, 40f);
+
+        int minutes = Mathf.FloorToInt(survivalTime / 60f);
+        int seconds = Mathf.FloorToInt(survivalTime % 60f);
+        TextMeshProUGUI timeText = timeGO.AddComponent<TextMeshProUGUI>();
+        if (font != null) timeText.font = font;
+        string prefixStr = won ? "Completion Time:" : "Survived:";
+        timeText.text = $"{prefixStr} <color=#FFD700>{minutes:00}:{seconds:00}</color>";
+        timeText.fontSize = 28;
+        timeText.alignment = TextAlignmentOptions.Center;
+
+        // "Enter your tag" label
+        GameObject labelGO = new GameObject("LabelText");
+        labelGO.layer = 5;
+        RectTransform labelRect = labelGO.AddComponent<RectTransform>();
+        labelRect.SetParent(containerGO.transform, false);
+        labelRect.anchorMin = new Vector2(0.5f, 1f);
+        labelRect.anchorMax = new Vector2(0.5f, 1f);
+        labelRect.anchoredPosition = new Vector2(0f, -170f);
+        labelRect.sizeDelta = new Vector2(400f, 30f);
+
+        TextMeshProUGUI labelText = labelGO.AddComponent<TextMeshProUGUI>();
+        if (font != null) labelText.font = font;
+        labelText.text = "Enter your tag:";
+        labelText.fontSize = 22;
+        labelText.alignment = TextAlignmentOptions.Center;
+        labelText.color = Color.white;
+
+        // Input field
+        GameObject inputGO = new GameObject("TagInputField");
+        inputGO.layer = 5;
+        RectTransform inputRect = inputGO.AddComponent<RectTransform>();
+        inputRect.SetParent(containerGO.transform, false);
+        inputRect.anchorMin = new Vector2(0.5f, 1f);
+        inputRect.anchorMax = new Vector2(0.5f, 1f);
+        inputRect.anchoredPosition = new Vector2(0f, -220f);
+        inputRect.sizeDelta = new Vector2(350f, 50f);
+
+        Image inputBg = inputGO.AddComponent<Image>();
+        inputBg.color = new Color(0.15f, 0.15f, 0.2f, 1f);
+
+        // Text area child for TMP_InputField
+        GameObject textAreaGO = new GameObject("Text Area");
+        textAreaGO.layer = 5;
+        RectTransform textAreaRect = textAreaGO.AddComponent<RectTransform>();
+        textAreaRect.SetParent(inputGO.transform, false);
+        textAreaRect.anchorMin = Vector2.zero;
+        textAreaRect.anchorMax = Vector2.one;
+        textAreaRect.offsetMin = new Vector2(10f, 5f);
+        textAreaRect.offsetMax = new Vector2(-10f, -5f);
+        textAreaGO.AddComponent<RectMask2D>();
+
+        // Placeholder text
+        GameObject placeholderGO = new GameObject("Placeholder");
+        placeholderGO.layer = 5;
+        RectTransform phRect = placeholderGO.AddComponent<RectTransform>();
+        phRect.SetParent(textAreaGO.transform, false);
+        phRect.anchorMin = Vector2.zero;
+        phRect.anchorMax = Vector2.one;
+        phRect.offsetMin = Vector2.zero;
+        phRect.offsetMax = Vector2.zero;
+        TextMeshProUGUI phText = placeholderGO.AddComponent<TextMeshProUGUI>();
+        if (font != null) phText.font = font;
+        phText.text = "Your name...";
+        phText.fontSize = 24;
+        phText.color = new Color(0.5f, 0.5f, 0.5f, 0.7f);
+        phText.alignment = TextAlignmentOptions.Left;
+
+        // Input text child
+        GameObject inputTextGO = new GameObject("Text");
+        inputTextGO.layer = 5;
+        RectTransform itRect = inputTextGO.AddComponent<RectTransform>();
+        itRect.SetParent(textAreaGO.transform, false);
+        itRect.anchorMin = Vector2.zero;
+        itRect.anchorMax = Vector2.one;
+        itRect.offsetMin = Vector2.zero;
+        itRect.offsetMax = Vector2.zero;
+        TextMeshProUGUI inputText = inputTextGO.AddComponent<TextMeshProUGUI>();
+        if (font != null) inputText.font = font;
+        inputText.fontSize = 24;
+        inputText.color = Color.white;
+        inputText.alignment = TextAlignmentOptions.Left;
+
+        // TMP_InputField component
+        TMP_InputField inputField = inputGO.AddComponent<TMP_InputField>();
+        inputField.textViewport = textAreaRect;
+        inputField.textComponent = inputText;
+        inputField.placeholder = phText;
+        inputField.characterLimit = 12;
+        inputField.contentType = TMP_InputField.ContentType.Alphanumeric;
+        inputField.pointSize = 24;
+
+        // Submit button
+        GameObject submitGO = new GameObject("SubmitButton");
+        submitGO.layer = 5;
+        RectTransform submitRect = submitGO.AddComponent<RectTransform>();
+        submitRect.SetParent(containerGO.transform, false);
+        submitRect.anchorMin = new Vector2(0.5f, 0f);
+        submitRect.anchorMax = new Vector2(0.5f, 0f);
+        submitRect.anchoredPosition = new Vector2(0f, 60f);
+        submitRect.sizeDelta = new Vector2(250f, 55f);
+
+        Image submitBg = submitGO.AddComponent<Image>();
+        submitBg.color = new Color(0.15f, 0.6f, 0.15f, 1f);
+
+        // Submit button text
+        GameObject submitTextGO = new GameObject("SubmitText");
+        submitTextGO.layer = 5;
+        RectTransform stRect = submitTextGO.AddComponent<RectTransform>();
+        stRect.SetParent(submitGO.transform, false);
+        stRect.anchorMin = Vector2.zero;
+        stRect.anchorMax = Vector2.one;
+        stRect.offsetMin = Vector2.zero;
+        stRect.offsetMax = Vector2.zero;
+
+        TextMeshProUGUI submitText = submitTextGO.AddComponent<TextMeshProUGUI>();
+        if (font != null) submitText.font = font;
+        submitText.text = "<color=#FFFFFF>SUBMIT</color>";
+        submitText.fontSize = 30;
+        submitText.alignment = TextAlignmentOptions.Center;
+        submitText.raycastTarget = false;
+
+        // Hover and click events
+        EventTrigger trigger = submitGO.AddComponent<EventTrigger>();
+
+        EventTrigger.Entry enter = new EventTrigger.Entry { eventID = EventTriggerType.PointerEnter };
+        enter.callback.AddListener(_ => submitBg.color = new Color(0.2f, 0.75f, 0.2f, 1f));
+        trigger.triggers.Add(enter);
+
+        EventTrigger.Entry exit = new EventTrigger.Entry { eventID = EventTriggerType.PointerExit };
+        exit.callback.AddListener(_ => submitBg.color = new Color(0.15f, 0.6f, 0.15f, 1f));
+        trigger.triggers.Add(exit);
+
+        float capturedTime = survivalTime;
+        EventTrigger.Entry click = new EventTrigger.Entry { eventID = EventTriggerType.PointerClick };
+        click.callback.AddListener(_ =>
+        {
+            string playerTag = inputField.text;
+            if (string.IsNullOrWhiteSpace(playerTag))
+            {
+                playerTag = "???";
+            }
+
+            // Save to ranking
+            RankingData data = RankingData.Load();
+            data.AddEntry(playerTag, capturedTime, won);
+
+            // Restart the game
+            RestartGame();
+        });
+        trigger.triggers.Add(click);
+
+        // Ensure EventSystem exists
+        if (FindAnyObjectByType<EventSystem>() == null)
+        {
+            var esGO = new GameObject("EventSystem");
+            esGO.AddComponent<EventSystem>();
+            esGO.AddComponent<StandaloneInputModule>();
+        }
+    }
+
+    void RestartGame()
+    {
+        // Destroy the death overlay
+        if (_deathOverlay != null)
+        {
+            Destroy(_deathOverlay);
+            _deathOverlay = null;
+        }
+
+        // Reset state flags
+        _deathSequenceActive = false;
+        _gameStarted = false;
+
+        // Reset time
+        Time.timeScale = 1f;
+        TimeManager._time = 0f;
+        TimeManager.IsStopped = false;
+
+        // Reset player static state
+        PlayerCtrl.ResetAllState();
+
+        // Destroy persistent BarsCanvas so it's recreated fresh
+        if (_barsCanvas != null)
+        {
+            Destroy(_barsCanvas.gameObject);
+            _barsCanvas = null;
+            _hpBarController = null;
+        }
+
+        // Reset tutorial step
+        _currentTutorialStep = TutorialStep.StartMenu;
+
+        // Reload the first scene
+        SceneManager.LoadScene(CRYSTALLINE_PATH);
     }
 }

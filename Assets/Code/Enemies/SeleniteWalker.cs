@@ -79,12 +79,24 @@ public class SeleniteGeode : MonoBehaviour, IMob
         this.MaxHP = _seleniteWalkerSO.HP;
         _enemyHealthbarController.Sethealth(HP, MaxHP);
         _animator = this.GetComponent<Animator>();
-        this._playerReference = GameObject.FindGameObjectWithTag("Player");
         this.spriteRenderer = this.GetComponent<SpriteRenderer>();
     }
 
     private void Update()
     {
+        if (this._playerReference == null)
+        {
+            if (GameManager.Player != null)
+            {
+                this._playerReference = GameManager.Player.gameObject;
+            }
+            else
+            {
+                this._playerReference = GameObject.FindGameObjectWithTag("Player");
+            }
+            if (this._playerReference == null) return;
+        }
+
         if (this.HP > 0)
         {
             DetermineDistanceAndAction();

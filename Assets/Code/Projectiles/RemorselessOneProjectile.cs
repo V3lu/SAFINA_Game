@@ -53,7 +53,7 @@ public class RemorselessOneProjectile : MonoBehaviour, IProjectile
         {
             if (collision.collider.TryGetComponent<PlayerCtrl>(out var player))
             {
-                player.LooseHP(Random.Range(1, 5));
+                player.TakeContactDamage(1f);
                 _temporaryCollisionSolution = true;
             }
         }

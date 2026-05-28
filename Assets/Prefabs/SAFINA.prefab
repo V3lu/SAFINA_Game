@@ -134,7 +134,7 @@ MonoBehaviour:
   _energyBlastPrefab: {fileID: 3981800061773876094, guid: 49aedb9d31e097046a9f0c3803c529fa, type: 3}
   _voidBoltPrefab: {fileID: 3090728429097142128, guid: ca9dc960d339a51418ff83f4fa2e2432, type: 3}
   _attackSpeed: 1.6
-  _movSpeed: 2
+  _movSpeed: 2.2
 --- !u!50 &2360872314497071879
 Rigidbody2D:
   serializedVersion: 5
