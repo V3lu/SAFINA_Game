@@ -15,5 +15,5 @@ MonoBehaviour:
   _fireballExplosionPrefab: {fileID: 6302505505497457010, guid: abe25cd13827f4f48ba439f5f5a73044, type: 3}
   _range: 7
   _speed: 5
-  _baseDamageLowest: 2
-  _baseDamageHighest: 12
+  _baseDamageLowest: 10
+  _baseDamageHighest: 18

@@ -6,8 +6,8 @@ public class FireballBaseSO : ScriptableObject
     [SerializeField] GameObject _fireballExplosionPrefab;
     [SerializeField] float _range = 7f;
     [SerializeField] float _speed = 5f;
-    [SerializeField] float _baseDamageLowest = 2;
-    [SerializeField] float _baseDamageHighest = 12;
+    [SerializeField] float _baseDamageLowest = 7;
+    [SerializeField] float _baseDamageHighest = 16;
 
 
     public GameObject FireballExplosionPrefab => _fireballExplosionPrefab;

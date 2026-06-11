@@ -25,6 +25,7 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     private float SortingPrecision = 10f;
     private int SortingBase = 1000;
     private Vector3 moveInput;
+    private float _dashDistance = 2f;
     private bool _isDead = false;
     private bool _deathTriggered = false;
 
@@ -38,7 +39,11 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     static XPBarController _xpBarController;
     static HPBarController _hpBarController;
     static AudioClip _fireballSFX;
-    static AudioClip[] _energyBlastSFXs;
+    static AudioClip[] _energyBlastSFXs;    
+    private int _maxDashCharges = 2;
+    private int _currentDashCharges = 2;
+    private float _dashCooldownDuration = 2f;
+    private List<float> _dashCooldowns = new List<float>();
     static AudioClip[] _voidBoltSFXs;
     static AudioClip _playerDamageSFX;
     static AudioClip _coinSFX;
@@ -51,6 +56,44 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     {
         spriteRenderer.sortingOrder = SortingBase +
             Mathf.RoundToInt(-transform.position.y * SortingPrecision);
+    }
+
+    public void Dash(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            PerformDash();
+        }
+    }
+
+    private void PerformDash()
+    {
+        if (_isDead) return;
+        if (_currentDashCharges <= 0) return;
+
+        // Zużywamy 1 ładunek dasha i dodajemy mu czas odnowienia
+        _currentDashCharges--;
+        _dashCooldowns.Add(_dashCooldownDuration);
+
+        Vector3 mousePosition = Vector3.zero;
+        Debug.Log("JUMPING TO MOUSE POSITION: " + mousePosition);
+#if ENABLE_INPUT_SYSTEM
+        if (Mouse.current != null)
+        {
+            mousePosition = Mouse.current.position.ReadValue();
+        }
+#else
+        mousePosition = Input.mousePosition;
+#endif
+
+        if (Camera.main != null)
+        {
+            Vector3 worldMousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+            worldMousePosition.z = transform.position.z;
+
+            Vector3 dashDirection = (worldMousePosition - transform.position).normalized;
+            transform.position += dashDirection * _dashDistance;
+        }
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -226,6 +269,19 @@ public class PlayerCtrl : MonoBehaviour, IDamagable
     // Update is called once per frame
     void Update()
     {
+        // Obsługa niezależnych czasów odnowienia skoku
+        for (int i = _dashCooldowns.Count - 1; i >= 0; i--)
+        {
+            _dashCooldowns[i] -= Time.deltaTime;
+            if (_dashCooldowns[i] <= 0)
+            {
+                _dashCooldowns.RemoveAt(i);
+                if (_currentDashCharges < _maxDashCharges)
+                {
+                    _currentDashCharges++;
+                }
+            }
+        }
         // Check for death — trigger death sequence once
         if (_isDead && !_deathTriggered)
         {

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 110806a06ccdd924384652504e8633b5, type: 3}
   m_Name: EnergyBlastBaseSO
   m_EditorClassIdentifier: Assembly-CSharp::EnergyBlastBaseSO
-  _baseDamageLowest: 6
-  _baseDamageHighest: 10
+  _baseDamageLowest: 9
+  _baseDamageHighest: 14
